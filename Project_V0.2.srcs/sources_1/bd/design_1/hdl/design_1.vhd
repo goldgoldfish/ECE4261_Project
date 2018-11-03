@@ -1,7 +1,7 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
---Date        : Fri Nov  2 20:08:17 2018
+--Date        : Sat Nov  3 12:42:21 2018
 --Host        : FRECE-ITB205-09 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -599,30 +599,30 @@ entity design_1 is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    je_pin10_i : in STD_LOGIC;
-    je_pin10_o : out STD_LOGIC;
-    je_pin10_t : out STD_LOGIC;
-    je_pin1_i : in STD_LOGIC;
-    je_pin1_o : out STD_LOGIC;
-    je_pin1_t : out STD_LOGIC;
-    je_pin2_i : in STD_LOGIC;
-    je_pin2_o : out STD_LOGIC;
-    je_pin2_t : out STD_LOGIC;
-    je_pin3_i : in STD_LOGIC;
-    je_pin3_o : out STD_LOGIC;
-    je_pin3_t : out STD_LOGIC;
-    je_pin4_i : in STD_LOGIC;
-    je_pin4_o : out STD_LOGIC;
-    je_pin4_t : out STD_LOGIC;
-    je_pin7_i : in STD_LOGIC;
-    je_pin7_o : out STD_LOGIC;
-    je_pin7_t : out STD_LOGIC;
-    je_pin8_i : in STD_LOGIC;
-    je_pin8_o : out STD_LOGIC;
-    je_pin8_t : out STD_LOGIC;
-    je_pin9_i : in STD_LOGIC;
-    je_pin9_o : out STD_LOGIC;
-    je_pin9_t : out STD_LOGIC
+    ja_pin10_i : in STD_LOGIC;
+    ja_pin10_o : out STD_LOGIC;
+    ja_pin10_t : out STD_LOGIC;
+    ja_pin1_i : in STD_LOGIC;
+    ja_pin1_o : out STD_LOGIC;
+    ja_pin1_t : out STD_LOGIC;
+    ja_pin2_i : in STD_LOGIC;
+    ja_pin2_o : out STD_LOGIC;
+    ja_pin2_t : out STD_LOGIC;
+    ja_pin3_i : in STD_LOGIC;
+    ja_pin3_o : out STD_LOGIC;
+    ja_pin3_t : out STD_LOGIC;
+    ja_pin4_i : in STD_LOGIC;
+    ja_pin4_o : out STD_LOGIC;
+    ja_pin4_t : out STD_LOGIC;
+    ja_pin7_i : in STD_LOGIC;
+    ja_pin7_o : out STD_LOGIC;
+    ja_pin7_t : out STD_LOGIC;
+    ja_pin8_i : in STD_LOGIC;
+    ja_pin8_o : out STD_LOGIC;
+    ja_pin8_t : out STD_LOGIC;
+    ja_pin9_i : in STD_LOGIC;
+    ja_pin9_o : out STD_LOGIC;
+    ja_pin9_t : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
   attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=1,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,synth_mode=OOC_per_IP}";
@@ -708,7 +708,21 @@ architecture STRUCTURE of design_1 is
     PS_PORB : inout STD_LOGIC
   );
   end component design_1_processing_system7_0_0;
-  component design_1_PmodKYPD_0_0 is
+  component design_1_rst_ps7_0_100M_0 is
+  port (
+    slowest_sync_clk : in STD_LOGIC;
+    ext_reset_in : in STD_LOGIC;
+    aux_reset_in : in STD_LOGIC;
+    mb_debug_sys_rst : in STD_LOGIC;
+    dcm_locked : in STD_LOGIC;
+    mb_reset : out STD_LOGIC;
+    bus_struct_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
+    peripheral_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
+    interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
+    peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component design_1_rst_ps7_0_100M_0;
+  component design_1_PmodKYPD_1_0 is
   port (
     AXI_LITE_GPIO_araddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
     AXI_LITE_GPIO_arready : out STD_LOGIC;
@@ -754,45 +768,31 @@ architecture STRUCTURE of design_1 is
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC
   );
-  end component design_1_PmodKYPD_0_0;
-  component design_1_rst_ps7_0_100M_0 is
-  port (
-    slowest_sync_clk : in STD_LOGIC;
-    ext_reset_in : in STD_LOGIC;
-    aux_reset_in : in STD_LOGIC;
-    mb_debug_sys_rst : in STD_LOGIC;
-    dcm_locked : in STD_LOGIC;
-    mb_reset : out STD_LOGIC;
-    bus_struct_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component design_1_rst_ps7_0_100M_0;
-  signal PmodKYPD_0_Pmod_out_PIN10_I : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN10_O : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN10_T : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN1_I : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN1_O : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN1_T : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN2_I : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN2_O : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN2_T : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN3_I : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN3_O : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN3_T : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN4_I : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN4_O : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN4_T : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN7_I : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN7_O : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN7_T : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN8_I : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN8_O : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN8_T : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN9_I : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN9_O : STD_LOGIC;
-  signal PmodKYPD_0_Pmod_out_PIN9_T : STD_LOGIC;
+  end component design_1_PmodKYPD_1_0;
+  signal PmodKYPD_1_Pmod_out_PIN10_I : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN10_O : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN10_T : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN1_I : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN1_O : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN1_T : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN2_I : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN2_O : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN2_T : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN3_I : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN3_O : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN3_T : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN4_I : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN4_O : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN4_T : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN7_I : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN7_O : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN7_T : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN8_I : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN8_O : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN8_T : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN9_I : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN9_O : STD_LOGIC;
+  signal PmodKYPD_1_Pmod_out_PIN9_T : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -885,31 +885,31 @@ architecture STRUCTURE of design_1 is
   signal NLW_rst_ps7_0_100M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
 begin
-  PmodKYPD_0_Pmod_out_PIN10_I <= je_pin10_i;
-  PmodKYPD_0_Pmod_out_PIN1_I <= je_pin1_i;
-  PmodKYPD_0_Pmod_out_PIN2_I <= je_pin2_i;
-  PmodKYPD_0_Pmod_out_PIN3_I <= je_pin3_i;
-  PmodKYPD_0_Pmod_out_PIN4_I <= je_pin4_i;
-  PmodKYPD_0_Pmod_out_PIN7_I <= je_pin7_i;
-  PmodKYPD_0_Pmod_out_PIN8_I <= je_pin8_i;
-  PmodKYPD_0_Pmod_out_PIN9_I <= je_pin9_i;
-  je_pin10_o <= PmodKYPD_0_Pmod_out_PIN10_O;
-  je_pin10_t <= PmodKYPD_0_Pmod_out_PIN10_T;
-  je_pin1_o <= PmodKYPD_0_Pmod_out_PIN1_O;
-  je_pin1_t <= PmodKYPD_0_Pmod_out_PIN1_T;
-  je_pin2_o <= PmodKYPD_0_Pmod_out_PIN2_O;
-  je_pin2_t <= PmodKYPD_0_Pmod_out_PIN2_T;
-  je_pin3_o <= PmodKYPD_0_Pmod_out_PIN3_O;
-  je_pin3_t <= PmodKYPD_0_Pmod_out_PIN3_T;
-  je_pin4_o <= PmodKYPD_0_Pmod_out_PIN4_O;
-  je_pin4_t <= PmodKYPD_0_Pmod_out_PIN4_T;
-  je_pin7_o <= PmodKYPD_0_Pmod_out_PIN7_O;
-  je_pin7_t <= PmodKYPD_0_Pmod_out_PIN7_T;
-  je_pin8_o <= PmodKYPD_0_Pmod_out_PIN8_O;
-  je_pin8_t <= PmodKYPD_0_Pmod_out_PIN8_T;
-  je_pin9_o <= PmodKYPD_0_Pmod_out_PIN9_O;
-  je_pin9_t <= PmodKYPD_0_Pmod_out_PIN9_T;
-PmodKYPD_0: component design_1_PmodKYPD_0_0
+  PmodKYPD_1_Pmod_out_PIN10_I <= ja_pin10_i;
+  PmodKYPD_1_Pmod_out_PIN1_I <= ja_pin1_i;
+  PmodKYPD_1_Pmod_out_PIN2_I <= ja_pin2_i;
+  PmodKYPD_1_Pmod_out_PIN3_I <= ja_pin3_i;
+  PmodKYPD_1_Pmod_out_PIN4_I <= ja_pin4_i;
+  PmodKYPD_1_Pmod_out_PIN7_I <= ja_pin7_i;
+  PmodKYPD_1_Pmod_out_PIN8_I <= ja_pin8_i;
+  PmodKYPD_1_Pmod_out_PIN9_I <= ja_pin9_i;
+  ja_pin10_o <= PmodKYPD_1_Pmod_out_PIN10_O;
+  ja_pin10_t <= PmodKYPD_1_Pmod_out_PIN10_T;
+  ja_pin1_o <= PmodKYPD_1_Pmod_out_PIN1_O;
+  ja_pin1_t <= PmodKYPD_1_Pmod_out_PIN1_T;
+  ja_pin2_o <= PmodKYPD_1_Pmod_out_PIN2_O;
+  ja_pin2_t <= PmodKYPD_1_Pmod_out_PIN2_T;
+  ja_pin3_o <= PmodKYPD_1_Pmod_out_PIN3_O;
+  ja_pin3_t <= PmodKYPD_1_Pmod_out_PIN3_T;
+  ja_pin4_o <= PmodKYPD_1_Pmod_out_PIN4_O;
+  ja_pin4_t <= PmodKYPD_1_Pmod_out_PIN4_T;
+  ja_pin7_o <= PmodKYPD_1_Pmod_out_PIN7_O;
+  ja_pin7_t <= PmodKYPD_1_Pmod_out_PIN7_T;
+  ja_pin8_o <= PmodKYPD_1_Pmod_out_PIN8_O;
+  ja_pin8_t <= PmodKYPD_1_Pmod_out_PIN8_T;
+  ja_pin9_o <= PmodKYPD_1_Pmod_out_PIN9_O;
+  ja_pin9_t <= PmodKYPD_1_Pmod_out_PIN9_T;
+PmodKYPD_1: component design_1_PmodKYPD_1_0
      port map (
       AXI_LITE_GPIO_araddr(8 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(8 downto 0),
       AXI_LITE_GPIO_arready => ps7_0_axi_periph_M00_AXI_ARREADY,
@@ -928,30 +928,30 @@ PmodKYPD_0: component design_1_PmodKYPD_0_0
       AXI_LITE_GPIO_wready => ps7_0_axi_periph_M00_AXI_WREADY,
       AXI_LITE_GPIO_wstrb(3 downto 0) => ps7_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
       AXI_LITE_GPIO_wvalid => ps7_0_axi_periph_M00_AXI_WVALID,
-      Pmod_out_pin10_i => PmodKYPD_0_Pmod_out_PIN10_I,
-      Pmod_out_pin10_o => PmodKYPD_0_Pmod_out_PIN10_O,
-      Pmod_out_pin10_t => PmodKYPD_0_Pmod_out_PIN10_T,
-      Pmod_out_pin1_i => PmodKYPD_0_Pmod_out_PIN1_I,
-      Pmod_out_pin1_o => PmodKYPD_0_Pmod_out_PIN1_O,
-      Pmod_out_pin1_t => PmodKYPD_0_Pmod_out_PIN1_T,
-      Pmod_out_pin2_i => PmodKYPD_0_Pmod_out_PIN2_I,
-      Pmod_out_pin2_o => PmodKYPD_0_Pmod_out_PIN2_O,
-      Pmod_out_pin2_t => PmodKYPD_0_Pmod_out_PIN2_T,
-      Pmod_out_pin3_i => PmodKYPD_0_Pmod_out_PIN3_I,
-      Pmod_out_pin3_o => PmodKYPD_0_Pmod_out_PIN3_O,
-      Pmod_out_pin3_t => PmodKYPD_0_Pmod_out_PIN3_T,
-      Pmod_out_pin4_i => PmodKYPD_0_Pmod_out_PIN4_I,
-      Pmod_out_pin4_o => PmodKYPD_0_Pmod_out_PIN4_O,
-      Pmod_out_pin4_t => PmodKYPD_0_Pmod_out_PIN4_T,
-      Pmod_out_pin7_i => PmodKYPD_0_Pmod_out_PIN7_I,
-      Pmod_out_pin7_o => PmodKYPD_0_Pmod_out_PIN7_O,
-      Pmod_out_pin7_t => PmodKYPD_0_Pmod_out_PIN7_T,
-      Pmod_out_pin8_i => PmodKYPD_0_Pmod_out_PIN8_I,
-      Pmod_out_pin8_o => PmodKYPD_0_Pmod_out_PIN8_O,
-      Pmod_out_pin8_t => PmodKYPD_0_Pmod_out_PIN8_T,
-      Pmod_out_pin9_i => PmodKYPD_0_Pmod_out_PIN9_I,
-      Pmod_out_pin9_o => PmodKYPD_0_Pmod_out_PIN9_O,
-      Pmod_out_pin9_t => PmodKYPD_0_Pmod_out_PIN9_T,
+      Pmod_out_pin10_i => PmodKYPD_1_Pmod_out_PIN10_I,
+      Pmod_out_pin10_o => PmodKYPD_1_Pmod_out_PIN10_O,
+      Pmod_out_pin10_t => PmodKYPD_1_Pmod_out_PIN10_T,
+      Pmod_out_pin1_i => PmodKYPD_1_Pmod_out_PIN1_I,
+      Pmod_out_pin1_o => PmodKYPD_1_Pmod_out_PIN1_O,
+      Pmod_out_pin1_t => PmodKYPD_1_Pmod_out_PIN1_T,
+      Pmod_out_pin2_i => PmodKYPD_1_Pmod_out_PIN2_I,
+      Pmod_out_pin2_o => PmodKYPD_1_Pmod_out_PIN2_O,
+      Pmod_out_pin2_t => PmodKYPD_1_Pmod_out_PIN2_T,
+      Pmod_out_pin3_i => PmodKYPD_1_Pmod_out_PIN3_I,
+      Pmod_out_pin3_o => PmodKYPD_1_Pmod_out_PIN3_O,
+      Pmod_out_pin3_t => PmodKYPD_1_Pmod_out_PIN3_T,
+      Pmod_out_pin4_i => PmodKYPD_1_Pmod_out_PIN4_I,
+      Pmod_out_pin4_o => PmodKYPD_1_Pmod_out_PIN4_O,
+      Pmod_out_pin4_t => PmodKYPD_1_Pmod_out_PIN4_T,
+      Pmod_out_pin7_i => PmodKYPD_1_Pmod_out_PIN7_I,
+      Pmod_out_pin7_o => PmodKYPD_1_Pmod_out_PIN7_O,
+      Pmod_out_pin7_t => PmodKYPD_1_Pmod_out_PIN7_T,
+      Pmod_out_pin8_i => PmodKYPD_1_Pmod_out_PIN8_I,
+      Pmod_out_pin8_o => PmodKYPD_1_Pmod_out_PIN8_O,
+      Pmod_out_pin8_t => PmodKYPD_1_Pmod_out_PIN8_T,
+      Pmod_out_pin9_i => PmodKYPD_1_Pmod_out_PIN9_I,
+      Pmod_out_pin9_o => PmodKYPD_1_Pmod_out_PIN9_O,
+      Pmod_out_pin9_t => PmodKYPD_1_Pmod_out_PIN9_T,
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_aresetn => rst_ps7_0_100M_peripheral_aresetn(0)
     );

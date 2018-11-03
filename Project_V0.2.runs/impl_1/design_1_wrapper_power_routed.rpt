@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date             : Fri Nov  2 20:12:09 2018
+| Date             : Sat Nov  3 12:45:15 2018
 | Host             : FRECE-ITB205-09 running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -51,7 +51,7 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.003 |        3 |       --- |             --- |
 | Slice Logic             |     0.001 |     1386 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |      363 |     17600 |            2.06 |
+|   LUT as Logic          |    <0.001 |      362 |     17600 |            2.06 |
 |   Register              |    <0.001 |      632 |     35200 |            1.80 |
 |   CARRY4                |    <0.001 |       18 |      4400 |            0.41 |
 |   LUT as Shift Register |    <0.001 |       62 |      6000 |            1.03 |
@@ -148,7 +148,7 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | design_1_wrapper                                 |     1.566 |
 |   design_1_i                                     |     1.562 |
-|     PmodKYPD_0                                   |    <0.001 |
+|     PmodKYPD_1                                   |    <0.001 |
 |       inst                                       |    <0.001 |
 |         axi_gpio_0                               |    <0.001 |
 |           U0                                     |    <0.001 |
@@ -198,14 +198,14 @@ Table of Contents
 |           ACTIVE_LOW_EXT.ACT_LO_EXT              |    <0.001 |
 |         SEQ                                      |    <0.001 |
 |           SEQ_COUNTER                            |    <0.001 |
-|   je_pin10_iobuf                                 |    <0.001 |
-|   je_pin1_iobuf                                  |    <0.001 |
-|   je_pin2_iobuf                                  |    <0.001 |
-|   je_pin3_iobuf                                  |    <0.001 |
-|   je_pin4_iobuf                                  |    <0.001 |
-|   je_pin7_iobuf                                  |    <0.001 |
-|   je_pin8_iobuf                                  |    <0.001 |
-|   je_pin9_iobuf                                  |    <0.001 |
+|   ja_pin10_iobuf                                 |    <0.001 |
+|   ja_pin1_iobuf                                  |    <0.001 |
+|   ja_pin2_iobuf                                  |    <0.001 |
+|   ja_pin3_iobuf                                  |    <0.001 |
+|   ja_pin4_iobuf                                  |    <0.001 |
+|   ja_pin7_iobuf                                  |    <0.001 |
+|   ja_pin8_iobuf                                  |    <0.001 |
+|   ja_pin9_iobuf                                  |    <0.001 |
 +--------------------------------------------------+-----------+
 
 

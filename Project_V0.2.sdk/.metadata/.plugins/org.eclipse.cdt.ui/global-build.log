@@ -1,168 +1,55 @@
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s clean 
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s clean 
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s clean 
-make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s clean 
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_2/src -s clean 
-make -C ps7_cortexa9_0/libsrc/lwip141_v1_8/src -s clean 
-make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s clean 
-make -C ps7_cortexa9_0/libsrc/scugic_v3_6/src -s clean 
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
-make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s clean 
-make -C ps7_cortexa9_0/libsrc/standalone_v6_2/src -s clean 
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s clean 
-make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s clean 
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s clean 
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s clean 
-rm -f ps7_cortexa9_0/lib/libxil.a
-20:55:27 **** Build of project echo_bsp ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/lwip141_v1_8/src"
-make -C ps7_cortexa9_0/libsrc/lwip141_v1_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Command canceled
-20:59:00 **** Build of project echo_bsp ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/lwip141_v1_8/src"
-make -C ps7_cortexa9_0/libsrc/lwip141_v1_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_6/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v6_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling coresightps_dcc"
-arm-none-eabi-ar: creating ../../../lib/libxil.a
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling ddrps"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling emacps"
-"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling gpiops"
-"Running Make libs in ps7_cortexa9_0/libsrc/lwip141_v1_8/src"
-make -C ps7_cortexa9_0/libsrc/lwip141_v1_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling lwip src and adapter files"
-In file included from ../../../include/lwip/ip.h:39:0,
-                 from lwip-1.4.1/src/core/ipv4/ip.c:42:
-lwip-1.4.1/src/core/ipv4/ip.c: In function 'ip_input':
-../../../include/lwip/ip_addr.h:200:39: warning: the comparison will always evaluate as 'false' for the address of 'current_iphdr_src' will never be NULL [-Waddress]
- #define ip_addr_isany(addr1) ((addr1) == NULL || (addr1)->addr == IPADDR_ANY)
-                                       ^
-lwip-1.4.1/src/core/ipv4/ip.c:473:24: note: in expansion of macro 'ip_addr_isany'
-   if (check_ip_src && !ip_addr_isany(&current_iphdr_src))
-                        ^
-In file included from ../../../include/lwip/netif.h:41:0,
-                 from ../../../include/lwip/udp.h:40,
-                 from lwip-1.4.1/src/core/dhcp.c:75:
-lwip-1.4.1/src/core/dhcp.c: In function 'dhcp_bind':
-../../../include/lwip/ip_addr.h:200:39: warning: the comparison will always evaluate as 'false' for the address of 'gw_addr' will never be NULL [-Waddress]
- #define ip_addr_isany(addr1) ((addr1) == NULL || (addr1)->addr == IPADDR_ANY)
-                                       ^
-lwip-1.4.1/src/core/dhcp.c:987:7: note: in expansion of macro 'ip_addr_isany'
-   if (ip_addr_isany(&gw_addr)) {
-       ^
-In file included from ../../../include/xemacps.h:342:0,
-                 from ../../../include/netif/xemacpsif.h:59,
-                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:39:
-contrib/ports/xilinx/netif/xemacpsif_dma.c: In function 'init_dma':
-../../../include/xemacps_bd.h:163:62: warning: 'bdrxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
-     (*(u32 *)((UINTPTR)(void*)(BaseAddress) + (u32)(Offset)) = (u32)(Data))
-                                                              ^
-contrib/ports/xilinx/netif/xemacpsif_dma.c:551:14: note: 'bdrxterminate' was declared here
-  XEmacPs_Bd *bdrxterminate;
-              ^
-In file included from ../../../include/xemacps.h:342:0,
-                 from ../../../include/netif/xemacpsif.h:59,
-                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:39:
-../../../include/xemacps_bd.h:126:5: warning: 'bdtxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
-     memset((BdPtr), 0, sizeof(XEmacPs_Bd))
-     ^
-contrib/ports/xilinx/netif/xemacpsif_dma.c:550:14: note: 'bdtxterminate' was declared here
-  XEmacPs_Bd *bdtxterminate;
-              ^
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_6/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scugic"
-xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
-  }
-  ^
-In file included from xscugic_g.c:41:0:
-xscugic.h:217:27: note: 'HandlerTable' declared here
-  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
-                           ^~~~~~~~~~~~
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling sdps"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v6_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling ttcps"
-Command canceled
-21:04:49 **** Build of project echo_bsp ****
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 106296	   3840	2218272	2328408	 238758	Project.elf
+'Finished building: Project.elf.size'
+' '
+16:08:58 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:09:06 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:09:46 **** Auto Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:129:7: warning: unused variable 'data_arry' [-Wunused-variable]
+  char data_arry[MAX_FRAME_SIZE];
+       ^~~~~~~~~
+../src/main.c: In function 'DemoRun':
+../src/main.c:256:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
+    char *num_bytes_string;
+          ^~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 106296	   3840	2218272	2328408	 238758	Project.elf
+'Finished building: Project.elf.size'
+' '
+16:09:48 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:09:53 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
