@@ -1,8 +1,7 @@
-19:17:25 **** Incremental Build of configuration Debug for project echo ****
-make pre-build main-build 
-a9-linaro-pre-build-step
+20:52:48 **** Clean-only build of configuration Debug for project echo ****
+make clean 
+rm -rf  ./src/PmodKYPD.o ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o  ./src/PmodKYPD.d ./src/echo.d ./src/i2c_access.d ./src/iic_phyreset.d ./src/main.d ./src/platform.d ./src/platform_mb.d ./src/platform_ppc.d ./src/platform_zynq.d ./src/platform_zynqmp.d ./src/sfp.d ./src/si5324.d  echo.elf.size  echo.elf
 ' '
-make: Nothing to be done for `main-build'.
 
-19:17:25 Build Finished (took 765ms)
+20:53:02 Build Finished (took 13s.676ms)
 

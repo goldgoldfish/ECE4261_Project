@@ -7,6 +7,7 @@ LD_SRCS += \
 ../src/lscript.ld 
 
 C_SRCS += \
+../src/PmodKYPD.c \
 ../src/echo.c \
 ../src/i2c_access.c \
 ../src/iic_phyreset.c \
@@ -20,6 +21,7 @@ C_SRCS += \
 ../src/si5324.c 
 
 OBJS += \
+./src/PmodKYPD.o \
 ./src/echo.o \
 ./src/i2c_access.o \
 ./src/iic_phyreset.o \
@@ -33,6 +35,7 @@ OBJS += \
 ./src/si5324.o 
 
 C_DEPS += \
+./src/PmodKYPD.d \
 ./src/echo.d \
 ./src/i2c_access.d \
 ./src/iic_phyreset.d \
