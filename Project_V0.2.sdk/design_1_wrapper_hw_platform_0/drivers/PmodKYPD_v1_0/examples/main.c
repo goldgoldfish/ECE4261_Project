@@ -60,7 +60,7 @@ int main(void) {
 
 void DemoInitialize() {
    EnableCaches();
-   KYPD_begin(&myDevice, XPAR_PMODKYPD_1_AXI_LITE_GPIO_BASEADDR);
+   KYPD_begin(&myDevice, XPAR_PMODKYPD_0_AXI_LITE_GPIO_BASEADDR);
    KYPD_loadKeyTable(&myDevice, (u8*) DEFAULT_KEYTABLE);
 }
 

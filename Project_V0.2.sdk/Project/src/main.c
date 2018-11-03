@@ -35,6 +35,7 @@
 
 #include "PmodKYPD.h"
 #include "sleep.h"
+#include "functions_4261.h"
 
 void DemoInitialize();
 void DemoRun();
@@ -45,12 +46,9 @@ void DemoSleep(u32 millis);
 
 PmodKYPD myDevice;
 
-int soft_select = 0;
-
 #define MAX_FRAME_SIZE 1500 //set the maximum number of bytes that can be passed in a single ethernet frame
 
 //--------------------------------------------------------------------------------------------//
-
 
 #include <stdio.h>
 
@@ -330,13 +328,17 @@ void DemoRun() {
 		xil_printf("\r\n");
 		if(last_key == '1'){
 			xil_printf("Hardware selected\r\n");
-			soft_select = 0;
-			goto HARD;
+			char *string = make_transmit_string(num_bytes, MAX_FRAME_SIZE);
+			xil_printf("%s\r\n", string);
+			break;
+			//hardware_encrypt(num_bytes, make_transmit_string());
 		} //end if
 		else if (last_key == '0'){
 			xil_printf("Software selected\r\n");
-			soft_select = 1;
-			goto SOFT;
+			char *string = make_transmit_string(num_bytes, MAX_FRAME_SIZE);
+			xil_printf("%s\r\n", string);
+			break;
+			//software_encrypt(num_bytes, make_transmit_string());
 		} //end else if
 		else {
 			xil_printf("Error!!!\r\n");
@@ -349,8 +351,6 @@ void DemoRun() {
 	usleep(1000);
 
 	} //end while
-	HARD:;
-	SOFT:;
 } //end DemoRun
 
 void DemoCleanup() {

@@ -9,6 +9,7 @@ LD_SRCS += \
 C_SRCS += \
 ../src/PmodKYPD.c \
 ../src/echo.c \
+../src/functions_4261.c \
 ../src/i2c_access.c \
 ../src/iic_phyreset.c \
 ../src/main.c \
@@ -23,6 +24,7 @@ C_SRCS += \
 OBJS += \
 ./src/PmodKYPD.o \
 ./src/echo.o \
+./src/functions_4261.o \
 ./src/i2c_access.o \
 ./src/iic_phyreset.o \
 ./src/main.o \
@@ -37,6 +39,7 @@ OBJS += \
 C_DEPS += \
 ./src/PmodKYPD.d \
 ./src/echo.d \
+./src/functions_4261.d \
 ./src/i2c_access.d \
 ./src/iic_phyreset.d \
 ./src/main.d \
