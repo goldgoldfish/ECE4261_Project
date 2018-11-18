@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad/Project_V0.2.xpr">
+<Project Version="7" Minor="20" Path="C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master/ECE4261_Project-master/Project_V0.2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="7c0d72ac959a4edaa014928f97464bbf"/>
@@ -167,9 +167,7 @@
     </Run>
     <Run Id="design_1_PmodKYPD_1_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_PmodKYPD_1_0" Part="xc7z010clg400-1" ConstrsSet="design_1_PmodKYPD_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_PmodKYPD_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -227,9 +225,7 @@
     </Run>
     <Run Id="design_1_PmodKYPD_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="design_1_PmodKYPD_1_0" Description="Default settings for Implementation." SynthRun="design_1_PmodKYPD_1_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

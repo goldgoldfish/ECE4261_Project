@@ -2,10 +2,19 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="xilinx.gnu.armv7.exe.debug.1420719633;xilinx.gnu.armv7.exe.debug.1420719633.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="#undef __ARM_ARCH_EXT_IDIV__" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_IDIV" removed="true"/>
 <includePath path="c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/6.2.1/include"/>
+<includePath path="#undef __ARM_ASM_SYNTAX_UNIFIED__" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_DSP" removed="true"/>
 <includePath path="c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/6.2.1/include-fixed"/>
+<includePath path="#undef __ARM_FEATURE_QBIT" removed="true"/>
 <includePath path="c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/include"/>
+<includePath path="#undef __ARM_FEATURE_UNALIGNED" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_SAT" removed="true"/>
 <includePath path="c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../arm-none-eabi/libc/usr/include"/>
+<includePath path="#undef __ARM_FEATURE_QRDMX" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_CRYPTO" removed="true"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_VERSION__=201112L"/>
 <definedSymbol symbol="__STDC_UTF_16__=1"/>
@@ -708,10 +717,17 @@
 </instance>
 <instance id="xilinx.gnu.armv7.exe.debug.1420719633;xilinx.gnu.armv7.exe.debug.1420719633.;xilinx.gnu.armv7.c.toolchain.compiler.debug.114166985;xilinx.gnu.armv7.c.compiler.input.2132595724">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="#undef __thumb2__" removed="true"/>
+<includePath path="#undef __THUMBEL__" removed="true"/>
+<includePath path="#undef __ARM_ASM_SYNTAX_UNIFIED__" removed="true"/>
 <includePath path="c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/6.2.1/include"/>
+<includePath path="#undef __ARM_FEATURE_DSP" removed="true"/>
 <includePath path="c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/6.2.1/include-fixed"/>
+<includePath path="#undef __ARM_FEATURE_QBIT" removed="true"/>
 <includePath path="c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/include"/>
+<includePath path="#undef __ARM_FEATURE_SAT" removed="true"/>
 <includePath path="c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../arm-none-eabi/libc/usr/include"/>
+<includePath path="#undef __ARM_FEATURE_CRYPTO" removed="true"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_VERSION__=201112L"/>
 <definedSymbol symbol="__STDC_UTF_16__=1"/>

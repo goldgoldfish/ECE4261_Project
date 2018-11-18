@@ -51,17 +51,17 @@ set rc [catch {
   set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad/Project_V0.2.cache/wt [current_project]
-  set_property parent.project_path C:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad/Project_V0.2.xpr [current_project]
-  set_property ip_repo_paths C:/Users/bwedemir/Downloads/vivado-library-2018.2-1 [current_project]
-  set_property ip_output_repo C:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad/Project_V0.2.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master/ECE4261_Project-master/Project_V0.2.cache/wt [current_project]
+  set_property parent.project_path C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master/ECE4261_Project-master/Project_V0.2.xpr [current_project]
+  set_property ip_repo_paths C:/Users/bwedemir/Desktop/ECE4261Project/vivado-library-2018.2-1 [current_project]
+  set_property ip_output_repo C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master/ECE4261_Project-master/Project_V0.2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet C:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad/Project_V0.2.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master/ECE4261_Project-master/Project_V0.2.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -suppress
   set_param project.isImplRun true
-  add_files C:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad/Project_V0.2.srcs/sources_1/bd/design_1/design_1.bd
-  set_property is_locked true [get_files C:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad/Project_V0.2.srcs/sources_1/bd/design_1/design_1.bd]
+  add_files C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master/ECE4261_Project-master/Project_V0.2.srcs/sources_1/bd/design_1/design_1.bd
+  set_property is_locked true [get_files C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master/ECE4261_Project-master/Project_V0.2.srcs/sources_1/bd/design_1/design_1.bd]
   set_param project.isImplRun false
   set_param project.isImplRun true
   link_design -top design_1_wrapper -part xc7z010clg400-1

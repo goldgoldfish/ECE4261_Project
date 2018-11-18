@@ -46,7 +46,7 @@ char *make_transmit_string(int num_bytes, int max_length) {
 		return_string[n] = temp_string[mod];
 		n++;
 	} //end while
-	return(return_string);
+	return return_string;
 } //end make_transmit_sting
 
 /*** void KYPD_begin(PmodKYPD *InstancePtr, u32 GPIO_Address)

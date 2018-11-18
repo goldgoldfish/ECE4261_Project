@@ -1,390 +1,27 @@
-17:53:54 **** Incremental Build of configuration Debug for project Project ****
+21:23:36 **** Incremental Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-17:54:02 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/functions_4261.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/functions_4261.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/functions_4261.d" -MT"src/functions_4261.o" -o "src/functions_4261.o" "../src/functions_4261.c"
-../src/functions_4261.c: In function 'make_transmit_string':
-../src/functions_4261.c:46:3: error: expected ';' before 'return_string'
-   return_string[n] = temp_string[n%s];
-   ^~~~~~~~~~~~~
-../src/functions_4261.c:34:6: warning: variable 'mod' set but not used [-Wunused-but-set-variable]
-  int mod = 0;
-      ^~~
-make: *** [src/functions_4261.o] Error 1
-17:54:18 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/functions_4261.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/functions_4261.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/functions_4261.d" -MT"src/functions_4261.o" -o "src/functions_4261.o" "../src/functions_4261.c"
-'Finished building: ../src/functions_4261.c'
-' '
-'Building target: Project.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Project.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Project.elf  |tee "Project.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 106584	   3840	2218272	2328696	 238878	Project.elf
-'Finished building: Project.elf.size'
-' '
-17:54:20 **** Incremental Build of configuration Debug for project Project ****
+21:23:41 **** Incremental Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-17:54:28 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-17:58:32 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/functions_4261.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/functions_4261.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/functions_4261.d" -MT"src/functions_4261.o" -o "src/functions_4261.o" "../src/functions_4261.c"
-../src/functions_4261.c: In function 'make_transmit_string':
-../src/functions_4261.c:37:18: error: too few arguments to function 'calloc'
-  return_string = calloc(sizeof(char) * num_bytes - 1);
-                  ^~~~~~
-In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdlib.h:11:0,
-                 from ../src/functions_4261.c:10:
-c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdlib.h:86:6: note: declared here
- _PTR _EXFUN_NOTHROW(calloc,(size_t __nmemb, size_t __size));
-      ^
-make: *** [src/functions_4261.o] Error 1
-17:58:33 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/functions_4261.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/functions_4261.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/functions_4261.d" -MT"src/functions_4261.o" -o "src/functions_4261.o" "../src/functions_4261.c"
-../src/functions_4261.c: In function 'make_transmit_string':
-../src/functions_4261.c:37:18: error: too few arguments to function 'calloc'
-  return_string = calloc(sizeof(char) * num_bytes - 1);
-                  ^~~~~~
-In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdlib.h:11:0,
-                 from ../src/functions_4261.c:10:
-c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdlib.h:86:6: note: declared here
- _PTR _EXFUN_NOTHROW(calloc,(size_t __nmemb, size_t __size));
-      ^
-make: *** [src/functions_4261.o] Error 1
-17:59:29 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/functions_4261.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/functions_4261.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/functions_4261.d" -MT"src/functions_4261.o" -o "src/functions_4261.o" "../src/functions_4261.c"
-'Finished building: ../src/functions_4261.c'
-' '
-'Building target: Project.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Project.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Project.elf  |tee "Project.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 106696	   3840	2218272	2328808	 2388e8	Project.elf
-'Finished building: Project.elf.size'
-' '
-17:59:31 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-17:59:35 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-18:01:47 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:128:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:255:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-'Finished building: ../src/main.c'
-' '
-'Building target: Project.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Project.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Project.elf  |tee "Project.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 106760	   3840	2218272	2328872	 238928	Project.elf
-'Finished building: Project.elf.size'
-' '
-18:01:54 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-18:02:02 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-18:02:54 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-18:03:04 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-18:04:19 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:128:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:334:9: error: expected ';' before '(' token
-    break();
-         ^
-../src/main.c:341:9: error: expected ';' before '(' token
-    break();
-         ^
-../src/main.c:255:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-make: *** [src/main.o] Error 1
-18:04:26 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:128:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:341:9: error: expected ';' before '(' token
-    break();
-         ^
-../src/main.c:255:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-make: *** [src/main.o] Error 1
-18:04:27 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:128:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:341:9: error: expected ';' before '(' token
-    break();
-         ^
-../src/main.c:255:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-make: *** [src/main.o] Error 1
-18:04:30 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:128:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:255:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-'Finished building: ../src/main.c'
-' '
-'Building target: Project.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Project.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Project.elf  |tee "Project.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 106760	   3840	2218272	2328872	 238928	Project.elf
-'Finished building: Project.elf.size'
-' '
-18:04:33 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-18:17:29 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:218:12: error: 'tpcb' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-            ^~~~
-../src/main.c:218:12: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:218:18: error: 'string' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-                  ^~~~~~
-../src/main.c:128:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:259:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-make: *** [src/main.o] Error 1
-18:17:31 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:218:12: error: 'tpcb' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-            ^~~~
-../src/main.c:218:12: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:218:18: error: 'string' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-                  ^~~~~~
-../src/main.c:128:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:259:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-make: *** [src/main.o] Error 1
-18:25:58 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:222:12: error: 'tpcb' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-            ^~~~
-../src/main.c:222:12: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:222:18: error: 'string' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-                  ^~~~~~
-../src/main.c:132:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:263:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-make: *** [src/main.o] Error 1
-18:26:00 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:222:12: error: 'tpcb' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-            ^~~~
-../src/main.c:222:12: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:222:18: error: 'string' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-                  ^~~~~~
-../src/main.c:132:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:263:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-make: *** [src/main.o] Error 1
-18:26:29 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:127:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:254:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-'Finished building: ../src/main.c'
-' '
-'Building target: Project.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Project.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Project.elf  |tee "Project.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 106760	   3840	2218272	2328872	 238928	Project.elf
-'Finished building: Project.elf.size'
-' '
-18:26:31 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-18:30:03 **** Auto Build of configuration Debug for project Project ****
+21:28:27 **** Auto Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/echo.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'start_connection':
+../src/echo.c:248:8: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+  err_t err;
+        ^~~
+../src/echo.c:247:18: warning: unused variable 'tpcb' [-Wunused-variable]
+  struct tcp_pcb *tpcb;
+                  ^~~~
 'Finished building: ../src/echo.c'
 ' '
 'Building target: Project.elf'
@@ -395,15 +32,15 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Project.elf  |tee "Project.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 106760	   3840	2218272	2328872	 238928	Project.elf
+ 107868	   3840	2218272	2329980	 238d7c	Project.elf
 'Finished building: Project.elf.size'
 ' '
-18:30:04 **** Incremental Build of configuration Debug for project Project ****
+21:28:28 **** Incremental Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-18:30:07 **** Incremental Build of configuration Debug for project Project ****
+21:28:33 **** Incremental Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '

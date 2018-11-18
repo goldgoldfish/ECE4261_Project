@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad/Project_V0.2.runs/synth_1'
+HD_PWD='C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master/ECE4261_Project-master/Project_V0.2.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
