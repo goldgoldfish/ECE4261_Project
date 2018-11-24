@@ -1,8 +1,23 @@
-14:55:23 **** Incremental Build of configuration Debug for project Project ****
+17:03:40 **** Auto Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-make: Nothing to be done for `main-build'.
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107144	   3832	2218272	2329248	 238aa0	Project.elf
+'Finished building: Project.elf.size'
+' '
 
-14:55:23 Build Finished (took 434ms)
+17:03:43 Build Finished (took 2s.943ms)
 

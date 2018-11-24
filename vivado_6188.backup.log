@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Nov 24 14:53:34 2018
+# Process ID: 6188
+# Current directory: C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master2018-11-24/ECE4261_Project-master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1812 C:\Users\bwedemir\Desktop\ECE4261Project\ECE4261_Project-master2018-11-24\ECE4261_Project-master\Project_V0.2.xpr
+# Log file: C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master2018-11-24/ECE4261_Project-master/vivado.log
+# Journal file: C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master2018-11-24/ECE4261_Project-master\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master2018-11-24/ECE4261_Project-master/Project_V0.2.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master2018-11-24/ECE4261_Project-master'
+INFO: [Project 1-313] Project file moved from 'C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master/ECE4261_Project-master' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/bwedemir/Desktop/Desktop/Project_V0.2/Project_V0.2.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'xilinx:valuePermission' : Unexpected attribute
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file c:/Users/bwedemir/Desktop/ECE4261Project/vivado-library-2018.2-1/vivado-library/ip/Pmods/PmodESP32_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'xilinx:valuePermission' : Unexpected attribute
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'xilinx:valuePermission' : Unexpected attribute
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bwedemir/Desktop/ECE4261Project/vivado-library-2018.2-1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2017.1/Vivado/2017.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 958.563 ; gain = 190.773
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master2018-11-24/ECE4261_Project-master/Project_V0.2.sdk -hwspec C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master2018-11-24/ECE4261_Project-master/Project_V0.2.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master2018-11-24/ECE4261_Project-master/Project_V0.2.sdk -hwspec C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master2018-11-24/ECE4261_Project-master/Project_V0.2.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 24 14:56:56 2018...

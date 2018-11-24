@@ -62,8 +62,6 @@ int start_UDP(char *data_array)
 	IP4_ADDR(&local_ip,   192,168,1,10);
 	IP4_ADDR(&dest_ip,   192,168,1,11);
 
-	char test_string = "Testing UDP123";
-
 	/* create new UDP PCB structure */
 	pcb = udp_new();
 	if (!pcb) {
@@ -88,9 +86,9 @@ int start_UDP(char *data_array)
 	struct pbuf *p;
 //	p = pbuf_alloc(PBUF_TRANSPORT, udp_data_size, PBUF_RAM);
 
-	int count = 10;
+	//int count = 10;
 
-	while(count){
+	//while(count){
 		p = pbuf_alloc(PBUF_TRANSPORT, udp_data_size, PBUF_RAM);
 		memcpy(p->payload,data_array,udp_data_size);
 		err = udp_send(pcb, p);
@@ -98,13 +96,19 @@ int start_UDP(char *data_array)
 			xil_printf("Unable to send UDP packet: err = %d\n\r", err);
 			return -2;
 		} //end if
-		count--;
-		xil_printf("Count is: %d\n\r", count);
+		//count--;
+		//xil_printf("Count is: %d\n\r", count);
 		usleep(1000);
-	} //end while
+	//} //end while
 
 	pbuf_free(p);
+
 	xil_printf("Done\n\r");
+
+	sleep(5);
+
+	udp_remove(pcb);
+	udp_disconnect(pcb);
 
 	return 0;
 }
