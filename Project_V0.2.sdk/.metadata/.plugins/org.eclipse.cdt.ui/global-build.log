@@ -1,27 +1,54 @@
-21:23:36 **** Incremental Build of configuration Debug for project Project ****
+14:48:09 **** Incremental Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-21:23:41 **** Incremental Build of configuration Debug for project Project ****
+14:48:47 **** Auto Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:212:3: warning: label 'restart' defined but not used [-Wunused-label]
+   restart:
+   ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107648	   3832	2218272	2329752	 238c98	Project.elf
+'Finished building: Project.elf.size'
+' '
+14:48:50 **** Incremental Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-21:28:27 **** Auto Build of configuration Debug for project Project ****
+14:48:53 **** Auto Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/echo.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-../src/echo.c: In function 'start_connection':
-../src/echo.c:248:8: warning: variable 'err' set but not used [-Wunused-but-set-variable]
-  err_t err;
-        ^~~
-../src/echo.c:247:18: warning: unused variable 'tpcb' [-Wunused-variable]
-  struct tcp_pcb *tpcb;
-                  ^~~~
+../src/echo.c: In function 'start_UDP':
+../src/echo.c:65:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  char test_string = "Testing UDP123";
+                     ^~~~~~~~~~~~~~~~
+../src/echo.c:103:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+   usleep(1000);
+   ^~~~~~
+../src/echo.c:65:7: warning: unused variable 'test_string' [-Wunused-variable]
+  char test_string = "Testing UDP123";
+       ^~~~~~~~~~~
 'Finished building: ../src/echo.c'
 ' '
 'Building target: Project.elf'
@@ -32,15 +59,30 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Project.elf  |tee "Project.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 107868	   3840	2218272	2329980	 238d7c	Project.elf
+ 106728	   3832	2218272	2328832	 238900	Project.elf
 'Finished building: Project.elf.size'
 ' '
-21:28:28 **** Incremental Build of configuration Debug for project Project ****
+14:48:54 **** Incremental Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-21:28:33 **** Incremental Build of configuration Debug for project Project ****
+14:49:06 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:50:39 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:50:59 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:55:23 **** Incremental Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '

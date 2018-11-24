@@ -34,245 +34,77 @@
 #include <string.h>
 
 #include "lwip/err.h"
+#include "lwip/udp.h"
 #include "lwip/tcp.h"
 #if defined (__arm__) || defined (__aarch64__)
 #include "xil_printf.h"
 #endif
 
-err_t accept_callback(void *arg, struct tcp_pcb *newpcb, err_t err);
-
-int transfer_data_old(){
+int transfer_data(){
 	return 0;
-}
-
-int transfer_data(char *data_array) {
-
-	err_t wr_err = ERR_OK;
-	struct tcp_pcb *l_tcp_pcb;
-	unsigned port = 7;
-	ip_addr_t dest_ip = { ((u32_t)0x0B01A8C0UL) }; //this is 192.168.1.11
-	ip_addr_t local_ip = { ((u32_t)0x0A01A8C0UL) }; //this is 192.168.1.10
-
-	int length = 0;
-	int i = 0;
-	while (data_array[i]){
-		length++;
-		i++;
-	} //end while
-
-	xil_printf("Length is: %d.\r\n", length);
-
-	struct pbuf *p = pbuf_alloc(PBUF_TRANSPORT, length, PBUF_RAM);
-
-	/* create new TCP PCB structure */
-	l_tcp_pcb = tcp_new();
-	if (!l_tcp_pcb) {
-		xil_printf("Error creating PCB. Out of Memory\n\r");
-		return -1;
-	} //end if
-
-	wr_err = tcp_bind(l_tcp_pcb, &local_ip, port);
-	if (wr_err != ERR_OK) {
-		xil_printf("Unable to bind to port %d: err = %d\n\r", port, wr_err);
-		return -2;
-	} //end if
-
-
-	wr_err = tcp_connect(l_tcp_pcb, &dest_ip, 7, NULL); //the NULL can be changed for a callback function
-	if (wr_err != ERR_OK) {
-		xil_printf("Unable to connect %d: err = %d\n\r", port, wr_err);
-		return -2;
-	} //end if
-
-	//Sending Data
-	tcp_sent(l_tcp_pcb, NULL); //the NULL can be changed for a callback function
-	//tcp_sent(l_tcp_pcb, accept_callback(NULL, l_tcp_pcb, wr_err)); //the NULL can be changed for a callback function
-
-	//unsigned char buffer_send[1024] = "My Name Is TCP";
-	p->payload = data_array;
-	p->len = length;
-	p->tot_len = 1024;
-
-	xil_printf("Attempting to send TCP packet.\r\n");
-
-	wr_err = ERR_OK;
-
-	xil_printf("Length is: %d.\r\n", p->len);
-	xil_printf("String is: %s.\r\n", p->payload);
-
-	if (tcp_sndbuf(l_tcp_pcb) > p->len) {
-		wr_err = tcp_write(l_tcp_pcb, p->payload, p->len, 1);
-	} else
-		xil_printf("no space in tcp_sndbuf\n\r");
-
-	/*
-	if (wr_err != ERR_OK){
-		xil_printf("Unable to write to %d: err = %d\n\r", port, wr_err);
-		return -2;
-	} //end if
-	*/
-
-	wr_err = tcp_output(l_tcp_pcb);
-	if (wr_err != ERR_OK){
-		xil_printf("Unable to output on %d: err = %d\n\r", port, wr_err);
-		return -2;
-	} //end if
-
-	if(wr_err == ERR_OK){
-		p->len++;
-	} //end if
-
-	pbuf_free(p);
-
-	tcp_close(l_tcp_pcb);
-
-	return 1;
-
-	/*
-	//Call tcp_sent() to specify a callback function for acknowledgements.
-	tcp_sent(p, NULL);
-	p->payload = data_array;
-
-	//Call tcp_sndbuf() to find the maximum amount of data that can be sent.
-	p->len = sizeof(p);
-	p->tot_len = p->len;
-	if (tcp_sndbuf(tpcb) > p->len) {
-		err = tcp_write(tpcb, p->payload, p->len, 1);
-	} else
-		xil_printf("no space in tcp_sndbuf\n\r");
-
-	//Call tcp_write() to enqueue the data.
-	tcp_output(p);
-
-	//Call tcp_output() to force the data to be sent.
-
-	//free the received pbuf
-	pbuf_free(p);
-
-	return 0;
-	*/
-
 }
 
 void print_app_header()
 {
-	xil_printf("\n\r\n\r-----lwIP TCP echo server ------\n\r");
-	xil_printf("TCP packets sent to port 6001 will be echoed back\n\r");
+	xil_printf("UDP packets sent to port 7\n\r");
 }
 
-err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
-                               struct pbuf *p, err_t err)
+int start_UDP(char *data_array)
 {
-	/* do not read the packet if we are not in ESTABLISHED state */
-	if (!p) {
-		tcp_close(tpcb);
-		tcp_recv(tpcb, NULL);
-		return ERR_OK;
-	}
-
-	/* indicate that the packet has been received */
-	tcp_recved(tpcb, p->len);
-
-	/* echo back the payload */
-	/* in this case, we assume that the payload is < TCP_SND_BUF */
-	if (tcp_sndbuf(tpcb) > p->len) {
-		err = tcp_write(tpcb, p->payload, p->len, 1);
-	} else
-		xil_printf("no space in tcp_sndbuf\n\r");
-
-	/* free the received pbuf */
-	pbuf_free(p);
-
-	return ERR_OK;
-}
-
-err_t accept_callback(void *arg, struct tcp_pcb *newpcb, err_t err)
-{
-	static int connection = 1;
-
-	/* set the receive callback for this connection */
-	tcp_recv(newpcb, recv_callback);
-
-	/* just use an integer number indicating the connection id as the
-	   callback argument */
-	tcp_arg(newpcb, (void*)(UINTPTR)connection);
-
-	/* increment for subsequent accepted connections */
-	connection++;
-
-	return ERR_OK;
-}
-
-int start_application()
-{
-	struct tcp_pcb *pcb;
+	int udp_data_size = strlen(data_array);
+	struct udp_pcb *pcb;
 	err_t err;
 	unsigned port = 7;
 
-	/* create new TCP PCB structure */
-	pcb = tcp_new();
+	struct ip_addr dest_ip; //this is 192.168.1.11
+	struct ip_addr  local_ip; //this is 192.168.1.10
+
+	IP4_ADDR(&local_ip,   192,168,1,10);
+	IP4_ADDR(&dest_ip,   192,168,1,11);
+
+	char test_string = "Testing UDP123";
+
+	/* create new UDP PCB structure */
+	pcb = udp_new();
 	if (!pcb) {
 		xil_printf("Error creating PCB. Out of Memory\n\r");
 		return -1;
 	}
 
-	/* bind to specified @port */
-	err = tcp_bind(pcb, IP_ADDR_ANY, port);
-	if (err != ERR_OK) {
-		xil_printf("Unable to bind to port %d: err = %d\n\r", port, err);
+	err = udp_bind(pcb, IP_ADDR_ANY, port);
+	if (err != ERR_OK){
+		xil_printf("Unable to bind to %d: err = %d\n\r", port, err);
 		return -2;
-	}
+	} //end if
 
-	/* we do not need any arguments to callback functions */
-	tcp_arg(pcb, NULL);
+	err = udp_connect(pcb, &dest_ip, port);
+	if (err != ERR_OK){
+		xil_printf("Unable to connect to %d: err = %d\n\r", port, err);
+		return -2;
+	} //end if
 
-	/* listen for connections */
-	pcb = tcp_listen(pcb);
-	if (!pcb) {
-		xil_printf("Out of memory while tcp_listen\n\r");
-		return -3;
-	}
+	xil_printf("UDP sending server started @ port %d\n\r", port);
 
-	/* specify callback to use for incoming connections */
-	tcp_accept(pcb, accept_callback);
+	struct pbuf *p;
+//	p = pbuf_alloc(PBUF_TRANSPORT, udp_data_size, PBUF_RAM);
 
-	xil_printf("TCP echo server started @ port %d\n\r", port);
+	int count = 10;
 
-	return 0;
-}
+	while(count){
+		p = pbuf_alloc(PBUF_TRANSPORT, udp_data_size, PBUF_RAM);
+		memcpy(p->payload,data_array,udp_data_size);
+		err = udp_send(pcb, p);
+		if (err != ERR_OK){
+			xil_printf("Unable to send UDP packet: err = %d\n\r", err);
+			return -2;
+		} //end if
+		count--;
+		xil_printf("Count is: %d\n\r", count);
+		usleep(1000);
+	} //end while
 
-int start_connection()
-{
-	struct tcp_pcb *pcb;
-	struct tcp_pcb *tpcb;
-	err_t err;
-	unsigned port = 7;
-
-
-	/* create new TCP PCB structure */
-	pcb = tcp_new();
-	if (!pcb) {
-		xil_printf("Error creating PCB. Out of Memory\n\r");
-		return -1;
-	}
-
-	/* we do not need any arguments to callback functions */
-	//tcp_arg(pcb, NULL);
-
-	/* listen for connections */
-	//pcb = tcp_listen(pcb);
-	//if (!pcb) {
-	//	xil_printf("Out of memory while tcp_listen\n\r");
-	//	return -3;
-	//}
-	err = tcp_bind(pcb, IP_ADDR_ANY, port);
-
-	///* specify callback to use for incoming connections */
-	//tcp_accept(pcb, transfer_data);
-
-	err = tcp_connect(pcb, IP_ADDR_ANY, port, NULL);
-
-	xil_printf("TCP sending server started @ port %d\n\r", port);
+	pbuf_free(p);
+	xil_printf("Done\n\r");
 
 	return 0;
 }

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Nov 23 17:40:08 2018
+# Process ID: 10976
+# Current directory: C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master2018-11-23/ECE4261_Project-master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15276 C:\Users\bwedemir\Desktop\ECE4261Project\ECE4261_Project-master2018-11-23\ECE4261_Project-master\Project_V0.2.xpr
+# Log file: C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master2018-11-23/ECE4261_Project-master/vivado.log
+# Journal file: C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master2018-11-23/ECE4261_Project-master\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master2018-11-23/ECE4261_Project-master/Project_V0.2.xpr

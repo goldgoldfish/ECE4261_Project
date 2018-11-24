@@ -72,7 +72,7 @@ PmodKYPD myDevice;
 /* defined by each RAW mode application */
 void print_app_header();
 int start_application();
-int start_connection();
+int start_UDP();
 int transfer_data();
 int transfer_data_old();
 void tcp_fasttmr(void);
@@ -221,14 +221,9 @@ int main()
 
 	//Attempt to begin a connection
 
-	transfer_data(data_array);
+	start_UDP(data_array);
+
 	sleep(5);
-	transfer_data(data_array);
-
-
-	/* start the application (web server, rxtest, txtest, etc..) */
-
-	//start_application();
 
 	/* receive and process packets */
 	while (1) {
@@ -241,7 +236,7 @@ int main()
 			TcpSlowTmrFlag = 0;
 		}
 		xemacif_input(echo_netif);
-		transfer_data_old();
+		transfer_data();
 	}
   
 	/* never reached */
