@@ -11,4 +11,10 @@
 <Block Addr="0x200e04" Context="JTAG-jsn-Zybo-210279655100A-4ba00477-0.0" Size="4"/>
 <Block Addr="0x200e04" Context="JTAG-jsn-Zybo-210279655100A-4ba00477-0.0" Size="4"/>
 <Block Addr="0x200e04" Context="JTAG-jsn-Zybo-210279655100A-4ba00477-0.0" Size="4"/>
+<Block Addr="0x41b884" Context="JTAG-jsn-Zybo-210279655100A-4ba00477-0.0" Size="4">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="0x41b884" Context="JTAG-jsn-Zybo-210279655100A-4ba00477-0.0" Size="4">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
 </Memory>

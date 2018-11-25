@@ -34,7 +34,8 @@ src/main.o src/main.o: ../src/main.c ../src/PmodKYPD.h \
  ../../Project_bsp/ps7_cortexa9_0/include/lwip/icmp.h \
  ../../Project_bsp/ps7_cortexa9_0/include/xil_cache.h \
  ../../Project_bsp/ps7_cortexa9_0/include/lwip/dhcp.h \
- ../../Project_bsp/ps7_cortexa9_0/include/lwip/udp.h
+ ../../Project_bsp/ps7_cortexa9_0/include/lwip/udp.h ../src/BLOWFISH.C \
+ ../src/Blowfish.h ../src/BLOWFISH.H
 
 ../src/PmodKYPD.h:
 
@@ -111,3 +112,9 @@ src/main.o src/main.o: ../src/main.c ../src/PmodKYPD.h \
 ../../Project_bsp/ps7_cortexa9_0/include/lwip/dhcp.h:
 
 ../../Project_bsp/ps7_cortexa9_0/include/lwip/udp.h:
+
+../src/BLOWFISH.C:
+
+../src/Blowfish.h:
+
+../src/BLOWFISH.H:

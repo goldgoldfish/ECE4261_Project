@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-master/ECE4261_Project-master/Project_V0.2.xpr">
+<Project Version="7" Minor="20" Path="C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP/Project_V0.2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="7c0d72ac959a4edaa014928f97464bbf"/>
@@ -20,13 +20,13 @@
     <Option Name="BoardPart" Val="digilentinc.com:zybo:part0:1.0"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../vivado-library-2018.2-1"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../vivado-library-2018.2-1"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
-    <Option Name="IPUserFilesDir" Val="$PPRDIR/../../../Desktop/Project_V0.2/Project_V0.2.ip_user_files"/>
+    <Option Name="IPUserFilesDir" Val="$PPRDIR/../../Desktop/Project_V0.2/Project_V0.2.ip_user_files"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="zybo"/>

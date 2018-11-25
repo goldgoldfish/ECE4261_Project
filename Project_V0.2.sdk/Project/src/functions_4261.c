@@ -33,6 +33,7 @@ char *make_transmit_string(int num_bytes, int max_length) {
 	int n = 0;
 	int mod = 0;
 	int s = sizeof(temp_string) - 1;
+	num_bytes = 1456;
 
 	return_string = calloc(num_bytes - 1,sizeof(char));
 
@@ -46,10 +47,64 @@ char *make_transmit_string(int num_bytes, int max_length) {
 		return_string[n] = temp_string[mod];
 		n++;
 	} //end while
+	return_string[n] = '\0';
 	return return_string;
 } //end make_transmit_sting
 
-/*** void KYPD_begin(PmodKYPD *InstancePtr, u32 GPIO_Address)
+/*** char *make_transmit_string(int num_bytes, int max_length)
+**
+**   Parameters:
+**      num_bytes: The total number of bytes excluding NULLs
+**      max_length: The max length the string can be including
+**      NULLS
+**
+**   Return Value:
+**      A pointer to the string created
+**
+**   Description:
+**      Create a string of the length num_bytes but not longer
+**      than max length
+*/
+
+//char *make_transmit_string(char *) {
+
+	//return return_string;
+//} //end make_transmit_sting
+
+
+/*** void timer_start(void)
+**
+**   Parameters:
+**      none
+**
+**   Return Value:
+**      none
+**
+**   Description:
+**      Start the timer
+*/
+
+void timer_start(void){
+
+} //end timer_start
+
+/*** void timer_stop(void)
+**
+**   Parameters:
+**      none
+**
+**   Return Value:
+**      Value of the timer at the stop time
+**
+**   Description:
+**      Stop the timer
+*/
+
+void timer_stop(void){
+
+} //end timer_start
+
+/*** void software_encrypt(num_bytes, make_transmit_string())
 **
 **   Parameters:
 **      InstancePtr: A PmodKYPD device to start
@@ -64,7 +119,7 @@ char *make_transmit_string(int num_bytes, int max_length) {
 
 //software_encrypt(num_bytes, make_transmit_string());
 
-/*** void KYPD_begin(PmodKYPD *InstancePtr, u32 GPIO_Address)
+/*** void hardware_encyrpt(num_bytes, make_transmit_string())
 **
 **   Parameters:
 **      InstancePtr: A PmodKYPD device to start

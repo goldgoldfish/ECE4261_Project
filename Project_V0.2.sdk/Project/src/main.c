@@ -46,7 +46,7 @@ void DemoSleep(u32 millis);
 
 PmodKYPD myDevice;
 
-#define MAX_FRAME_SIZE 1458 //set the maximum number of bytes that can be passed in a single ethernet frame
+#define MAX_FRAME_SIZE 1448 //set the maximum number of bytes that can be passed in a single ethernet frame
 
 //--------------------------------------------------------------------------------------------//
 
@@ -90,6 +90,18 @@ extern volatile int TcpFastTmrFlag;
 extern volatile int TcpSlowTmrFlag;
 static struct netif server_netif;
 struct netif *echo_netif;
+
+//Includes for encryption/decryption
+
+#include "BLOWFISH.C"
+#include "BLOWFISH.H"
+
+//char *encrypt_key;
+short keybytes = 16;
+char *encrypt_key = "1A8C556BAAD4567B";
+char *encrypted_message;
+
+// END Includes for encryption/decryption
 
 void
 print_ip(char *msg, struct ip_addr *ip) 
@@ -214,6 +226,30 @@ int main()
 
 	xil_printf("%s\r\n", data_array);
 
+	int length_string = sizeof(*data_array);
+	xil_printf("%d\r\n", length_string);
+	int *int_array;
+	int_array = data_array;
+
+	InitializeBlowfish(encrypt_key,keybytes); //initialize the algorithm by picking the size of the key and the key
+	int *temp1;
+	temp1 = calloc(1,4);
+	int *temp12;
+	temp12 = calloc(1,4);
+	int *temp_int_array;
+	temp_int_array = int_array;
+	while(*temp_int_array){
+		*temp1 = *temp_int_array;
+		temp_int_array++;
+		*temp12 = *temp_int_array;
+		temp_int_array++;
+		Blowfish_encipher(temp1,temp12);
+		strcat(encrypted_message, temp1);
+		strcat(encrypted_message, temp12);
+	} //end while
+
+	xil_printf("Encrypted String is: %s\r\n", encrypted_message);
+
 	DemoCleanup();
 
 	//-----------------------------This is the section for UDP----------------------------------------------------//
@@ -312,7 +348,7 @@ char *DemoRun() {
 	} //end else if
 	else if (status == KYPD_SINGLE_KEY && (status != last_status || key != last_key) && key == 'F'){
 		xil_printf("Reset button pressed\r\n");
-		xil_printf("Enter a number of bytes to be transmitted (0 to 1458).\r\n");
+		xil_printf("Enter a number of bytes to be transmitted (1 to 1448).\r\n");
 		while (status) {
 			keystate = KYPD_getKeyStates(&myDevice);
 			status = KYPD_getKeyPressed(&myDevice, keystate, &key);
@@ -352,14 +388,14 @@ char *DemoRun() {
 		xil_printf("\r\n");
 		if(last_key == '1'){
 			xil_printf("Hardware selected\r\n");
-			string = make_transmit_string(num_bytes, MAX_FRAME_SIZE);
+			string = make_transmit_string(num_bytes, (MAX_FRAME_SIZE+8));
 			xil_printf("%s\r\n", string);
 			break;
 			//hardware_encrypt(num_bytes, make_transmit_string());
 		} //end if
 		else if (last_key == '0'){
 			xil_printf("Software selected\r\n");
-			string = make_transmit_string(num_bytes, MAX_FRAME_SIZE);
+			string = make_transmit_string(num_bytes, (MAX_FRAME_SIZE+8));
 			xil_printf("%s\r\n", string);
 			break;
 			//software_encrypt(num_bytes, make_transmit_string());
@@ -374,7 +410,7 @@ char *DemoRun() {
 	} //end else if
 	else if (status == KYPD_SINGLE_KEY && (status != last_status || key != last_key) && key == 'F'){
 		xil_printf("Reset button pressed\r\n");
-		xil_printf("Enter a number of bytes to be transmitted (0 to 1458).\r\n");
+		xil_printf("Enter a number of bytes to be transmitted (0 to 1448).\r\n");
 		while (status) {
 			keystate = KYPD_getKeyStates(&myDevice);
 			status = KYPD_getKeyPressed(&myDevice, keystate, &key);

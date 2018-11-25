@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="tcp" key="selection"/>
+		<item value=" string" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value=" string"/>
 			<item value="tcp"/>
 			<item value="Lwip"/>
 			<item value="iwip"/>
@@ -15,7 +16,6 @@
 			<item value="tcp_recved"/>
 			<item value="recv_callback"/>
 			<item value="XPar"/>
-			<item value="XPAR_PMODKYPD"/>
 		</list>
 		<list key="replacehistory">
 		</list>
