@@ -80,12 +80,6 @@ int XBlowfish_encipher_Initialize(XBlowfish_encipher *InstancePtr, const char* I
 int XBlowfish_encipher_Release(XBlowfish_encipher *InstancePtr);
 #endif
 
-void XBlowfish_encipher_Start(XBlowfish_encipher *InstancePtr);
-u32 XBlowfish_encipher_IsDone(XBlowfish_encipher *InstancePtr);
-u32 XBlowfish_encipher_IsIdle(XBlowfish_encipher *InstancePtr);
-u32 XBlowfish_encipher_IsReady(XBlowfish_encipher *InstancePtr);
-void XBlowfish_encipher_EnableAutoRestart(XBlowfish_encipher *InstancePtr);
-void XBlowfish_encipher_DisableAutoRestart(XBlowfish_encipher *InstancePtr);
 
 void XBlowfish_encipher_Set_xl_i(XBlowfish_encipher *InstancePtr, u32 Data);
 u32 XBlowfish_encipher_Get_xl_i(XBlowfish_encipher *InstancePtr);
@@ -95,14 +89,6 @@ void XBlowfish_encipher_Set_xr_i(XBlowfish_encipher *InstancePtr, u32 Data);
 u32 XBlowfish_encipher_Get_xr_i(XBlowfish_encipher *InstancePtr);
 u32 XBlowfish_encipher_Get_xr_o(XBlowfish_encipher *InstancePtr);
 u32 XBlowfish_encipher_Get_xr_o_vld(XBlowfish_encipher *InstancePtr);
-
-void XBlowfish_encipher_InterruptGlobalEnable(XBlowfish_encipher *InstancePtr);
-void XBlowfish_encipher_InterruptGlobalDisable(XBlowfish_encipher *InstancePtr);
-void XBlowfish_encipher_InterruptEnable(XBlowfish_encipher *InstancePtr, u32 Mask);
-void XBlowfish_encipher_InterruptDisable(XBlowfish_encipher *InstancePtr, u32 Mask);
-void XBlowfish_encipher_InterruptClear(XBlowfish_encipher *InstancePtr, u32 Mask);
-u32 XBlowfish_encipher_InterruptGetEnabled(XBlowfish_encipher *InstancePtr);
-u32 XBlowfish_encipher_InterruptGetStatus(XBlowfish_encipher *InstancePtr);
 
 #ifdef __cplusplus
 }

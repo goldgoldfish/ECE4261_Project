@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: sedate:hls:Blowfish_encipher:1.0
--- IP Revision: 1811261935
+-- IP VLNV: xilinx.com:hls:Blowfish_encipher:1.0
+-- IP Revision: 1811271232
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -74,7 +74,10 @@ ENTITY design_1_Blowfish_encipher_0_0 IS
     s_axi_AXILiteS_RREADY : IN STD_LOGIC;
     ap_clk : IN STD_LOGIC;
     ap_rst_n : IN STD_LOGIC;
-    interrupt : OUT STD_LOGIC
+    ap_start : IN STD_LOGIC;
+    ap_done : OUT STD_LOGIC;
+    ap_idle : OUT STD_LOGIC;
+    ap_ready : OUT STD_LOGIC
   );
 END design_1_Blowfish_encipher_0_0;
 
@@ -106,7 +109,10 @@ ARCHITECTURE design_1_Blowfish_encipher_0_0_arch OF design_1_Blowfish_encipher_0
       s_axi_AXILiteS_RREADY : IN STD_LOGIC;
       ap_clk : IN STD_LOGIC;
       ap_rst_n : IN STD_LOGIC;
-      interrupt : OUT STD_LOGIC
+      ap_start : IN STD_LOGIC;
+      ap_done : OUT STD_LOGIC;
+      ap_idle : OUT STD_LOGIC;
+      ap_ready : OUT STD_LOGIC
     );
   END COMPONENT Blowfish_encipher;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -129,7 +135,10 @@ ARCHITECTURE design_1_Blowfish_encipher_0_0_arch OF design_1_Blowfish_encipher_0
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_AXILiteS_RREADY: SIGNAL IS "xilinx.com:interface:aximm:1.0 s_axi_AXILiteS RREADY";
   ATTRIBUTE X_INTERFACE_INFO OF ap_clk: SIGNAL IS "xilinx.com:signal:clock:1.0 ap_clk CLK";
   ATTRIBUTE X_INTERFACE_INFO OF ap_rst_n: SIGNAL IS "xilinx.com:signal:reset:1.0 ap_rst_n RST";
-  ATTRIBUTE X_INTERFACE_INFO OF interrupt: SIGNAL IS "xilinx.com:signal:interrupt:1.0 interrupt INTERRUPT";
+  ATTRIBUTE X_INTERFACE_INFO OF ap_start: SIGNAL IS "xilinx.com:interface:acc_handshake:1.0 ap_ctrl start";
+  ATTRIBUTE X_INTERFACE_INFO OF ap_done: SIGNAL IS "xilinx.com:interface:acc_handshake:1.0 ap_ctrl done";
+  ATTRIBUTE X_INTERFACE_INFO OF ap_idle: SIGNAL IS "xilinx.com:interface:acc_handshake:1.0 ap_ctrl idle";
+  ATTRIBUTE X_INTERFACE_INFO OF ap_ready: SIGNAL IS "xilinx.com:interface:acc_handshake:1.0 ap_ctrl ready";
 BEGIN
   U0 : Blowfish_encipher
     GENERIC MAP (
@@ -156,6 +165,9 @@ BEGIN
       s_axi_AXILiteS_RREADY => s_axi_AXILiteS_RREADY,
       ap_clk => ap_clk,
       ap_rst_n => ap_rst_n,
-      interrupt => interrupt
+      ap_start => ap_start,
+      ap_done => ap_done,
+      ap_idle => ap_idle,
+      ap_ready => ap_ready
     );
 END design_1_Blowfish_encipher_0_0_arch;

@@ -161,7 +161,7 @@ proc create_root_design { parentCell } {
   # Create ports
 
   # Create instance: Blowfish_encipher_0, and set properties
-  set Blowfish_encipher_0 [ create_bd_cell -type ip -vlnv sedate:hls:Blowfish_encipher:1.0 Blowfish_encipher_0 ]
+  set Blowfish_encipher_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:Blowfish_encipher:1.0 Blowfish_encipher_0 ]
 
   set_property -dict [ list \
 CONFIG.NUM_READ_OUTSTANDING {1} \
@@ -320,6 +320,9 @@ CONFIG.NUM_MI {2} \
   # Create instance: rst_ps7_0_100M, and set properties
   set rst_ps7_0_100M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_ps7_0_100M ]
 
+  # Create instance: xlconstant_0, and set properties
+  set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
+
   # Create interface connections
   connect_bd_intf_net -intf_net PmodKYPD_1_Pmod_out [get_bd_intf_ports ja] [get_bd_intf_pins PmodKYPD_1/Pmod_out]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
@@ -333,6 +336,7 @@ CONFIG.NUM_MI {2} \
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
   connect_bd_net -net rst_ps7_0_100M_interconnect_aresetn [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins rst_ps7_0_100M/interconnect_aresetn]
   connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins Blowfish_encipher_0/ap_rst_n] [get_bd_pins PmodKYPD_1/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+  connect_bd_net -net xlconstant_0_dout [get_bd_pins Blowfish_encipher_0/ap_start] [get_bd_pins xlconstant_0/dout]
 
   # Create address segments
   create_bd_addr_seg -range 0x00010000 -offset 0x43C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs Blowfish_encipher_0/s_axi_AXILiteS/Reg] SEG_Blowfish_encipher_0_Reg

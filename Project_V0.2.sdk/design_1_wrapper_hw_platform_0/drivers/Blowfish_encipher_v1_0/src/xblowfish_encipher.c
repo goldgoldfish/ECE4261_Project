@@ -21,61 +21,6 @@ int XBlowfish_encipher_CfgInitialize(XBlowfish_encipher *InstancePtr, XBlowfish_
 }
 #endif
 
-void XBlowfish_encipher_Start(XBlowfish_encipher *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XBlowfish_encipher_ReadReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_AP_CTRL) & 0x80;
-    XBlowfish_encipher_WriteReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_AP_CTRL, Data | 0x01);
-}
-
-u32 XBlowfish_encipher_IsDone(XBlowfish_encipher *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XBlowfish_encipher_ReadReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_AP_CTRL);
-    return (Data >> 1) & 0x1;
-}
-
-u32 XBlowfish_encipher_IsIdle(XBlowfish_encipher *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XBlowfish_encipher_ReadReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_AP_CTRL);
-    return (Data >> 2) & 0x1;
-}
-
-u32 XBlowfish_encipher_IsReady(XBlowfish_encipher *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XBlowfish_encipher_ReadReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_AP_CTRL);
-    // check ap_start to see if the pcore is ready for next input
-    return !(Data & 0x1);
-}
-
-void XBlowfish_encipher_EnableAutoRestart(XBlowfish_encipher *InstancePtr) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XBlowfish_encipher_WriteReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_AP_CTRL, 0x80);
-}
-
-void XBlowfish_encipher_DisableAutoRestart(XBlowfish_encipher *InstancePtr) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XBlowfish_encipher_WriteReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_AP_CTRL, 0);
-}
-
 void XBlowfish_encipher_Set_xl_i(XBlowfish_encipher *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
@@ -148,60 +93,5 @@ u32 XBlowfish_encipher_Get_xr_o_vld(XBlowfish_encipher *InstancePtr) {
 
     Data = XBlowfish_encipher_ReadReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_XR_O_CTRL);
     return Data & 0x1;
-}
-
-void XBlowfish_encipher_InterruptGlobalEnable(XBlowfish_encipher *InstancePtr) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XBlowfish_encipher_WriteReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_GIE, 1);
-}
-
-void XBlowfish_encipher_InterruptGlobalDisable(XBlowfish_encipher *InstancePtr) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XBlowfish_encipher_WriteReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_GIE, 0);
-}
-
-void XBlowfish_encipher_InterruptEnable(XBlowfish_encipher *InstancePtr, u32 Mask) {
-    u32 Register;
-
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Register =  XBlowfish_encipher_ReadReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_IER);
-    XBlowfish_encipher_WriteReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_IER, Register | Mask);
-}
-
-void XBlowfish_encipher_InterruptDisable(XBlowfish_encipher *InstancePtr, u32 Mask) {
-    u32 Register;
-
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Register =  XBlowfish_encipher_ReadReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_IER);
-    XBlowfish_encipher_WriteReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_IER, Register & (~Mask));
-}
-
-void XBlowfish_encipher_InterruptClear(XBlowfish_encipher *InstancePtr, u32 Mask) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XBlowfish_encipher_WriteReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_ISR, Mask);
-}
-
-u32 XBlowfish_encipher_InterruptGetEnabled(XBlowfish_encipher *InstancePtr) {
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    return XBlowfish_encipher_ReadReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_IER);
-}
-
-u32 XBlowfish_encipher_InterruptGetStatus(XBlowfish_encipher *InstancePtr) {
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    return XBlowfish_encipher_ReadReg(InstancePtr->Axilites_BaseAddress, XBLOWFISH_ENCIPHER_AXILITES_ADDR_ISR);
 }
 

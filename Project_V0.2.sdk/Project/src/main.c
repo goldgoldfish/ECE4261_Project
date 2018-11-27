@@ -49,6 +49,8 @@ PmodKYPD myDevice;
 
 XBlowfish_encipher ENCRYPT;
 
+#define ENCRYPT_DEVICE_ID 	XPAR_BLOWFISH_ENCIPHER_0_DEVICE_ID
+
 #define MAX_FRAME_SIZE 1448 //set the maximum number of bytes that can be passed in a single ethernet frame
 
 //--------------------------------------------------------------------------------------------//
@@ -221,22 +223,20 @@ int main()
 	//-----------------------------This is the section for the Keypad---------------------------------------------//
 
 	char *data_array;
-
 	int *temp1;
 	temp1 = calloc(1,4);
 	int *temp12;
 	temp12 = calloc(1,4);
-	char *encrypted_message;
-	encrypted_message = calloc(MAX_FRAME_SIZE,sizeof(char));
-	char *decrypted_message;
-	decrypted_message = calloc(MAX_FRAME_SIZE+8,sizeof(char));
 	int *temp_int_array;
 
 	DemoInitialize();
 
-	restart:
+	restart: data_array = DemoRun();
 
-	data_array = DemoRun();
+	char *encrypted_message;
+	encrypted_message = calloc(MAX_FRAME_SIZE,sizeof(char));
+	char *decrypted_message;
+	decrypted_message = calloc(MAX_FRAME_SIZE+8,sizeof(char));
 
 	xil_printf("%s\r\n", data_array);
 	xil_printf("Data_array length is: %d\r\n", strlen(data_array));
@@ -245,8 +245,6 @@ int main()
 	xil_printf("%d\r\n", length_string);
 	int *int_array;
 	int_array = data_array;
-
-
 
 	if (!hardware_encrypt_flag){
 
@@ -261,7 +259,6 @@ int main()
 			strcat(encrypted_message, temp1);
 			strcat(encrypted_message, temp12);
 		} //end while
-
 
 		xil_printf("Encrypted String length is: %d\r\n", strlen(encrypted_message));
 		xil_printf("Encrypted String is: %s\r\n", encrypted_message);
@@ -282,18 +279,14 @@ int main()
 
 		xil_printf("Decrypted String length is: %d\r\n", strlen(decrypted_message));
 		xil_printf("Decrypted String is: %s\r\n", decrypted_message);
+
 	} //end if
 
 	else if (hardware_encrypt_flag){
+		u32 xl;
+		u32 xr;
 
-		if (XBlowfish_encipher_IsReady(&ENCRYPT)){
-			xil_printf("Block Ready\r\n");
-		} //end if
-		else{
-			xil_printf("Block not ready %d\r\n", XBlowfish_encipher_IsReady(&ENCRYPT));
-		}
-
-		XBlowfish_encipher_Start(&ENCRYPT);
+		XBlowfish_encipher_Initialize(&ENCRYPT, ENCRYPT_DEVICE_ID);
 
 		temp_int_array = int_array;
 
@@ -304,13 +297,25 @@ int main()
 		XBlowfish_encipher_Set_xr_i(&ENCRYPT, *temp12);
 		temp_int_array++;
 
-		while (!XBlowfish_encipher_IsDone(&ENCRYPT));
+		for (int i = 0; i < 100000; i++);
 
-		strcat(encrypted_message, XBlowfish_encipher_Get_xl_o(&ENCRYPT));
-		strcat(encrypted_message, XBlowfish_encipher_Get_xr_o(&ENCRYPT));
+		xl = XBlowfish_encipher_Get_xl_o(&ENCRYPT);
+		xr = XBlowfish_encipher_Get_xr_o(&ENCRYPT);
+
+		strcat(encrypted_message, &xl);
+		strcat(encrypted_message, &xr);
 
 		xil_printf("Encrypted String length is: %d\r\n", strlen(encrypted_message));
 		xil_printf("Encrypted String is: %s\r\n", encrypted_message);
+
+		Blowfish_decipher(&xl,&xr);
+
+		strcat(decrypted_message, &xl);
+		strcat(decrypted_message, &xr);
+
+		xil_printf("Decrypted String length is: %d\r\n", strlen(decrypted_message));
+		xil_printf("Decrypted String is: %s\r\n", decrypted_message);
+
 	} //end else if
 	else {
 		xil_printf("Error\r\n");
@@ -323,7 +328,10 @@ int main()
 
 	//Attempt to begin a connection
 
-	start_UDP(decrypted_message);
+	start_UDP(encrypted_message);
+
+	free(decrypted_message);
+	free(encrypted_message);
 
 	/* receive and process packets */
 	//while (1) {

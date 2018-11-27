@@ -1,7 +1,7 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
---Date        : Mon Nov 26 20:39:07 2018
+--Date        : Tue Nov 27 12:37:31 2018
 --Host        : FRECE-ITB205-09 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1135,7 +1135,7 @@ entity design_1 is
     ja_pin9_t : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=10,numReposBlks=6,numNonXlnxBlks=2,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_clkrst_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=11,numReposBlks=7,numNonXlnxBlks=1,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=7,da_clkrst_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -1300,9 +1300,17 @@ architecture STRUCTURE of design_1 is
     s_axi_AXILiteS_RREADY : in STD_LOGIC;
     ap_clk : in STD_LOGIC;
     ap_rst_n : in STD_LOGIC;
-    interrupt : out STD_LOGIC
+    ap_start : in STD_LOGIC;
+    ap_done : out STD_LOGIC;
+    ap_idle : out STD_LOGIC;
+    ap_ready : out STD_LOGIC
   );
   end component design_1_Blowfish_encipher_0_0;
+  component design_1_xlconstant_0_0 is
+  port (
+    dout : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component design_1_xlconstant_0_0;
   signal PmodKYPD_1_Pmod_out_PIN10_I : STD_LOGIC;
   signal PmodKYPD_1_Pmod_out_PIN10_O : STD_LOGIC;
   signal PmodKYPD_1_Pmod_out_PIN10_T : STD_LOGIC;
@@ -1424,7 +1432,10 @@ architecture STRUCTURE of design_1 is
   signal ps7_0_axi_periph_M01_AXI_WVALID : STD_LOGIC;
   signal rst_ps7_0_100M_interconnect_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_Blowfish_encipher_0_interrupt_UNCONNECTED : STD_LOGIC;
+  signal xlconstant_0_dout : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_Blowfish_encipher_0_ap_done_UNCONNECTED : STD_LOGIC;
+  signal NLW_Blowfish_encipher_0_ap_idle_UNCONNECTED : STD_LOGIC;
+  signal NLW_Blowfish_encipher_0_ap_ready_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_ENET0_MDIO_MDC_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_ENET0_MDIO_O_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_ENET0_MDIO_T_UNCONNECTED : STD_LOGIC;
@@ -1464,8 +1475,11 @@ begin
 Blowfish_encipher_0: component design_1_Blowfish_encipher_0_0
      port map (
       ap_clk => processing_system7_0_FCLK_CLK0,
+      ap_done => NLW_Blowfish_encipher_0_ap_done_UNCONNECTED,
+      ap_idle => NLW_Blowfish_encipher_0_ap_idle_UNCONNECTED,
+      ap_ready => NLW_Blowfish_encipher_0_ap_ready_UNCONNECTED,
       ap_rst_n => rst_ps7_0_100M_peripheral_aresetn(0),
-      interrupt => NLW_Blowfish_encipher_0_interrupt_UNCONNECTED,
+      ap_start => xlconstant_0_dout(0),
       s_axi_AXILiteS_ARADDR(5 downto 0) => ps7_0_axi_periph_M01_AXI_ARADDR(5 downto 0),
       s_axi_AXILiteS_ARREADY => ps7_0_axi_periph_M01_AXI_ARREADY,
       s_axi_AXILiteS_ARVALID => ps7_0_axi_periph_M01_AXI_ARVALID,
@@ -1701,5 +1715,9 @@ rst_ps7_0_100M: component design_1_rst_ps7_0_100M_0
       peripheral_aresetn(0) => rst_ps7_0_100M_peripheral_aresetn(0),
       peripheral_reset(0) => NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED(0),
       slowest_sync_clk => processing_system7_0_FCLK_CLK0
+    );
+xlconstant_0: component design_1_xlconstant_0_0
+     port map (
+      dout(0) => xlconstant_0_dout(0)
     );
 end STRUCTURE;

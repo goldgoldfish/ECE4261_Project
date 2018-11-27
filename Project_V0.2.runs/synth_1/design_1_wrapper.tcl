@@ -17,6 +17,7 @@ set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
 set_property ip_repo_paths {
   c:/Users/bwedemir/Desktop/ECE4261Project/vivado-library-2018.2-1
   c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/blowfish
+  c:/Users/bwedemir/Desktop/ECE4261Project/new_blowfish_en
 } [current_project]
 set_property ip_output_repo c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

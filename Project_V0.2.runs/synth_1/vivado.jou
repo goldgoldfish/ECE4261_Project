@@ -2,8 +2,8 @@
 # Vivado v2017.1 (64-bit)
 # SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
 # IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Mon Nov 26 20:40:00 2018
-# Process ID: 13368
+# Start of session at: Tue Nov 27 12:38:36 2018
+# Process ID: 10188
 # Current directory: C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.runs/synth_1/design_1_wrapper.vds

@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date             : Mon Nov 26 20:41:43 2018
+| Date             : Tue Nov 27 12:40:23 2018
 | Host             : FRECE-ITB205-09 running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.712 |
-| Dynamic (W)              | 1.582 |
+| Total On-Chip Power (W)  | 1.711 |
+| Dynamic (W)              | 1.580 |
 | Device Static (W)        | 0.131 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 65.3  |
@@ -49,20 +49,19 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.006 |        3 |       --- |             --- |
-| Slice Logic             |     0.003 |     2805 |       --- |             --- |
-|   LUT as Logic          |     0.003 |      793 |     17600 |            4.51 |
-|   Register              |    <0.001 |     1478 |     35200 |            4.20 |
+| Clocks                  |     0.005 |        3 |       --- |             --- |
+| Slice Logic             |     0.003 |     2497 |       --- |             --- |
+|   LUT as Logic          |     0.003 |      792 |     17600 |            4.50 |
+|   Register              |    <0.001 |     1166 |     35200 |            3.31 |
 |   CARRY4                |    <0.001 |       34 |      4400 |            0.77 |
-|   F7/F8 Muxes           |    <0.001 |        3 |     17600 |            0.02 |
 |   LUT as Shift Register |    <0.001 |       62 |      6000 |            1.03 |
-|   Others                |     0.000 |      209 |       --- |             --- |
-| Signals                 |     0.005 |     2220 |       --- |             --- |
+|   Others                |     0.000 |      217 |       --- |             --- |
+| Signals                 |     0.004 |     1957 |       --- |             --- |
 | Block RAM               |     0.008 |        2 |        60 |            3.33 |
 | I/O                     |     0.003 |        8 |       100 |            8.00 |
 | PS7                     |     1.556 |        1 |       --- |             --- |
 | Static Power            |     0.131 |          |           |                 |
-| Total                   |     1.712 |          |           |                 |
+| Total                   |     1.711 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.029 |       0.022 |      0.007 |
+| Vccint    |       1.000 |     0.027 |       0.020 |      0.007 |
 | Vccaux    |       1.800 |     0.012 |       0.000 |      0.012 |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -148,13 +147,21 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | Name                                             | Power (W) |
 +--------------------------------------------------+-----------+
-| design_1_wrapper                                 |     1.582 |
-|   design_1_i                                     |     1.578 |
-|     Blowfish_encipher_0                          |     0.015 |
-|       U0                                         |     0.015 |
-|         Blowfish_encipher_AXILiteS_s_axi_U       |    <0.001 |
+| design_1_wrapper                                 |     1.580 |
+|   design_1_i                                     |     1.577 |
+|     Blowfish_encipher_0                          |     0.013 |
+|       U0                                         |     0.013 |
+|         Blowfish_encipher_AXILiteS_s_axi_U       |     0.002 |
 |         P_U                                      |    <0.001 |
 |           Blowfish_encipher_P_rom_U              |    <0.001 |
+|         S_0_U                                    |     0.003 |
+|           Blowfish_encipherbkb_rom_U             |     0.003 |
+|         S_1_U                                    |     0.002 |
+|           Blowfish_enciphercud_rom_U             |     0.002 |
+|         S_2_U                                    |     0.002 |
+|           Blowfish_encipherdEe_rom_U             |     0.002 |
+|         S_3_U                                    |     0.003 |
+|           Blowfish_enciphereOg_rom_U             |     0.003 |
 |     PmodKYPD_1                                   |    <0.001 |
 |       inst                                       |    <0.001 |
 |         axi_gpio_0                               |    <0.001 |
