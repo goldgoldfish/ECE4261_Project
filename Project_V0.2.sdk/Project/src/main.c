@@ -36,6 +36,7 @@
 #include "PmodKYPD.h"
 #include "sleep.h"
 #include "functions_4261.h"
+#include "xblowfish_encipher.h"
 
 void DemoInitialize();
 char *DemoRun();
@@ -45,6 +46,8 @@ void EnableCaches();
 void DemoSleep(u32 millis);
 
 PmodKYPD myDevice;
+
+XBlowfish_encipher ENCRYPT;
 
 #define MAX_FRAME_SIZE 1448 //set the maximum number of bytes that can be passed in a single ethernet frame
 
@@ -99,9 +102,10 @@ struct netif *echo_netif;
 //char *encrypt_key;
 short keybytes = 16;
 char *encrypt_key = "1A8C556BAAD4567B";
-char *encrypted_message;
 
 // END Includes for encryption/decryption
+
+short hardware_encrypt_flag = 0; //set this to default to software
 
 void
 print_ip(char *msg, struct ip_addr *ip) 
@@ -218,6 +222,16 @@ int main()
 
 	char *data_array;
 
+	int *temp1;
+	temp1 = calloc(1,4);
+	int *temp12;
+	temp12 = calloc(1,4);
+	char *encrypted_message;
+	encrypted_message = calloc(MAX_FRAME_SIZE,sizeof(char));
+	char *decrypted_message;
+	decrypted_message = calloc(MAX_FRAME_SIZE+8,sizeof(char));
+	int *temp_int_array;
+
 	DemoInitialize();
 
 	restart:
@@ -225,30 +239,83 @@ int main()
 	data_array = DemoRun();
 
 	xil_printf("%s\r\n", data_array);
+	xil_printf("Data_array length is: %d\r\n", strlen(data_array));
 
 	int length_string = sizeof(*data_array);
 	xil_printf("%d\r\n", length_string);
 	int *int_array;
 	int_array = data_array;
 
-	InitializeBlowfish(encrypt_key,keybytes); //initialize the algorithm by picking the size of the key and the key
-	int *temp1;
-	temp1 = calloc(1,4);
-	int *temp12;
-	temp12 = calloc(1,4);
-	int *temp_int_array;
-	temp_int_array = int_array;
-	while(*temp_int_array){
+
+
+	if (!hardware_encrypt_flag){
+
+		//InitializeBlowfish(encrypt_key,keybytes); //initialize the algorithm by picking the size of the key and the key
+		temp_int_array = int_array;
+		while(*temp_int_array){
+			*temp1 = *temp_int_array;
+			temp_int_array++;
+			*temp12 = *temp_int_array;
+			temp_int_array++;
+			Blowfish_encipher(temp1,temp12);
+			strcat(encrypted_message, temp1);
+			strcat(encrypted_message, temp12);
+		} //end while
+
+
+		xil_printf("Encrypted String length is: %d\r\n", strlen(encrypted_message));
+		xil_printf("Encrypted String is: %s\r\n", encrypted_message);
+		xil_printf("Encrypted String is: %04x\r\n", encrypted_message);
+
+		int_array = encrypted_message;
+
+		temp_int_array = int_array;
+		while(*temp_int_array){
+			*temp1 = *temp_int_array;
+			temp_int_array++;
+			*temp12 = *temp_int_array;
+			temp_int_array++;
+			Blowfish_decipher(temp1,temp12);
+			strcat(decrypted_message, temp1);
+			strcat(decrypted_message, temp12);
+		} //end while
+
+		xil_printf("Decrypted String length is: %d\r\n", strlen(decrypted_message));
+		xil_printf("Decrypted String is: %s\r\n", decrypted_message);
+	} //end if
+
+	else if (hardware_encrypt_flag){
+
+		if (XBlowfish_encipher_IsReady(&ENCRYPT)){
+			xil_printf("Block Ready\r\n");
+		} //end if
+		else{
+			xil_printf("Block not ready %d\r\n", XBlowfish_encipher_IsReady(&ENCRYPT));
+		}
+
+		XBlowfish_encipher_Start(&ENCRYPT);
+
+		temp_int_array = int_array;
+
 		*temp1 = *temp_int_array;
+		XBlowfish_encipher_Set_xl_i(&ENCRYPT, *temp1);
 		temp_int_array++;
 		*temp12 = *temp_int_array;
+		XBlowfish_encipher_Set_xr_i(&ENCRYPT, *temp12);
 		temp_int_array++;
-		Blowfish_encipher(temp1,temp12);
-		strcat(encrypted_message, temp1);
-		strcat(encrypted_message, temp12);
-	} //end while
 
-	xil_printf("Encrypted String is: %s\r\n", encrypted_message);
+		while (!XBlowfish_encipher_IsDone(&ENCRYPT));
+
+		strcat(encrypted_message, XBlowfish_encipher_Get_xl_o(&ENCRYPT));
+		strcat(encrypted_message, XBlowfish_encipher_Get_xr_o(&ENCRYPT));
+
+		xil_printf("Encrypted String length is: %d\r\n", strlen(encrypted_message));
+		xil_printf("Encrypted String is: %s\r\n", encrypted_message);
+	} //end else if
+	else {
+		xil_printf("Error\r\n");
+		exit(0);
+	} //end else
 
 	DemoCleanup();
 
@@ -256,7 +323,7 @@ int main()
 
 	//Attempt to begin a connection
 
-	start_UDP(data_array);
+	start_UDP(decrypted_message);
 
 	/* receive and process packets */
 	//while (1) {
@@ -389,16 +456,14 @@ char *DemoRun() {
 		if(last_key == '1'){
 			xil_printf("Hardware selected\r\n");
 			string = make_transmit_string(num_bytes, (MAX_FRAME_SIZE+8));
-			xil_printf("%s\r\n", string);
+			hardware_encrypt_flag = 1;
 			break;
-			//hardware_encrypt(num_bytes, make_transmit_string());
 		} //end if
 		else if (last_key == '0'){
 			xil_printf("Software selected\r\n");
 			string = make_transmit_string(num_bytes, (MAX_FRAME_SIZE+8));
-			xil_printf("%s\r\n", string);
+			hardware_encrypt_flag = 0;
 			break;
-			//software_encrypt(num_bytes, make_transmit_string());
 		} //end else if
 		else {
 			xil_printf("Error!!!\r\n");

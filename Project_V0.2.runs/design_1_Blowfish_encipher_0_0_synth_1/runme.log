@@ -1,0 +1,607 @@
+
+*** Running vivado
+    with args -log design_1_Blowfish_encipher_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Blowfish_encipher_0_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_Blowfish_encipher_0_0.tcl -notrace
+Command: synth_design -top design_1_Blowfish_encipher_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16404 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 392.305 ; gain = 81.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_Blowfish_encipher_0_0' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ip/design_1_Blowfish_encipher_0_0/synth/design_1_Blowfish_encipher_0_0.vhd:81]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Blowfish_encipher' declared at 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:12' bound to instance 'U0' of component 'Blowfish_encipher' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ip/design_1_Blowfish_encipher_0_0/synth/design_1_Blowfish_encipher_0_0.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'Blowfish_encipher' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:40]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:86]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:89]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:123]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:127]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:133]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:141]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:148]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:151]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:156]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:162]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:165]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:181]
+	Parameter DataWidth bound to: 31 - type: integer 
+	Parameter AddressRange bound to: 18 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Blowfish_encipher_P' declared at 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_P.vhd:84' bound to instance 'P_U' of component 'Blowfish_encipher_P' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:297]
+INFO: [Synth 8-638] synthesizing module 'Blowfish_encipher_P' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_P.vhd:97]
+	Parameter DataWidth bound to: 31 - type: integer 
+	Parameter AddressRange bound to: 18 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Blowfish_encipher_P_rom' declared at 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_P.vhd:12' bound to instance 'Blowfish_encipher_P_rom_U' of component 'Blowfish_encipher_P_rom' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_P.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'Blowfish_encipher_P_rom' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_P.vhd:27]
+	Parameter dwidth bound to: 31 - type: integer 
+	Parameter awidth bound to: 5 - type: integer 
+	Parameter mem_size bound to: 18 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_P.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'Blowfish_encipher_P_rom' (1#1) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_P.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Blowfish_encipher_P' (2#1) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_P.vhd:97]
+	Parameter DataWidth bound to: 31 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Blowfish_encipherbkb' declared at 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherbkb.vhd:321' bound to instance 'S_0_U' of component 'Blowfish_encipherbkb' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:309]
+INFO: [Synth 8-638] synthesizing module 'Blowfish_encipherbkb' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherbkb.vhd:334]
+	Parameter DataWidth bound to: 31 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Blowfish_encipherbkb_rom' declared at 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherbkb.vhd:12' bound to instance 'Blowfish_encipherbkb_rom_U' of component 'Blowfish_encipherbkb_rom' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherbkb.vhd:346]
+INFO: [Synth 8-638] synthesizing module 'Blowfish_encipherbkb_rom' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherbkb.vhd:27]
+	Parameter dwidth bound to: 31 - type: integer 
+	Parameter awidth bound to: 8 - type: integer 
+	Parameter mem_size bound to: 256 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Blowfish_encipherbkb_rom' (3#1) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherbkb.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Blowfish_encipherbkb' (4#1) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherbkb.vhd:334]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Blowfish_enciphercud' declared at 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphercud.vhd:321' bound to instance 'S_1_U' of component 'Blowfish_enciphercud' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:321]
+INFO: [Synth 8-638] synthesizing module 'Blowfish_enciphercud' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphercud.vhd:334]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Blowfish_enciphercud_rom' declared at 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphercud.vhd:12' bound to instance 'Blowfish_enciphercud_rom_U' of component 'Blowfish_enciphercud_rom' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphercud.vhd:346]
+INFO: [Synth 8-638] synthesizing module 'Blowfish_enciphercud_rom' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphercud.vhd:27]
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 8 - type: integer 
+	Parameter mem_size bound to: 256 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Blowfish_enciphercud_rom' (5#1) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphercud.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Blowfish_enciphercud' (6#1) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphercud.vhd:334]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Blowfish_encipherdEe' declared at 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherdEe.vhd:321' bound to instance 'S_2_U' of component 'Blowfish_encipherdEe' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:333]
+INFO: [Synth 8-638] synthesizing module 'Blowfish_encipherdEe' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherdEe.vhd:334]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Blowfish_encipherdEe_rom' declared at 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherdEe.vhd:12' bound to instance 'Blowfish_encipherdEe_rom_U' of component 'Blowfish_encipherdEe_rom' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherdEe.vhd:346]
+INFO: [Synth 8-638] synthesizing module 'Blowfish_encipherdEe_rom' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherdEe.vhd:27]
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 8 - type: integer 
+	Parameter mem_size bound to: 256 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Blowfish_encipherdEe_rom' (7#1) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherdEe.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Blowfish_encipherdEe' (8#1) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherdEe.vhd:334]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Blowfish_enciphereOg' declared at 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphereOg.vhd:321' bound to instance 'S_3_U' of component 'Blowfish_enciphereOg' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:345]
+INFO: [Synth 8-638] synthesizing module 'Blowfish_enciphereOg' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphereOg.vhd:334]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Blowfish_enciphereOg_rom' declared at 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphereOg.vhd:12' bound to instance 'Blowfish_enciphereOg_rom_U' of component 'Blowfish_enciphereOg_rom' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphereOg.vhd:346]
+INFO: [Synth 8-638] synthesizing module 'Blowfish_enciphereOg_rom' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphereOg.vhd:27]
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 8 - type: integer 
+	Parameter mem_size bound to: 256 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Blowfish_enciphereOg_rom' (9#1) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphereOg.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Blowfish_enciphereOg' (10#1) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphereOg.vhd:334]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Blowfish_encipher_AXILiteS_s_axi' declared at 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_AXILiteS_s_axi.vhd:12' bound to instance 'Blowfish_encipher_AXILiteS_s_axi_U' of component 'Blowfish_encipher_AXILiteS_s_axi' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:357]
+INFO: [Synth 8-638] synthesizing module 'Blowfish_encipher_AXILiteS_s_axi' [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_AXILiteS_s_axi.vhd:90]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element int_isr_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_AXILiteS_s_axi.vhd:255]
+WARNING: [Synth 8-6014] Unused sequential element int_isr_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_AXILiteS_s_axi.vhd:372]
+INFO: [Synth 8-256] done synthesizing module 'Blowfish_encipher_AXILiteS_s_axi' (11#1) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_AXILiteS_s_axi.vhd:90]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state11_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:683]
+WARNING: [Synth 8-6014] Unused sequential element xl_0_ack_out_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:528]
+WARNING: [Synth 8-6014] Unused sequential element xr_0_ack_out_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:544]
+WARNING: [Synth 8-6014] Unused sequential element S_1_ce0_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:330]
+WARNING: [Synth 8-6014] Unused sequential element S_3_ce0_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element ap_ready_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:384]
+WARNING: [Synth 8-6014] Unused sequential element xr_1_vld_in_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:469]
+INFO: [Synth 8-256] done synthesizing module 'Blowfish_encipher' (12#1) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'design_1_Blowfish_encipher_0_0' (13#1) [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ip/design_1_Blowfish_encipher_0_0/synth/design_1_Blowfish_encipher_0_0.vhd:81]
+WARNING: [Synth 8-3331] design Blowfish_enciphereOg has unconnected port reset
+WARNING: [Synth 8-3331] design Blowfish_encipherdEe has unconnected port reset
+WARNING: [Synth 8-3331] design Blowfish_enciphercud has unconnected port reset
+WARNING: [Synth 8-3331] design Blowfish_encipherbkb has unconnected port reset
+WARNING: [Synth 8-3331] design Blowfish_encipher_P has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 433.637 ; gain = 123.098
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 433.637 ; gain = 123.098
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ip/design_1_Blowfish_encipher_0_0/constraints/Blowfish_encipher_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ip/design_1_Blowfish_encipher_0_0/constraints/Blowfish_encipher_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.runs/design_1_Blowfish_encipher_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.runs/design_1_Blowfish_encipher_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 742.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 742.137 ; gain = 431.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 742.137 ; gain = 431.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.runs/design_1_Blowfish_encipher_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 742.137 ; gain = 431.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+WARNING: [Synth 8-6014] Unused sequential element q0_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherbkb.vhd:310]
+WARNING: [Synth 8-6014] Unused sequential element q0_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphercud.vhd:310]
+WARNING: [Synth 8-6014] Unused sequential element q0_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipherdEe.vhd:310]
+WARNING: [Synth 8-6014] Unused sequential element q0_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_enciphereOg.vhd:310]
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'Blowfish_encipher_AXILiteS_s_axi'
+WARNING: [Synth 8-6014] Unused sequential element wstate_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_AXILiteS_s_axi.vhd:156]
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RVALID_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_3_reg_358_reg' and it is trimmed from '24' to '16' bits. [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:482]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_181_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element wstate_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_AXILiteS_s_axi.vhd:156]
+WARNING: [Synth 8-6014] Unused sequential element wstate_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_AXILiteS_s_axi.vhd:156]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'Blowfish_encipher_AXILiteS_s_axi'
+WARNING: [Synth 8-6014] Unused sequential element wstate_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher_AXILiteS_s_axi.vhd:156]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 742.137 ; gain = 431.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 5     
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 20    
+	               31 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---ROMs : 
+	                              ROMs := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	  11 Input     32 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	  12 Input     11 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Blowfish_encipher_P_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               31 Bit    Registers := 1     
+Module Blowfish_encipherbkb_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               31 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Blowfish_enciphercud_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Blowfish_encipherdEe_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Blowfish_enciphereOg_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Blowfish_encipher_AXILiteS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	  11 Input     32 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Blowfish_encipher 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 5     
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 12    
+	               31 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	  12 Input     11 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element b_reg_378_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:510]
+WARNING: [Synth 8-6014] Unused sequential element tmp_5_reg_383_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:513]
+WARNING: [Synth 8-6014] Unused sequential element c_reg_373_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:511]
+WARNING: [Synth 8-6014] Unused sequential element d_reg_368_reg was removed.  [c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ipshared/2b33/hdl/vhdl/Blowfish_encipher.vhd:512]
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[0]' (FDE) to 'U0/tmp_1_reg_353_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_1_reg_353_reg[0]' (FDE) to 'U0/P_load_reg_348_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[1]' (FDE) to 'U0/tmp_1_reg_353_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_1_reg_353_reg[1]' (FDE) to 'U0/P_load_reg_348_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[2]' (FDE) to 'U0/tmp_1_reg_353_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_1_reg_353_reg[2]' (FDE) to 'U0/P_load_reg_348_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[3]' (FDE) to 'U0/tmp_1_reg_353_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_1_reg_353_reg[3]' (FDE) to 'U0/P_load_reg_348_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[4]' (FDE) to 'U0/tmp_1_reg_353_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_1_reg_353_reg[4]' (FDE) to 'U0/P_load_reg_348_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[5]' (FDE) to 'U0/tmp_1_reg_353_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_1_reg_353_reg[5]' (FDE) to 'U0/P_load_reg_348_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[6]' (FDE) to 'U0/tmp_1_reg_353_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_1_reg_353_reg[6]' (FDE) to 'U0/P_load_reg_348_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[7]' (FDE) to 'U0/tmp_1_reg_353_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_1_reg_353_reg[7]' (FDE) to 'U0/P_load_reg_348_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[8]' (FDE) to 'U0/P_load_reg_348_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[9]' (FDE) to 'U0/P_load_reg_348_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[10]' (FDE) to 'U0/P_load_reg_348_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[11]' (FDE) to 'U0/P_load_reg_348_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[12]' (FDE) to 'U0/P_load_reg_348_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[13]' (FDE) to 'U0/P_load_reg_348_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[14]' (FDE) to 'U0/P_load_reg_348_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_3_reg_358_reg[15]' (FDE) to 'U0/P_load_reg_348_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[1]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[2]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[3]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[4]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[5]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[6]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[7]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[9]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[12]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[13]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[15]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[18]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[19]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[23]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[25]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\P_U/Blowfish_encipher_P_rom_U/q0_reg[27] )
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[1]' (FDE) to 'U0/P_load_reg_348_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[2]' (FDE) to 'U0/P_load_reg_348_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[3]' (FDE) to 'U0/P_load_reg_348_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[4]' (FDE) to 'U0/P_load_reg_348_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[5]' (FDE) to 'U0/P_load_reg_348_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[6]' (FDE) to 'U0/P_load_reg_348_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[7]' (FDE) to 'U0/P_load_reg_348_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[9]' (FDE) to 'U0/P_load_reg_348_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[12]' (FDE) to 'U0/P_load_reg_348_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[13]' (FDE) to 'U0/P_load_reg_348_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[15]' (FDE) to 'U0/P_load_reg_348_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[18]' (FDE) to 'U0/P_load_reg_348_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[19]' (FDE) to 'U0/P_load_reg_348_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[23]' (FDE) to 'U0/P_load_reg_348_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[25]' (FDE) to 'U0/P_load_reg_348_reg[27]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Blowfish_encipher_AXILiteS_s_axi_U/rstate_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\P_load_reg_348_reg[27] )
+WARNING: [Synth 8-3332] Sequential element (Blowfish_encipher_AXILiteS_s_axi_U/rstate_reg[2]) is unused and will be removed from module Blowfish_encipher.
+WARNING: [Synth 8-3332] Sequential element (P_U/Blowfish_encipher_P_rom_U/q0_reg[27]) is unused and will be removed from module Blowfish_encipher.
+WARNING: [Synth 8-3332] Sequential element (P_load_reg_348_reg[27]) is unused and will be removed from module Blowfish_encipher.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 742.137 ; gain = 431.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------------+-------------------+---------------+----------------+
+|Module Name              | RTL Object        | Depth x Width | Implemented As | 
++-------------------------+-------------------+---------------+----------------+
+|Blowfish_encipher_P_rom  | p_0_out           | 32x31         | LUT            | 
+|Blowfish_encipherbkb_rom | q0_reg            | 256x31        | Block RAM      | 
+|Blowfish_enciphercud_rom | q0_reg            | 256x32        | Block RAM      | 
+|Blowfish_encipherdEe_rom | q0_reg            | 256x32        | Block RAM      | 
+|Blowfish_enciphereOg_rom | q0_reg            | 256x32        | Block RAM      | 
+|Blowfish_encipher        | b_reg_378_reg     | 256x32        | Block RAM      | 
+|Blowfish_encipher        | tmp_5_reg_383_reg | 256x31        | Block RAM      | 
+|Blowfish_encipher        | c_reg_373_reg     | 256x32        | Block RAM      | 
+|Blowfish_encipher        | d_reg_368_reg     | 256x32        | Block RAM      | 
+|Blowfish_encipher        | p_0_out           | 32x31         | LUT            | 
++-------------------------+-------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 742.137 ; gain = 431.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 787.504 ; gain = 476.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[8]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[10]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[14]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[20]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[21]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[28]' (FDE) to 'U0/P_U/Blowfish_encipher_P_rom_U/q0_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[8]' (FDE) to 'U0/P_load_reg_348_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[10]' (FDE) to 'U0/P_load_reg_348_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[14]' (FDE) to 'U0/P_load_reg_348_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[20]' (FDE) to 'U0/P_load_reg_348_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[21]' (FDE) to 'U0/P_load_reg_348_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/P_load_reg_348_reg[28]' (FDE) to 'U0/P_load_reg_348_reg[29]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 787.504 ; gain = 476.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 787.504 ; gain = 476.965
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 787.504 ; gain = 476.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 787.504 ; gain = 476.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 787.504 ; gain = 476.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 787.504 ; gain = 476.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 787.504 ; gain = 476.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    16|
+|2     |LUT1       |    32|
+|3     |LUT2       |    69|
+|4     |LUT3       |   136|
+|5     |LUT4       |    45|
+|6     |LUT5       |    23|
+|7     |LUT6       |    46|
+|8     |MUXF7      |     3|
+|9     |RAMB18E1   |     1|
+|10    |RAMB18E1_1 |     1|
+|11    |RAMB18E1_2 |     1|
+|12    |RAMB18E1_3 |     1|
+|13    |FDRE       |   635|
+|14    |FDSE       |     3|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+---------------------------------+------+
+|      |Instance                               |Module                           |Cells |
++------+---------------------------------------+---------------------------------+------+
+|1     |top                                    |                                 |  1012|
+|2     |  U0                                   |Blowfish_encipher                |  1012|
+|3     |    Blowfish_encipher_AXILiteS_s_axi_U |Blowfish_encipher_AXILiteS_s_axi |   335|
+|4     |    P_U                                |Blowfish_encipher_P              |    18|
+|5     |      Blowfish_encipher_P_rom_U        |Blowfish_encipher_P_rom          |    18|
++------+---------------------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 787.504 ; gain = 476.965
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 787.504 ; gain = 168.465
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 787.504 ; gain = 476.965
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+142 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 787.504 ; gain = 476.965
+INFO: [Common 17-1381] The checkpoint 'C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.runs/design_1_Blowfish_encipher_0_0_synth_1/design_1_Blowfish_encipher_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ip/design_1_Blowfish_encipher_0_0/design_1_Blowfish_encipher_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.runs/design_1_Blowfish_encipher_0_0_synth_1/design_1_Blowfish_encipher_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 787.504 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 26 20:39:56 2018...

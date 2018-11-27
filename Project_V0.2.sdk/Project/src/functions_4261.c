@@ -33,9 +33,9 @@ char *make_transmit_string(int num_bytes, int max_length) {
 	int n = 0;
 	int mod = 0;
 	int s = sizeof(temp_string) - 1;
-	num_bytes = 1456;
+	//num_bytes = 1456;
 
-	return_string = calloc(num_bytes - 1,sizeof(char));
+	return_string = calloc(num_bytes + 7,sizeof(char));
 
 	if(num_bytes > max_length) {
 		xil_printf("Number of bytes entered exceeds max length allowed");
@@ -66,10 +66,35 @@ char *make_transmit_string(int num_bytes, int max_length) {
 **      than max length
 */
 
-//char *make_transmit_string(char *) {
+//char *software_encrypt(char *) {
+//
+//	int *temp1;
+//	temp1 = calloc(1,4);
+//	int *temp12;
+//	temp12 = calloc(1,4);
+//	char *encrypted_message;
+//	encrypted_message = calloc(MAX_FRAME_SIZE,sizeof(char));
+//
+//	int length_string = sizeof(*data_array);
+//	xil_printf("%d\r\n", length_string);
+//	int *int_array;
+//	int_array = data_array;
+//
+//	InitializeBlowfish(encrypt_key,keybytes); //initialize the algorithm by picking the size of the key and the key
+//	int *temp_int_array;
+//	temp_int_array = int_array;
+//	while(*temp_int_array){
+//		*temp1 = *temp_int_array;
+//		temp_int_array++;
+//		*temp12 = *temp_int_array;
+//		temp_int_array++;
+//		Blowfish_encipher(temp1,temp12);
+//		strcat(encrypted_message, temp1);
+//		strcat(encrypted_message, temp12);
+//	} //end while
+//} //end software_encrypt
 
-	//return return_string;
-//} //end make_transmit_sting
+
 
 
 /*** void timer_start(void)

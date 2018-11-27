@@ -48,7 +48,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint design_1_wrapper_routed.dcp
-  set_property webtalk.parent_dir C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP/Project_V0.2.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP2018-11-26-back/ECE4261_Project-UDP/Project_V0.2.cache/wt [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   catch { write_mem_info -force design_1_wrapper.mmi }
   write_bitstream -force design_1_wrapper.bit 

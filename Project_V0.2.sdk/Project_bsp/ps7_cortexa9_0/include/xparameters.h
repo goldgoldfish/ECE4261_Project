@@ -23,6 +23,25 @@
 
 /******************************************************************/
 
+/* Definitions for driver BLOWFISH_ENCIPHER */
+#define XPAR_XBLOWFISH_ENCIPHER_NUM_INSTANCES 1
+
+/* Definitions for peripheral BLOWFISH_ENCIPHER_0 */
+#define XPAR_BLOWFISH_ENCIPHER_0_DEVICE_ID 0
+#define XPAR_BLOWFISH_ENCIPHER_0_S_AXI_AXILITES_BASEADDR 0x43C00000
+#define XPAR_BLOWFISH_ENCIPHER_0_S_AXI_AXILITES_HIGHADDR 0x43C0FFFF
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral BLOWFISH_ENCIPHER_0 */
+#define XPAR_XBLOWFISH_ENCIPHER_0_DEVICE_ID XPAR_BLOWFISH_ENCIPHER_0_DEVICE_ID
+#define XPAR_XBLOWFISH_ENCIPHER_0_S_AXI_AXILITES_BASEADDR 0x43C00000
+#define XPAR_XBLOWFISH_ENCIPHER_0_S_AXI_AXILITES_HIGHADDR 0x43C0FFFF
+
+
+/******************************************************************/
+
 /* Definitions for driver PMODKYPD */
 #define XPAR_PMODKYPD_NUM_INSTANCES 1
 
