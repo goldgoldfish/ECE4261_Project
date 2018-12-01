@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Nov 30 23:06:29 2018
+# Process ID: 16112
+# Current directory: C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12692 C:\Users\bwedemir\Desktop\ECE4261Project\ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.xpr
+# Log file: C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/vivado.log
+# Journal file: C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP'
+INFO: [Project 1-313] Project file moved from 'C:/Users/kohara/Downloads/ECE4261_Project-UDP/ECE4261_Project-UDP' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/bwedemir/Desktop/Desktop/Project_V0.2/Project_V0.2.ip_user_files', nor could it be found using path 'C:/Users/kohara/Desktop/Project_V0.2/Project_V0.2.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'xilinx:valuePermission' : Unexpected attribute
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/vivado-library-2018.2-1/vivado-library/ip/Pmods/PmodESP32_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'xilinx:valuePermission' : Unexpected attribute
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'xilinx:valuePermission' : Unexpected attribute
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/vivado-library-2018.2-1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/blowfish_encipher'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/blowfish_decipher'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2017.1/Vivado/2017.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_Blowfish_encipher_0_1' generated file not found 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ip/design_1_Blowfish_encipher_0_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_0' generated file not found 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/stats.txt'. Please regenerate to continue.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_PmodKYPD_0_1
+
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 928.402 ; gain = 126.402
+update_compile_order -fileset sources_1
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'xilinx:valuePermission' : Unexpected attribute
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/vivado-library-2018.2-1/vivado-library/ip/Pmods/PmodESP32_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'xilinx:valuePermission' : Unexpected attribute
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'xilinx:valuePermission' : Unexpected attribute
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/vivado-library-2018.2-1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/blowfish_encipher'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/blowfish_decipher'.
+open_bd_design {C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:hls:Blowfish_encipher:1.0 - Blowfish_encipher_0
+Adding cell -- digilentinc.com:IP:PmodKYPD:1.0 - PmodKYPD_0
+Adding cell -- xilinx.com:hls:Blowfish_decipher:1.0 - Blowfish_decipher_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:c_counter_binary:12.0 - c_counter_binary_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file <C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1006.887 ; gain = 27.359
+regenerate_bd_layout
+validate_bd_design -force
+ERROR: [BD 5-336] This command cannot be run, as the BD-design is locked. Locked reason(s):
+* BD design contains locked IPs. Please run report_ip_status for more details and recommendations on how to fix this issue. 
+List of locked IPs: 
+design_1_PmodKYPD_0_1
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 30 23:08:38 2018...

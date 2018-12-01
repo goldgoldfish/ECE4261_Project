@@ -16,6 +16,10 @@ src/main.o src/main.o: ../src/main.c ../src/PmodKYPD.h \
  ../../Project_bsp/ps7_cortexa9_0/include/xblowfish_encipher.h \
  ../../Project_bsp/ps7_cortexa9_0/include/xstatus.h \
  ../../Project_bsp/ps7_cortexa9_0/include/xblowfish_encipher_hw.h \
+ ../../Project_bsp/ps7_cortexa9_0/include/xblowfish_decipher.h \
+ ../../Project_bsp/ps7_cortexa9_0/include/xblowfish_decipher_hw.h \
+ ../../Project_bsp/ps7_cortexa9_0/include/Xgpio.h \
+ ../../Project_bsp/ps7_cortexa9_0/include/xgpio_l.h \
  ../../Project_bsp/ps7_cortexa9_0/include/xparameters.h \
  ../../Project_bsp/ps7_cortexa9_0/include/netif/xadapter.h \
  ../../Project_bsp/ps7_cortexa9_0/include/lwipopts.h \
@@ -75,6 +79,14 @@ src/main.o src/main.o: ../src/main.c ../src/PmodKYPD.h \
 ../../Project_bsp/ps7_cortexa9_0/include/xstatus.h:
 
 ../../Project_bsp/ps7_cortexa9_0/include/xblowfish_encipher_hw.h:
+
+../../Project_bsp/ps7_cortexa9_0/include/xblowfish_decipher.h:
+
+../../Project_bsp/ps7_cortexa9_0/include/xblowfish_decipher_hw.h:
+
+../../Project_bsp/ps7_cortexa9_0/include/Xgpio.h:
+
+../../Project_bsp/ps7_cortexa9_0/include/xgpio_l.h:
 
 ../../Project_bsp/ps7_cortexa9_0/include/xparameters.h:
 

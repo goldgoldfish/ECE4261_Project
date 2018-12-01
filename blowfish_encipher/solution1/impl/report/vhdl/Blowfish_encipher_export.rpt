@@ -1,0 +1,19 @@
+
+
+Implementation tool: Xilinx Vivado v.2017.1
+Project:             blowfish_encipher
+Solution:            solution1
+Device target:       xc7z010clg400-1
+Report date:         Tue Nov 27 20:19:55 -0400 2018
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:            274
+FF:             334
+DSP:              0
+BRAM:             4
+SRL:              0
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    5.075
+Timing met

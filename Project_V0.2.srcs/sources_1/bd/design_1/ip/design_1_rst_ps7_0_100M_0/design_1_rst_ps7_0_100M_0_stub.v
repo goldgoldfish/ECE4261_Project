@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-// Date        : Fri Nov  2 20:09:44 2018
+// Date        : Fri Nov  2 20:09:42 2018
 // Host        : FRECE-ITB205-09 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad/Project_V0.2.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_rst_ps7_0_100M_0 -prefix
+//               design_1_rst_ps7_0_100M_0_ design_1_rst_ps7_0_100M_0_stub.v
 // Design      : design_1_rst_ps7_0_100M_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

@@ -1,0 +1,88 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Fri Nov 30 18:27:45 2018
+| Host         : FRECE-ITB205-05 running 64-bit major release  (build 9200)
+| Command      : report_timing -file ./report/Blowfish_decipher_timing_synth.rpt
+| Design       : Blowfish_decipher
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             4.925ns  (required time - arrival time)
+  Source:                 S_1_U/Blowfish_deciphercud_rom_U/q0_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            y_reg_387_reg[29]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.960ns  (logic 4.160ns (83.876%)  route 0.800ns (16.124%))
+  Logic Levels:           9  (CARRY4=8 LUT2=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=341, unset)          0.973     0.973    S_1_U/Blowfish_deciphercud_rom_U/ap_clk
+                         RAMB18E1                                     r  S_1_U/Blowfish_deciphercud_rom_U/q0_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[1])
+                                                      2.454     3.427 r  S_1_U/Blowfish_deciphercud_rom_U/q0_reg/DOADO[1]
+                         net (fo=1, unplaced)         0.800     4.227    S_0_U/Blowfish_decipherbkb_rom_U/q0_reg_1[1]
+                         LUT2 (Prop_lut2_I1_O)        0.124     4.351 r  S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387[3]_i_4/O
+                         net (fo=1, unplaced)         0.000     4.351    S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387[3]_i_4_n_2
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     4.901 r  S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[3]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.901    S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[3]_i_1_n_2
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.015 r  S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[7]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.015    S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[7]_i_1_n_2
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.129 r  S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[11]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.129    S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[11]_i_1_n_2
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.243 r  S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[15]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.243    S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[15]_i_1_n_2
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.357 r  S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[19]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.357    S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[19]_i_1_n_2
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.471 r  S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[23]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.471    S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[23]_i_1_n_2
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.585 r  S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[27]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.585    S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[27]_i_1_n_2
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348     5.933 r  S_0_U/Blowfish_decipherbkb_rom_U/y_reg_387_reg[31]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     5.933    y_fu_318_p2[29]
+                         FDRE                                         r  y_reg_387_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=341, unset)          0.924    10.924    ap_clk
+                         FDRE                                         r  y_reg_387_reg[29]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)       -0.031    10.858    y_reg_387_reg[29]
+  -------------------------------------------------------------------
+                         required time                         10.858    
+                         arrival time                          -5.933    
+  -------------------------------------------------------------------
+                         slack                                  4.925    
+
+
+
+

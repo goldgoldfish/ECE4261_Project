@@ -37,6 +37,8 @@
 #include "sleep.h"
 #include "functions_4261.h"
 #include "xblowfish_encipher.h"
+#include "xblowfish_decipher.h"
+#include "Xgpio.h"
 
 void DemoInitialize();
 char *DemoRun();
@@ -47,9 +49,14 @@ void DemoSleep(u32 millis);
 
 PmodKYPD myDevice;
 
-XBlowfish_encipher ENCRYPT;
+XBlowfish_encipher 	ENCRYPT;
+XBlowfish_decipher 	DECRYPT;
+XGpio			  	COUNTER;
 
 #define ENCRYPT_DEVICE_ID 	XPAR_BLOWFISH_ENCIPHER_0_DEVICE_ID
+#define DECRYPT_DEVICE_ID	XPAR_BLOWFISH_DECIPHER_0_DEVICE_ID
+#define COUNTER_DEVICE_ID 	XPAR_AXI_GPIO_0_DEVICE_ID
+
 
 #define MAX_FRAME_SIZE 1448 //set the maximum number of bytes that can be passed in a single ethernet frame
 
@@ -141,13 +148,40 @@ int IicPhyReset(void);
 
 int main()
 {
+	//-----------------------------This is the section for Hardware Initializations---------------------------------------------//
+	//Setting up the counter
+
+	int status;
+
+	status = XGpio_Initialize(&COUNTER, COUNTER_DEVICE_ID);
+	if (status != XST_SUCCESS) return XST_FAILURE;
+
+	XGpio_SetDataDirection(&COUNTER, 1, 0xFFFFFFFF);
+	xil_printf("Counter initialized\r\n");
+
+	unsigned long start, end;
+
+
+	//Setting up the hardware encryption block
+
+	XBlowfish_encipher_Initialize(&ENCRYPT, ENCRYPT_DEVICE_ID); // initialize encrypt block
+	XBlowfish_encipher_EnableAutoRestart(&ENCRYPT);
+	xil_printf("Hardware encryption initialized\r\n");
+
+
+	//Setting up the hardware decryption block
+
+	XBlowfish_decipher_Initialize(&DECRYPT, DECRYPT_DEVICE_ID); // initialize decrypt block
+	XBlowfish_decipher_EnableAutoRestart(&DECRYPT);
+	xil_printf("Hardware decryption initialized\r\n");
+
+	//-----------------------------This is the section for Hardware Initializations---------------------------------------------//
 
 	struct ip_addr ipaddr, netmask, gw;
 
 	/* the mac address of the board. this should be unique per board */
 	unsigned char mac_ethernet_address[] =
 	{ 0x00, 0x0a, 0x35, 0x00, 0x01, 0x02 };
-
 	echo_netif = &server_netif;
 #if defined (__arm__) && !defined (ARMR5)
 #if XPAR_GIGE_PCS_PMA_SGMII_CORE_PRESENT == 1 || XPAR_GIGE_PCS_PMA_1000BASEX_CORE_PRESENT == 1
@@ -220,6 +254,21 @@ int main()
 
 	print_ip_settings(&ipaddr, &netmask, &gw);
 
+
+	//-----------------------------This is the section for the Counter---------------------------------------------//
+//	int i = 0;
+//
+//	while(i < 1000){
+//		start = XGpio_DiscreteRead(&COUNTER, 1);
+//
+//		xil_printf("The counter value is: %u\n\r", start);
+//
+//		sleep(1);
+//		i++;
+//	} //end while
+//
+	//-----------------------------This is the section for the Counter---------------------------------------------//
+
 	//-----------------------------This is the section for the Keypad---------------------------------------------//
 
 	char *data_array;
@@ -228,6 +277,7 @@ int main()
 	int *temp12;
 	temp12 = calloc(1,4);
 	int *temp_int_array;
+	int *temp_array;
 
 	DemoInitialize();
 
@@ -248,8 +298,8 @@ int main()
 
 	if (!hardware_encrypt_flag){
 
-		//InitializeBlowfish(encrypt_key,keybytes); //initialize the algorithm by picking the size of the key and the key
 		temp_int_array = int_array;
+		start = XGpio_DiscreteRead(&COUNTER, 1);
 		while(*temp_int_array){
 			*temp1 = *temp_int_array;
 			temp_int_array++;
@@ -259,14 +309,16 @@ int main()
 			strcat(encrypted_message, temp1);
 			strcat(encrypted_message, temp12);
 		} //end while
+		end = XGpio_DiscreteRead(&COUNTER, 1);
 
 		xil_printf("Encrypted String length is: %d\r\n", strlen(encrypted_message));
 		xil_printf("Encrypted String is: %s\r\n", encrypted_message);
-		xil_printf("Encrypted String is: %04x\r\n", encrypted_message);
+		xil_printf("Time taken: %u\r\n", (end - start));
 
 		int_array = encrypted_message;
 
 		temp_int_array = int_array;
+		start = XGpio_DiscreteRead(&COUNTER, 1);
 		while(*temp_int_array){
 			*temp1 = *temp_int_array;
 			temp_int_array++;
@@ -276,46 +328,90 @@ int main()
 			strcat(decrypted_message, temp1);
 			strcat(decrypted_message, temp12);
 		} //end while
+		end = XGpio_DiscreteRead(&COUNTER, 1);
 
 		xil_printf("Decrypted String length is: %d\r\n", strlen(decrypted_message));
 		xil_printf("Decrypted String is: %s\r\n", decrypted_message);
+		xil_printf("Time taken: %u\r\n", (end - start));
 
 	} //end if
 
 	else if (hardware_encrypt_flag){
-		u32 xl;
-		u32 xr;
-
-		XBlowfish_encipher_Initialize(&ENCRYPT, ENCRYPT_DEVICE_ID);
+		u32 *xl;
+		xl = calloc(1,4);
+		u32 *xr;
+		xr = calloc(1,4);
+		//while(XBlowfish_encipher_IsReady(&ENCRYPT)); // wait for the block to be ready
 
 		temp_int_array = int_array;
+		start = XGpio_DiscreteRead(&COUNTER, 1);
+		while(*temp_int_array){
+			*temp1 = *temp_int_array;
+//			while(!XBlowfish_encipher_IsReady(&ENCRYPT)); // wait for block to be ready for input
+			XBlowfish_encipher_Set_xl_i(&ENCRYPT, *temp1);
+			temp_int_array++;
+			*temp12 = *temp_int_array;
+//			while(!XBlowfish_encipher_IsReady(&ENCRYPT)); // wait for block to be ready for input
+			XBlowfish_encipher_Set_xr_i(&ENCRYPT, *temp12);
+			temp_int_array++;
 
-		*temp1 = *temp_int_array;
-		XBlowfish_encipher_Set_xl_i(&ENCRYPT, *temp1);
-		temp_int_array++;
-		*temp12 = *temp_int_array;
-		XBlowfish_encipher_Set_xr_i(&ENCRYPT, *temp12);
-		temp_int_array++;
+			//while(XBlowfish_encipher_IsDone(&ENCRYPT)); // wait for result to be ready before reading back
+			XBlowfish_encipher_Start(&ENCRYPT); // start the encryption process
+			while(!XBlowfish_encipher_IsDone); // wait for encryption to complete
+			*xl = XBlowfish_encipher_Get_xl_o(&ENCRYPT);
+			//while(XBlowfish_encipher_IsReady(&ENCRYPT)); // wait for block to be ready for next input
+			*xr = XBlowfish_encipher_Get_xr_o(&ENCRYPT);
+			//while(XBlowfish_encipher_IsDone(&ENCRYPT)); // wait for block to be done execution before reading out
 
-		for (int i = 0; i < 100000; i++);
-
-		xl = XBlowfish_encipher_Get_xl_o(&ENCRYPT);
-		xr = XBlowfish_encipher_Get_xr_o(&ENCRYPT);
-
-		strcat(encrypted_message, &xl);
-		strcat(encrypted_message, &xr);
+			strcat(encrypted_message, xl);
+			strcat(encrypted_message, xr);
+		} // end while
+		end = XGpio_DiscreteRead(&COUNTER, 1);
 
 		xil_printf("Encrypted String length is: %d\r\n", strlen(encrypted_message));
 		xil_printf("Encrypted String is: %s\r\n", encrypted_message);
+		xil_printf("Time taken: %u\r\n", (end - start));
 
-		Blowfish_decipher(&xl,&xr);
+		int_array = encrypted_message;
+		temp_int_array = int_array;
 
-		strcat(decrypted_message, &xl);
-		strcat(decrypted_message, &xr);
+		start = XGpio_DiscreteRead(&COUNTER, 1);
+		while(*temp_int_array){
+			*xl = *temp_int_array;
+			//while(!XBlowfish_decipher_IsReady(&DECRYPT)); // wait for block to be ready for input
+			XBlowfish_decipher_Set_xl_i(&DECRYPT, *xl);
+			temp_int_array++;
+			*xr = *temp_int_array;
+			//while(!XBlowfish_decipher_IsReady(&DECRYPT)); // wait for block to be ready for input
+			XBlowfish_decipher_Set_xr_i(&DECRYPT, *xr);
+			temp_int_array++;
+
+			XBlowfish_decipher_Start(&DECRYPT);
+
+			XBlowfish_decipher_Start(&DECRYPT); // start the encryption process
+			while(!XBlowfish_decipher_IsDone); // wait for encryption to complete
+			*xl = XBlowfish_decipher_Get_xl_o(&DECRYPT);
+			*xr = XBlowfish_decipher_Get_xr_o(&DECRYPT);
+
+			strcat(decrypted_message, xl);
+			strcat(decrypted_message, xr);
+		}
+		end = XGpio_DiscreteRead(&COUNTER, 1);
 
 		xil_printf("Decrypted String length is: %d\r\n", strlen(decrypted_message));
 		xil_printf("Decrypted String is: %s\r\n", decrypted_message);
+		xil_printf("Time taken: %u\r\n", (end - start));
 
+		temp_array = decrypted_message;
+		while(*temp_array){
+			*temp_array = 0;
+			temp_array++;
+		}
+		temp_array = encrypted_message;
+		while(*temp_array){
+			*temp_array = 0;
+			temp_array++;
+		}
 	} //end else if
 	else {
 		xil_printf("Error\r\n");
@@ -366,23 +462,30 @@ int main()
 
 void DemoInitialize() {
    EnableCaches();
-   KYPD_begin(&myDevice, XPAR_PMODKYPD_1_AXI_LITE_GPIO_BASEADDR);
+   KYPD_begin(&myDevice, XPAR_PMODKYPD_0_AXI_LITE_GPIO_BASEADDR);
    KYPD_loadKeyTable(&myDevice, (u8*) DEFAULT_KEYTABLE);
 }
 
 char *DemoRun() {
 	int num_bytes, place;
 	char *string;
+	char *inputstr;
+	inputstr = calloc(4,1);
+	int b=0;;
+	char *clear;
+	clear = calloc(4,1);
+	int multiplier[4] = {1,10,100,1000};
+	int i=0;
 	u16 keystate;
 	XStatus status, last_status = KYPD_NO_KEY;
 	u8 key, last_key = 'x';
 	// Initial value of last_key cannot be contained in loaded KEYTABLE string
 
-	xil_printf("Enter a number of bytes to be transmitted (0 to 1500).\r\n");
+	xil_printf("Enter a number of bytes to be transmitted (0 to 1448).\r\n");
 	xil_printf("Press A on the Keypad to confirm selection.\r\n");
 	xil_printf("Press F on the Keypad to reset process.\r\n");
 
-	RESET: place = 1; //use this if reset
+	RESET: place = 1000; //use this if reset
 	num_bytes = 0;
 	while (key == 'A') { //Not sure why this is here
 	   keystate = KYPD_getKeyStates(&myDevice);
@@ -406,16 +509,29 @@ char *DemoRun() {
 	if (status == KYPD_SINGLE_KEY && (status != last_status || key != last_key) &&  !(key >= 'A')) {
 		xil_printf("%c", (char) key);
 		last_key = key;
-		num_bytes = num_bytes + place*(key - 48); //add the value enter to the num_bytes
-		place = place * 10; //change which number place the target is
-		if (place > 1000) place = 1000;
+		*(inputstr+i) = key;
+		i++;
+		//num_bytes = num_bytes + place*(key - 48); //add the value enter to the num_bytes
+		//place = place / 10; //change which number place the target is
+		//if (place < 1) place = 1;
 	} //end if
 	else if (status == KYPD_MULTI_KEY && status != last_status)
 		xil_printf("Error: Multiple keys pressed\r\n");
 	else if (status == KYPD_SINGLE_KEY && status != last_status && key == 'A'){
 		xil_printf("\r\n");
-		if (num_bytes > MAX_FRAME_SIZE) {
-			xil_printf("Try again: Enter a number of bytes less than or equal to 1458!\r\n");
+		b=0;
+		while(i>b){
+			num_bytes = num_bytes + multiplier[i-b-1]*(*(inputstr+(b)) - 48);
+			b++;
+		}
+		i=0;
+		clear = inputstr;
+		while(*clear){
+			*clear=0;
+			clear++;
+		}
+		if (num_bytes > MAX_FRAME_SIZE | num_bytes < 0) {
+			xil_printf("Try again: Enter a number of bytes less than or equal to 1448!\r\n");
 			goto RESET;
 		} // end if
 		xil_printf("The number of bytes that will be sent is %d\r\n", num_bytes);
