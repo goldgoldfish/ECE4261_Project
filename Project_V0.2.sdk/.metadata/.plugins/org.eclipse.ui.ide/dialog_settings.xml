@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="378" key="DIALOG_HEIGHT"/>
+		<item value="710" key="DIALOG_X_ORIGIN"/>
+		<item value="268" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP"/>
+			<item value="C:\Users\bwedemir\Desktop\ECE4261Project\ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP"/>
+			<item value="C:\Users\kohara\Downloads\ECE4261_Project-UDP\ECE4261_Project-UDP"/>
+			<item value="C:\Users\bwedemir\Desktop\ECE4261Project\ECE4261_Project-UDP2018-11-26\ECE4261_Project-UDP"/>
+			<item value="C:\Users\kohara\Desktop\ECE4261_Project-UDP\ECE4261_Project-UDP\Project_V0.2.sdk"/>
+			<item value="C:\Users\bwedemir\Desktop\ECE4261Project\ECE4261_Project-master"/>
 			<item value="C:\Users\bwedemir\Downloads\ECE4261_Project-Keypad\ECE4261_Project-Keypad\Project_V0.2.sdk\echo_bsp"/>
 			<item value="C:\Users\bwedemir\Downloads\ECE4261_Project-Keypad\ECE4261_Project-Keypad\Project_V0.2.sdk\echo"/>
 		</list>

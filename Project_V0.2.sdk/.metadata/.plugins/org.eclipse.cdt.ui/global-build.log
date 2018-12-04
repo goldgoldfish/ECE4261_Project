@@ -1,24 +1,1339 @@
-17:53:54 **** Incremental Build of configuration Debug for project Project ****
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/lwip141_v1_8/src"
+make -C ps7_cortexa9_0/libsrc/lwip141_v1_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/PmodKYPD_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/PmodKYPD_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/Blowfish_decipher_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/Blowfish_decipher_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling Blowfish_decipher"
+"Running Make libs in ps7_cortexa9_0/libsrc/Blowfish_encipher_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/Blowfish_encipher_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling Blowfish_encipher"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/lwip141_v1_8/src"
+make -C ps7_cortexa9_0/libsrc/lwip141_v1_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling lwip src and adapter files"
+In file included from ../../../include/lwip/ip.h:39:0,
+                 from lwip-1.4.1/src/core/ipv4/ip.c:42:
+lwip-1.4.1/src/core/ipv4/ip.c: In function 'ip_input':
+../../../include/lwip/ip_addr.h:200:39: warning: the comparison will always evaluate as 'false' for the address of 'current_iphdr_src' will never be NULL [-Waddress]
+ #define ip_addr_isany(addr1) ((addr1) == NULL || (addr1)->addr == IPADDR_ANY)
+                                       ^
+lwip-1.4.1/src/core/ipv4/ip.c:473:24: note: in expansion of macro 'ip_addr_isany'
+   if (check_ip_src && !ip_addr_isany(&current_iphdr_src))
+                        ^
+In file included from ../../../include/lwip/netif.h:41:0,
+                 from ../../../include/lwip/udp.h:40,
+                 from lwip-1.4.1/src/core/dhcp.c:75:
+lwip-1.4.1/src/core/dhcp.c: In function 'dhcp_bind':
+../../../include/lwip/ip_addr.h:200:39: warning: the comparison will always evaluate as 'false' for the address of 'gw_addr' will never be NULL [-Waddress]
+ #define ip_addr_isany(addr1) ((addr1) == NULL || (addr1)->addr == IPADDR_ANY)
+                                       ^
+lwip-1.4.1/src/core/dhcp.c:987:7: note: in expansion of macro 'ip_addr_isany'
+   if (ip_addr_isany(&gw_addr)) {
+       ^
+In file included from ../../../include/xemacps.h:342:0,
+                 from ../../../include/netif/xemacpsif.h:59,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:39:
+contrib/ports/xilinx/netif/xemacpsif_dma.c: In function 'init_dma':
+../../../include/xemacps_bd.h:163:62: warning: 'bdrxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     (*(u32 *)((UINTPTR)(void*)(BaseAddress) + (u32)(Offset)) = (u32)(Data))
+                                                              ^
+contrib/ports/xilinx/netif/xemacpsif_dma.c:551:14: note: 'bdrxterminate' was declared here
+  XEmacPs_Bd *bdrxterminate;
+              ^
+In file included from ../../../include/xemacps.h:342:0,
+                 from ../../../include/netif/xemacpsif.h:59,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:39:
+../../../include/xemacps_bd.h:126:5: warning: 'bdtxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     memset((BdPtr), 0, sizeof(XEmacPs_Bd))
+     ^
+contrib/ports/xilinx/netif/xemacpsif_dma.c:550:14: note: 'bdtxterminate' was declared here
+  XEmacPs_Bd *bdtxterminate;
+              ^
+"Running Make libs in ps7_cortexa9_0/libsrc/PmodKYPD_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/PmodKYPD_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling PmodKYPD..."
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:217:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+23:54:40 **** Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-make: Nothing to be done for `main-build'.
-17:54:02 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
+'Building file: ../src/PmodKYPD.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PmodKYPD.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/PmodKYPD.d" -MT"src/PmodKYPD.o" -o "src/PmodKYPD.o" "../src/PmodKYPD.c"
+'Finished building: ../src/PmodKYPD.c'
+' '
+'Building file: ../src/echo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'start_UDP':
+../src/echo.c:101:3: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+   usleep(1000);
+   ^~~~~~
+../src/echo.c:108:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+  sleep(5);
+  ^~~~~
+'Finished building: ../src/echo.c'
 ' '
 'Building file: ../src/functions_4261.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/functions_4261.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/functions_4261.d" -MT"src/functions_4261.o" -o "src/functions_4261.o" "../src/functions_4261.c"
-../src/functions_4261.c: In function 'make_transmit_string':
-../src/functions_4261.c:46:3: error: expected ';' before 'return_string'
-   return_string[n] = temp_string[n%s];
-   ^~~~~~~~~~~~~
-../src/functions_4261.c:34:6: warning: variable 'mod' set but not used [-Wunused-but-set-variable]
-  int mod = 0;
-      ^~~
-make: *** [src/functions_4261.o] Error 1
-17:54:18 **** Auto Build of configuration Debug for project Project ****
+'Finished building: ../src/functions_4261.c'
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C: In function 'opensubkeyfile':
+../src/BLOWFISH.C:55:21: warning: implicit declaration of function 'open' [-Wimplicit-function-declaration]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                     ^~~~
+../src/BLOWFISH.C:55:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                   ^
+../src/main.c: In function 'main':
+../src/main.c:282:12: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  int_array = data_array;
+            ^
+../src/main.c:293:22: warning: passing argument 1 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:85:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:293:28: warning: passing argument 2 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:85:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:294:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:295:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:304:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:313:22: warning: passing argument 1 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:115:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:313:28: warning: passing argument 2 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:115:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:314:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:315:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:343:10: warning: the address of 'XBlowfish_encipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_encipher_IsDone); // wait for encryption to complete
+          ^
+../src/main.c:347:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:348:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:357:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:372:10: warning: the address of 'XBlowfish_decipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_decipher_IsDone); // wait for encryption to complete
+          ^
+../src/main.c:376:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:377:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:265:7: warning: unused variable 'temp_array' [-Wunused-variable]
+  int *temp_array;
+       ^~~~~~~~~~
+../src/main.c: In function 'DemoRun':
+../src/main.c:507:17: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+   if (num_bytes > MAX_FRAME_SIZE | num_bytes < 0) {
+                 ^
+../src/main.c:444:17: warning: variable 'place' set but not used [-Wunused-but-set-variable]
+  int num_bytes, place;
+                 ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/platform_mb.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_mb.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+'Finished building: ../src/platform_mb.c'
+' '
+'Building file: ../src/platform_ppc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_ppc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_ppc.d" -MT"src/platform_ppc.o" -o "src/platform_ppc.o" "../src/platform_ppc.c"
+'Finished building: ../src/platform_ppc.c'
+' '
+'Building file: ../src/platform_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+'Finished building: ../src/platform_zynq.c'
+' '
+'Building file: ../src/platform_zynqmp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
+'Finished building: ../src/platform_zynqmp.c'
+' '
+'Building file: ../src/sfp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+'Finished building: ../src/sfp.c'
+' '
+'Building file: ../src/si5324.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+'Finished building: ../src/si5324.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118024	   8040	2218272	2344336	 23c590	Project.elf
+'Finished building: Project.elf.size'
+' '
+23:55:06 **** Auto Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C: In function 'opensubkeyfile':
+../src/BLOWFISH.C:55:21: warning: implicit declaration of function 'open' [-Wimplicit-function-declaration]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                     ^~~~
+../src/BLOWFISH.C:55:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                   ^
+../src/main.c: In function 'main':
+../src/main.c:290:12: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  int_array = data_array;
+            ^
+../src/main.c:301:22: warning: passing argument 1 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:85:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:301:28: warning: passing argument 2 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:85:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:302:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:303:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:314:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:323:22: warning: passing argument 1 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:115:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:323:28: warning: passing argument 2 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:115:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:324:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:325:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:355:10: warning: the address of 'XBlowfish_encipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_encipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:359:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:360:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:371:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:386:10: warning: the address of 'XBlowfish_decipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_decipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:390:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:391:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:266:7: warning: unused variable 'temp_array' [-Wunused-variable]
+  int *temp_array;
+       ^~~~~~~~~~
+../src/main.c: In function 'DemoRun':
+../src/main.c:526:18: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+    if (num_bytes > MAX_FRAME_SIZE | num_bytes < 0) {
+                  ^
+../src/main.c:463:18: warning: variable 'place' set but not used [-Wunused-but-set-variable]
+   int num_bytes, place;
+                  ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118224	   8040	2218272	2344536	 23c658	Project.elf
+'Finished building: Project.elf.size'
+' '
+23:55:07 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:55:10 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:56:21 **** Auto Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C: In function 'opensubkeyfile':
+../src/BLOWFISH.C:55:21: warning: implicit declaration of function 'open' [-Wimplicit-function-declaration]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                     ^~~~
+../src/BLOWFISH.C:55:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                   ^
+../src/main.c: In function 'main':
+../src/main.c:290:12: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  int_array = data_array;
+            ^
+../src/main.c:301:22: warning: passing argument 1 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:85:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:301:28: warning: passing argument 2 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:85:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:302:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:303:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:314:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:323:22: warning: passing argument 1 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:115:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:323:28: warning: passing argument 2 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:115:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:324:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:325:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:355:10: warning: the address of 'XBlowfish_encipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_encipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:359:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:360:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:371:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:386:10: warning: the address of 'XBlowfish_decipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_decipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:390:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:391:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:266:7: warning: unused variable 'temp_array' [-Wunused-variable]
+  int *temp_array;
+       ^~~~~~~~~~
+../src/main.c: In function 'DemoRun':
+../src/main.c:526:18: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+    if (num_bytes > MAX_FRAME_SIZE | num_bytes < 0) {
+                  ^
+../src/main.c:463:18: warning: variable 'place' set but not used [-Wunused-but-set-variable]
+   int num_bytes, place;
+                  ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118224	   8040	2218272	2344536	 23c658	Project.elf
+'Finished building: Project.elf.size'
+' '
+23:56:23 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:56:28 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:51:41 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:52:39 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:52:52 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:56:06 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:56:29 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:56:51 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:57:17 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:57:43 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:57:52 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:59:32 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:06:01 **** Auto Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C: In function 'opensubkeyfile':
+../src/BLOWFISH.C:55:21: warning: implicit declaration of function 'open' [-Wimplicit-function-declaration]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                     ^~~~
+../src/BLOWFISH.C:55:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                   ^
+../src/main.c: In function 'main':
+../src/main.c:290:12: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  int_array = data_array;
+            ^
+../src/main.c:301:22: warning: passing argument 1 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:85:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:301:28: warning: passing argument 2 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:85:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:302:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:303:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:314:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:323:22: warning: passing argument 1 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:115:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:323:28: warning: passing argument 2 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:115:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:324:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:325:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:355:10: warning: the address of 'XBlowfish_encipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_encipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:359:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:360:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:371:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:386:10: warning: the address of 'XBlowfish_decipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_decipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:390:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:391:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:266:7: warning: unused variable 'temp_array' [-Wunused-variable]
+  int *temp_array;
+       ^~~~~~~~~~
+../src/main.c: In function 'DemoRun':
+../src/main.c:526:18: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+    if (num_bytes > MAX_FRAME_SIZE | num_bytes < 0) {
+                  ^
+../src/main.c:463:18: warning: variable 'place' set but not used [-Wunused-but-set-variable]
+   int num_bytes, place;
+                  ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118224	   8040	2218272	2344536	 23c658	Project.elf
+'Finished building: Project.elf.size'
+' '
+13:06:04 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:06:13 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:07:18 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:08:52 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:09:37 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:12:35 **** Auto Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C: In function 'opensubkeyfile':
+../src/BLOWFISH.C:55:21: warning: implicit declaration of function 'open' [-Wimplicit-function-declaration]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                     ^~~~
+../src/BLOWFISH.C:55:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                   ^
+../src/main.c: In function 'main':
+../src/main.c:290:12: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  int_array = data_array;
+            ^
+../src/main.c:301:22: warning: passing argument 1 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:85:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:301:28: warning: passing argument 2 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:85:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:302:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:303:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:314:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:323:22: warning: passing argument 1 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:115:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:323:28: warning: passing argument 2 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:115:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:324:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:325:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:355:10: warning: the address of 'XBlowfish_encipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_encipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:359:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:360:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:371:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:386:10: warning: the address of 'XBlowfish_decipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_decipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:390:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:391:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:266:7: warning: unused variable 'temp_array' [-Wunused-variable]
+  int *temp_array;
+       ^~~~~~~~~~
+../src/main.c: In function 'DemoRun':
+../src/main.c:526:18: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+    if (num_bytes > MAX_FRAME_SIZE | num_bytes < 0) {
+                  ^
+../src/main.c:463:18: warning: variable 'place' set but not used [-Wunused-but-set-variable]
+   int num_bytes, place;
+                  ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118224	   8040	2218272	2344536	 23c658	Project.elf
+'Finished building: Project.elf.size'
+' '
+13:12:38 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:14:02 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:25:58 **** Auto Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C: In function 'opensubkeyfile':
+../src/BLOWFISH.C:55:21: warning: implicit declaration of function 'open' [-Wimplicit-function-declaration]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                     ^~~~
+../src/BLOWFISH.C:55:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                   ^
+../src/main.c: In function 'main':
+../src/main.c:290:12: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  int_array = data_array;
+            ^
+../src/main.c:301:22: warning: passing argument 1 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:85:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:301:28: warning: passing argument 2 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:85:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:302:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:303:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:314:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:323:22: warning: passing argument 1 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:115:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:323:28: warning: passing argument 2 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:108:0:
+../src/BLOWFISH.C:115:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:324:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:325:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:355:10: warning: the address of 'XBlowfish_encipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_encipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:359:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:360:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:371:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:386:10: warning: the address of 'XBlowfish_decipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_decipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:390:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:391:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:36:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:266:7: warning: unused variable 'temp_array' [-Wunused-variable]
+  int *temp_array;
+       ^~~~~~~~~~
+../src/main.c: In function 'DemoRun':
+../src/main.c:527:18: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+    if (num_bytes > MAX_FRAME_SIZE | num_bytes < 0) {
+                  ^
+../src/main.c:464:18: warning: variable 'place' set but not used [-Wunused-but-set-variable]
+   int num_bytes, place;
+                  ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118224	   8040	2218272	2344536	 23c658	Project.elf
+'Finished building: Project.elf.size'
+' '
+14:26:05 **** Incremental Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:23:24 **** Auto Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -35,98 +1350,176 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Project.elf  |tee "Project.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 106584	   3840	2218272	2328696	 238878	Project.elf
+ 118224	   8040	2218272	2344536	 23c658	Project.elf
 'Finished building: Project.elf.size'
 ' '
-17:54:20 **** Incremental Build of configuration Debug for project Project ****
+15:23:29 **** Incremental Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-17:54:28 **** Incremental Build of configuration Debug for project Project ****
+15:23:35 **** Incremental Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-17:58:32 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/functions_4261.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/functions_4261.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/functions_4261.d" -MT"src/functions_4261.o" -o "src/functions_4261.o" "../src/functions_4261.c"
-../src/functions_4261.c: In function 'make_transmit_string':
-../src/functions_4261.c:37:18: error: too few arguments to function 'calloc'
-  return_string = calloc(sizeof(char) * num_bytes - 1);
-                  ^~~~~~
-In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdlib.h:11:0,
-                 from ../src/functions_4261.c:10:
-c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdlib.h:86:6: note: declared here
- _PTR _EXFUN_NOTHROW(calloc,(size_t __nmemb, size_t __size));
-      ^
-make: *** [src/functions_4261.o] Error 1
-17:58:33 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/functions_4261.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/functions_4261.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/functions_4261.d" -MT"src/functions_4261.o" -o "src/functions_4261.o" "../src/functions_4261.c"
-../src/functions_4261.c: In function 'make_transmit_string':
-../src/functions_4261.c:37:18: error: too few arguments to function 'calloc'
-  return_string = calloc(sizeof(char) * num_bytes - 1);
-                  ^~~~~~
-In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdlib.h:11:0,
-                 from ../src/functions_4261.c:10:
-c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdlib.h:86:6: note: declared here
- _PTR _EXFUN_NOTHROW(calloc,(size_t __nmemb, size_t __size));
-      ^
-make: *** [src/functions_4261.o] Error 1
-17:59:29 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/functions_4261.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/functions_4261.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/functions_4261.d" -MT"src/functions_4261.o" -o "src/functions_4261.o" "../src/functions_4261.c"
-'Finished building: ../src/functions_4261.c'
-' '
-'Building target: Project.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Project.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Project.elf  |tee "Project.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 106696	   3840	2218272	2328808	 2388e8	Project.elf
-'Finished building: Project.elf.size'
-' '
-17:59:31 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-17:59:35 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-18:01:47 **** Auto Build of configuration Debug for project Project ****
+22:39:14 **** Auto Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C: In function 'opensubkeyfile':
+../src/BLOWFISH.C:55:21: warning: implicit declaration of function 'open' [-Wimplicit-function-declaration]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                     ^~~~
+../src/BLOWFISH.C:55:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                   ^
 ../src/main.c: In function 'main':
-../src/main.c:128:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
+../src/main.c:260:12: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  int_array = data_array;
+            ^
+../src/main.c:271:22: warning: passing argument 1 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:85:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:271:28: warning: passing argument 2 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:85:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:272:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:273:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:284:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:293:22: warning: passing argument 1 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:115:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:293:28: warning: passing argument 2 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:115:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:294:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:295:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:325:10: warning: the address of 'XBlowfish_encipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_encipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:329:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:330:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:341:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:356:10: warning: the address of 'XBlowfish_decipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_decipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:360:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:361:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:236:7: warning: unused variable 'temp_array' [-Wunused-variable]
+  int *temp_array;
+       ^~~~~~~~~~
 ../src/main.c: In function 'DemoRun':
-../src/main.c:255:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
+../src/main.c:497:18: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+    if (num_bytes > MAX_FRAME_SIZE | num_bytes < 0) {
+                  ^
+../src/main.c:434:18: warning: variable 'place' set but not used [-Wunused-but-set-variable]
+   int num_bytes, place;
+                  ^~~~~
 'Finished building: ../src/main.c'
 ' '
 'Building target: Project.elf'
@@ -137,254 +1530,23 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Project.elf  |tee "Project.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 106760	   3840	2218272	2328872	 238928	Project.elf
+ 118224	   8040	2218272	2344536	 23c658	Project.elf
 'Finished building: Project.elf.size'
 ' '
-18:01:54 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-18:02:02 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-18:02:54 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-18:03:04 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-18:04:19 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:128:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:334:9: error: expected ';' before '(' token
-    break();
-         ^
-../src/main.c:341:9: error: expected ';' before '(' token
-    break();
-         ^
-../src/main.c:255:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-make: *** [src/main.o] Error 1
-18:04:26 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:128:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:341:9: error: expected ';' before '(' token
-    break();
-         ^
-../src/main.c:255:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-make: *** [src/main.o] Error 1
-18:04:27 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:128:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:341:9: error: expected ';' before '(' token
-    break();
-         ^
-../src/main.c:255:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-make: *** [src/main.o] Error 1
-18:04:30 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:128:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:255:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-'Finished building: ../src/main.c'
-' '
-'Building target: Project.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Project.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Project.elf  |tee "Project.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 106760	   3840	2218272	2328872	 238928	Project.elf
-'Finished building: Project.elf.size'
-' '
-18:04:33 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-18:17:29 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:218:12: error: 'tpcb' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-            ^~~~
-../src/main.c:218:12: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:218:18: error: 'string' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-                  ^~~~~~
-../src/main.c:128:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:259:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-make: *** [src/main.o] Error 1
-18:17:31 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:218:12: error: 'tpcb' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-            ^~~~
-../src/main.c:218:12: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:218:18: error: 'string' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-                  ^~~~~~
-../src/main.c:128:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:259:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-make: *** [src/main.o] Error 1
-18:25:58 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:222:12: error: 'tpcb' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-            ^~~~
-../src/main.c:222:12: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:222:18: error: 'string' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-                  ^~~~~~
-../src/main.c:132:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:263:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-make: *** [src/main.o] Error 1
-18:26:00 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:222:12: error: 'tpcb' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-            ^~~~
-../src/main.c:222:12: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:222:18: error: 'string' undeclared (first use in this function)
-  tcp_write(tpcb, string->payload, string->len, 1);
-                  ^~~~~~
-../src/main.c:132:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:263:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-make: *** [src/main.o] Error 1
-18:26:29 **** Auto Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:127:7: warning: unused variable 'data_arry' [-Wunused-variable]
-  char data_arry[MAX_FRAME_SIZE];
-       ^~~~~~~~~
-../src/main.c: In function 'DemoRun':
-../src/main.c:254:10: warning: unused variable 'num_bytes_string' [-Wunused-variable]
-    char *num_bytes_string;
-          ^~~~~~~~~~~~~~~~
-'Finished building: ../src/main.c'
-' '
-'Building target: Project.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Project.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Project.elf  |tee "Project.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 106760	   3840	2218272	2328872	 238928	Project.elf
-'Finished building: Project.elf.size'
-' '
-18:26:31 **** Incremental Build of configuration Debug for project Project ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-18:30:03 **** Auto Build of configuration Debug for project Project ****
+22:40:32 **** Auto Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/echo.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'start_UDP':
+../src/echo.c:76:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(1000);
+  ^~~~~~
+../src/echo.c:82:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+  sleep(5);
+  ^~~~~
 'Finished building: ../src/echo.c'
 ' '
 'Building target: Project.elf'
@@ -395,15 +1557,587 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Project.elf  |tee "Project.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 106760	   3840	2218272	2328872	 238928	Project.elf
+ 118224	   8040	2218272	2344536	 23c658	Project.elf
 'Finished building: Project.elf.size'
 ' '
-18:30:04 **** Incremental Build of configuration Debug for project Project ****
+22:41:28 **** Auto Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-make: Nothing to be done for `main-build'.
-18:30:07 **** Incremental Build of configuration Debug for project Project ****
+'Building file: ../src/echo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'start_UDP':
+../src/echo.c:75:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(1000);
+  ^~~~~~
+../src/echo.c:81:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+  sleep(5);
+  ^~~~~
+'Finished building: ../src/echo.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118224	   8040	2218272	2344536	 23c658	Project.elf
+'Finished building: Project.elf.size'
+' '
+22:42:50 **** Auto Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/functions_4261.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/functions_4261.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/functions_4261.d" -MT"src/functions_4261.o" -o "src/functions_4261.o" "../src/functions_4261.c"
+'Finished building: ../src/functions_4261.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118160	   8040	2218272	2344472	 23c618	Project.elf
+'Finished building: Project.elf.size'
+' '
+22:44:04 **** Auto Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/functions_4261.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/functions_4261.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/functions_4261.d" -MT"src/functions_4261.o" -o "src/functions_4261.o" "../src/functions_4261.c"
+'Finished building: ../src/functions_4261.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118160	   8040	2218272	2344472	 23c618	Project.elf
+'Finished building: Project.elf.size'
+' '
+22:45:56 **** Auto Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C: In function 'opensubkeyfile':
+../src/BLOWFISH.C:74:21: warning: implicit declaration of function 'open' [-Wimplicit-function-declaration]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                     ^~~~
+../src/BLOWFISH.C:74:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                   ^
+../src/main.c: In function 'main':
+../src/main.c:260:12: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  int_array = data_array;
+            ^
+../src/main.c:271:22: warning: passing argument 1 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:104:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:271:28: warning: passing argument 2 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:104:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:272:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:273:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:284:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:293:22: warning: passing argument 1 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:134:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:293:28: warning: passing argument 2 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:134:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:294:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:295:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:325:10: warning: the address of 'XBlowfish_encipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_encipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:329:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:330:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:341:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:356:10: warning: the address of 'XBlowfish_decipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_decipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:360:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:361:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:236:7: warning: unused variable 'temp_array' [-Wunused-variable]
+  int *temp_array;
+       ^~~~~~~~~~
+../src/main.c: In function 'DemoRun':
+../src/main.c:497:18: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+    if (num_bytes > MAX_FRAME_SIZE | num_bytes < 0) {
+                  ^
+../src/main.c:434:18: warning: variable 'place' set but not used [-Wunused-but-set-variable]
+   int num_bytes, place;
+                  ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118160	   8040	2218272	2344472	 23c618	Project.elf
+'Finished building: Project.elf.size'
+' '
+22:45:58 **** Auto Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C: In function 'opensubkeyfile':
+../src/BLOWFISH.C:73:21: warning: implicit declaration of function 'open' [-Wimplicit-function-declaration]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                     ^~~~
+../src/BLOWFISH.C:73:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                   ^
+../src/main.c: In function 'main':
+../src/main.c:260:12: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  int_array = data_array;
+            ^
+../src/main.c:271:22: warning: passing argument 1 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:103:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:271:28: warning: passing argument 2 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:103:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:272:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:273:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:284:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:293:22: warning: passing argument 1 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:133:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:293:28: warning: passing argument 2 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:133:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:294:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:295:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:325:10: warning: the address of 'XBlowfish_encipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_encipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:329:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:330:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:341:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:356:10: warning: the address of 'XBlowfish_decipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_decipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:360:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:361:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:236:7: warning: unused variable 'temp_array' [-Wunused-variable]
+  int *temp_array;
+       ^~~~~~~~~~
+../src/main.c: In function 'DemoRun':
+../src/main.c:497:18: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+    if (num_bytes > MAX_FRAME_SIZE | num_bytes < 0) {
+                  ^
+../src/main.c:434:18: warning: variable 'place' set but not used [-Wunused-but-set-variable]
+   int num_bytes, place;
+                  ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118160	   8040	2218272	2344472	 23c618	Project.elf
+'Finished building: Project.elf.size'
+' '
+22:53:14 **** Auto Build of configuration Debug for project Project ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Project_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C: In function 'opensubkeyfile':
+../src/BLOWFISH.C:73:21: warning: implicit declaration of function 'open' [-Wimplicit-function-declaration]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                     ^~~~
+../src/BLOWFISH.C:73:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    if((SubkeyFile = open(subkeyfilename,"rb")) == NULL) {
+                   ^
+../src/main.c: In function 'main':
+../src/main.c:260:12: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  int_array = data_array;
+            ^
+../src/main.c:271:22: warning: passing argument 1 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:103:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:271:28: warning: passing argument 2 of 'Blowfish_encipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_encipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:103:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_encipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:272:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:273:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:284:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:293:22: warning: passing argument 1 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                      ^~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:133:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:293:28: warning: passing argument 2 of 'Blowfish_decipher' from incompatible pointer type [-Wincompatible-pointer-types]
+    Blowfish_decipher(temp1,temp12);
+                            ^~~~~~
+In file included from ../src/main.c:28:0:
+../src/BLOWFISH.C:133:6: note: expected 'long unsigned int *' but argument is of type 'int *'
+ void Blowfish_decipher(unsigned long *xl, unsigned long *xr)
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:294:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp1);
+                              ^~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:295:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, temp12);
+                              ^~~~~~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int *'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:325:10: warning: the address of 'XBlowfish_encipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_encipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:329:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:330:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(encrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:341:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+   int_array = encrypted_message;
+             ^
+../src/main.c:356:10: warning: the address of 'XBlowfish_decipher_IsDone' will always evaluate as 'true' [-Waddress]
+    while(!XBlowfish_decipher_IsDone); //wait for encryption to complete
+          ^
+../src/main.c:360:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xl);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:361:30: warning: passing argument 2 of 'strcat' from incompatible pointer type [-Wincompatible-pointer-types]
+    strcat(decrypted_message, xr);
+                              ^~
+In file included from c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Project_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/PmodKYPD.h:30,
+                 from ../src/main.c:15:
+c:\xilinx2017.1\sdk\2017.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'u32 * {aka long unsigned int *}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:236:7: warning: unused variable 'temp_array' [-Wunused-variable]
+  int *temp_array;
+       ^~~~~~~~~~
+../src/main.c: In function 'DemoRun':
+../src/main.c:496:18: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+    if (num_bytes > MAX_FRAME_SIZE | num_bytes < 0) {
+                  ^
+../src/main.c:433:18: warning: variable 'place' set but not used [-Wunused-but-set-variable]
+   int num_bytes, place;
+                  ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: Project.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Project_bsp/ps7_cortexa9_0/lib -o "Project.elf"  ./src/PmodKYPD.o ./src/echo.o ./src/functions_4261.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Project.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Project.elf  |tee "Project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118160	   8040	2218272	2344472	 23c618	Project.elf
+'Finished building: Project.elf.size'
+' '
+23:13:51 **** Incremental Build of configuration Debug for project Project ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '

@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Nov 30 22:02:52 2018
+# Process ID: 13672
+# Current directory: C:/Users/kohara/Downloads/ECE4261_Project-UDP/ECE4261_Project-UDP/Project_V0.2.runs/design_1_c_counter_binary_0_0_synth_1
+# Command line: vivado.exe -log design_1_c_counter_binary_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_c_counter_binary_0_0.tcl
+# Log file: C:/Users/kohara/Downloads/ECE4261_Project-UDP/ECE4261_Project-UDP/Project_V0.2.runs/design_1_c_counter_binary_0_0_synth_1/design_1_c_counter_binary_0_0.vds
+# Journal file: C:/Users/kohara/Downloads/ECE4261_Project-UDP/ECE4261_Project-UDP/Project_V0.2.runs/design_1_c_counter_binary_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_c_counter_binary_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 394.531 ; gain = 83.371
+INFO: [Synth 8-638] synthesizing module 'design_1_c_counter_binary_0_0' [c:/Users/kohara/Downloads/ECE4261_Project-UDP/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/synth/design_1_c_counter_binary_0_0.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'design_1_c_counter_binary_0_0' (8#1) [c:/Users/kohara/Downloads/ECE4261_Project-UDP/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/synth/design_1_c_counter_binary_0_0.vhd:66]
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 440.621 ; gain = 129.461
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 440.621 ; gain = 129.461
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 713.871 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 713.871 ; gain = 402.711
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 713.871 ; gain = 402.711
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 713.871 ; gain = 402.711
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 713.871 ; gain = 402.711
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 713.871 ; gain = 402.711
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 713.871 ; gain = 402.711
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 713.871 ; gain = 402.711
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 718.031 ; gain = 406.871
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 718.031 ; gain = 406.871
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 718.031 ; gain = 406.871
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 718.031 ; gain = 406.871
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 718.031 ; gain = 406.871
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 718.031 ; gain = 406.871
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 718.031 ; gain = 406.871
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |MUXCY |    31|
+|3     |XORCY |    32|
+|4     |FDRE  |    32|
++------+------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 718.031 ; gain = 406.871
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 722.414 ; gain = 411.254

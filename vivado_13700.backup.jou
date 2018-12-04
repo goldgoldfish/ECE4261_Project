@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Nov 30 23:28:17 2018
+# Process ID: 13700
+# Current directory: C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17604 C:\Users\bwedemir\Desktop\ECE4261Project\ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.xpr
+# Log file: C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/vivado.log
+# Journal file: C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.xpr
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/design_1.bd] -top
+file copy -force C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.runs/impl_1/design_1_wrapper.sysdef C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk -hwspec C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf
+make_wrapper -files [get_files C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/design_1.bd] -top
+file copy -force C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.runs/impl_1/design_1_wrapper.sysdef C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk -hwspec C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M03_AXI] [get_bd_nets c_counter_binary_0_Q] [get_bd_cells axi_gpio_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/ps7_0_axi_periph" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins axi_gpio_0/S_AXI]
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_i] [get_bd_pins c_counter_binary_0/Q]
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.runs/impl_1/design_1_wrapper.sysdef C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk -hwspec C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk -hwspec C:/Users/bwedemir/Desktop/ECE4261Project/ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf

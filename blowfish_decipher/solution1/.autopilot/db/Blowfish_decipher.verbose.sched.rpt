@@ -1,0 +1,331 @@
+
+
+================================================================
+== Vivado HLS Report for 'Blowfish_decipher'
+================================================================
+* Date:           Fri Nov 30 18:22:54 2018
+
+* Version:        2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)
+* Project:        blowfish_decipher
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.58|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   65|   65|   66|   66|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |   64|   64|         4|          -|          -|    16|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 5
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!icmp)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	2  / true
+* FSM state operations: 
+
+ <State 1>: 2.77ns
+ST_1: StgValue_6 (8)  [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %xl) nounwind, !map !13
+
+ST_1: StgValue_7 (9)  [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i32* %xr) nounwind, !map !19
+
+ST_1: StgValue_8 (10)  [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecTopModule([18 x i8]* @Blowfish_decipher_st) nounwind
+
+ST_1: StgValue_9 (11)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:41
+:3  call void (...)* @_ssdm_op_SpecInterface(i32* %xr, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: StgValue_10 (12)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:41
+:4  call void (...)* @_ssdm_op_SpecInterface(i32* %xl, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: StgValue_11 (13)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:41
+:5  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: Xl (14)  [1/1] 1.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:47
+:6  %Xl = call i32 @_ssdm_op_Read.s_axilite.i32P(i32* %xl) nounwind
+
+ST_1: Xr (15)  [1/1] 1.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:48
+:7  %Xr = call i32 @_ssdm_op_Read.s_axilite.i32P(i32* %xr) nounwind
+
+ST_1: StgValue_14 (16)  [1/1] 1.77ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:50
+:8  br label %1
+
+
+ <State 2>: 3.25ns
+ST_2: Xl_1 (18)  [1/1] 0.00ns
+:0  %Xl_1 = phi i32 [ %Xr, %0 ], [ %Xl_5, %2 ]
+
+ST_2: temp (19)  [1/1] 0.00ns
+:1  %temp = phi i32 [ %Xl, %0 ], [ %Xr_5, %2 ]
+
+ST_2: i (20)  [1/1] 0.00ns
+:2  %i = phi i5 [ -15, %0 ], [ %i_1, %2 ]
+
+ST_2: tmp (21)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:50
+:3  %tmp = call i4 @_ssdm_op_PartSelect.i4.i5.i32.i32(i5 %i, i32 1, i32 4)
+
+ST_2: icmp (22)  [1/1] 3.10ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:50
+:4  %icmp = icmp eq i4 %tmp, 0
+
+ST_2: empty (23)  [1/1] 0.00ns
+:5  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 16, i64 16, i64 16) nounwind
+
+ST_2: StgValue_21 (24)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:50
+:6  br i1 %icmp, label %3, label %2
+
+ST_2: tmp_7 (26)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:51
+:0  %tmp_7 = zext i5 %i to i32
+
+ST_2: P_addr (27)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:51
+:1  %P_addr = getelementptr [18 x i31]* @P, i32 0, i32 %tmp_7
+
+ST_2: P_load (28)  [2/2] 3.25ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:51
+:2  %P_load = load i31* %P_addr, align 4
+
+ST_2: i_1 (57)  [1/1] 2.66ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:50
+:31  %i_1 = add i5 -1, %i
+
+ST_2: Xr_2 (60)  [1/1] 2.07ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:65
+:0  %Xr_2 = xor i32 %temp, 827400743
+
+ST_2: Xl_2 (61)  [1/1] 2.07ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:66
+:1  %Xl_2 = xor i32 %Xl_1, 891628582
+
+ST_2: StgValue_28 (62)  [1/1] 1.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:68
+:2  call void @_ssdm_op_Write.s_axilite.i32P(i32* %xl, i32 %Xl_2) nounwind
+
+ST_2: StgValue_29 (63)  [1/1] 1.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:69
+:3  call void @_ssdm_op_Write.s_axilite.i32P(i32* %xr, i32 %Xr_2) nounwind
+
+ST_2: StgValue_30 (64)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:70
+:4  ret void
+
+
+ <State 3>: 8.58ns
+ST_3: P_load (28)  [1/2] 3.25ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:51
+:2  %P_load = load i31* %P_addr, align 4
+
+ST_3: P_load_cast (29)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:51
+:3  %P_load_cast = zext i31 %P_load to i32
+
+ST_3: tmp_1 (30)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:24->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:4  %tmp_1 = trunc i31 %P_load to i8
+
+ST_3: tmp_2 (31)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:24->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:5  %tmp_2 = trunc i32 %temp to i8
+
+ST_3: tmp_3 (32)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:51
+:6  %tmp_3 = trunc i31 %P_load to i24
+
+ST_3: tmp_4 (33)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:47
+:7  %tmp_4 = trunc i32 %temp to i24
+
+ST_3: Xl_5 (34)  [1/1] 2.07ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:51
+:8  %Xl_5 = xor i32 %P_load_cast, %temp
+
+ST_3: Xl_5_cast (35)  [1/1] 2.07ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:51
+:9  %Xl_5_cast = xor i24 %tmp_3, %tmp_4
+
+ST_3: d (36)  [1/1] 2.07ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:24->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:10  %d = xor i8 %tmp_1, %tmp_2
+
+ST_3: c (37)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:26->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:11  %c = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %Xl_5_cast, i32 8, i32 15)
+
+ST_3: b (38)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:28->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:12  %b = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %Xl_5, i32 16, i32 23)
+
+ST_3: tmp_5 (39)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:30->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:13  %tmp_5 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %Xl_5, i32 24, i32 31)
+
+ST_3: tmp_3_i (40)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:32->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:14  %tmp_3_i = zext i8 %tmp_5 to i32
+
+ST_3: S_0_addr (41)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:32->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:15  %S_0_addr = getelementptr [256 x i31]* @S_0, i32 0, i32 %tmp_3_i
+
+ST_3: S_0_load (42)  [2/2] 3.25ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:32->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:16  %S_0_load = load i31* %S_0_addr, align 4
+
+ST_3: tmp_4_i (44)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:32->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:18  %tmp_4_i = zext i8 %b to i32
+
+ST_3: S_1_addr (45)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:32->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:19  %S_1_addr = getelementptr [256 x i32]* @S_1, i32 0, i32 %tmp_4_i
+
+ST_3: S_1_load (46)  [2/2] 3.25ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:32->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:20  %S_1_load = load i32* %S_1_addr, align 4
+
+ST_3: tmp_5_i (48)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:33->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:22  %tmp_5_i = zext i8 %c to i32
+
+ST_3: S_2_addr (49)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:33->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:23  %S_2_addr = getelementptr [256 x i32]* @S_2, i32 0, i32 %tmp_5_i
+
+ST_3: S_2_load (50)  [2/2] 3.25ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:33->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:24  %S_2_load = load i32* %S_2_addr, align 4
+
+ST_3: tmp_6_i (52)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:34->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:26  %tmp_6_i = zext i8 %d to i32
+
+ST_3: S_3_addr (53)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:34->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:27  %S_3_addr = getelementptr [256 x i32]* @S_3, i32 0, i32 %tmp_6_i
+
+ST_3: S_3_load (54)  [2/2] 3.25ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:34->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:28  %S_3_load = load i32* %S_3_addr, align 4
+
+
+ <State 4>: 6.69ns
+ST_4: S_0_load (42)  [1/2] 3.25ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:32->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:16  %S_0_load = load i31* %S_0_addr, align 4
+
+ST_4: S_0_load_cast (43)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:32->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:17  %S_0_load_cast = zext i31 %S_0_load to i32
+
+ST_4: S_1_load (46)  [1/2] 3.25ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:32->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:20  %S_1_load = load i32* %S_1_addr, align 4
+
+ST_4: y (47)  [1/1] 3.44ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:32->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:21  %y = add i32 %S_0_load_cast, %S_1_load
+
+ST_4: S_2_load (50)  [1/2] 3.25ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:33->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:24  %S_2_load = load i32* %S_2_addr, align 4
+
+ST_4: S_3_load (54)  [1/2] 3.25ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:34->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:28  %S_3_load = load i32* %S_3_addr, align 4
+
+
+ <State 5>: 5.51ns
+ST_5: y_1 (51)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:33->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52 (grouped into LUT with out node y_2)
+:25  %y_1 = xor i32 %S_2_load, %y
+
+ST_5: y_2 (55)  [1/1] 3.44ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:34->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52 (out node of the LUT)
+:29  %y_2 = add i32 %S_3_load, %y_1
+
+ST_5: Xr_5 (56)  [1/1] 2.07ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52
+:30  %Xr_5 = xor i32 %y_2, %Xl_1
+
+ST_5: StgValue_64 (58)  [1/1] 0.00ns  loc: blowfish_decipher/blowfish_decrypt_ap_cntrl.c:50
+:32  br label %1
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 2.77ns
+The critical path consists of the following:
+	s_axi read on port 'xl' (blowfish_decipher/blowfish_decrypt_ap_cntrl.c:47) [14]  (1 ns)
+	multiplexor before 'phi' operation ('Xl') with incoming values : ('Xr', blowfish_decipher/blowfish_decrypt_ap_cntrl.c:48) ('Xl', blowfish_decipher/blowfish_decrypt_ap_cntrl.c:51) [18]  (1.77 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', blowfish_decipher/blowfish_decrypt_ap_cntrl.c:50) [20]  (0 ns)
+	'getelementptr' operation ('P_addr', blowfish_decipher/blowfish_decrypt_ap_cntrl.c:51) [27]  (0 ns)
+	'load' operation ('P_load', blowfish_decipher/blowfish_decrypt_ap_cntrl.c:51) on array 'P' [28]  (3.25 ns)
+
+ <State 3>: 8.58ns
+The critical path consists of the following:
+	'load' operation ('P_load', blowfish_decipher/blowfish_decrypt_ap_cntrl.c:51) on array 'P' [28]  (3.25 ns)
+	'xor' operation ('Xl_5_cast', blowfish_decipher/blowfish_decrypt_ap_cntrl.c:51) [35]  (2.07 ns)
+	'getelementptr' operation ('S_2_addr', blowfish_decipher/blowfish_decrypt_ap_cntrl.c:33->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52) [49]  (0 ns)
+	'load' operation ('S_2_load', blowfish_decipher/blowfish_decrypt_ap_cntrl.c:33->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52) on array 'S_2' [50]  (3.25 ns)
+
+ <State 4>: 6.69ns
+The critical path consists of the following:
+	'load' operation ('S_0_load', blowfish_decipher/blowfish_decrypt_ap_cntrl.c:32->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52) on array 'S_0' [42]  (3.25 ns)
+	'add' operation ('y', blowfish_decipher/blowfish_decrypt_ap_cntrl.c:32->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52) [47]  (3.44 ns)
+
+ <State 5>: 5.51ns
+The critical path consists of the following:
+	'xor' operation ('y', blowfish_decipher/blowfish_decrypt_ap_cntrl.c:33->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52) [51]  (0 ns)
+	'add' operation ('y', blowfish_decipher/blowfish_decrypt_ap_cntrl.c:34->blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52) [55]  (3.44 ns)
+	'xor' operation ('Xr', blowfish_decipher/blowfish_decrypt_ap_cntrl.c:52) [56]  (2.07 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

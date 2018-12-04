@@ -23,13 +23,51 @@
 
 /******************************************************************/
 
+/* Definitions for driver BLOWFISH_DECIPHER */
+#define XPAR_XBLOWFISH_DECIPHER_NUM_INSTANCES 1
+
+/* Definitions for peripheral BLOWFISH_DECIPHER_0 */
+#define XPAR_BLOWFISH_DECIPHER_0_DEVICE_ID 0
+#define XPAR_BLOWFISH_DECIPHER_0_S_AXI_AXILITES_BASEADDR 0x43C10000
+#define XPAR_BLOWFISH_DECIPHER_0_S_AXI_AXILITES_HIGHADDR 0x43C1FFFF
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral BLOWFISH_DECIPHER_0 */
+#define XPAR_XBLOWFISH_DECIPHER_0_DEVICE_ID XPAR_BLOWFISH_DECIPHER_0_DEVICE_ID
+#define XPAR_XBLOWFISH_DECIPHER_0_S_AXI_AXILITES_BASEADDR 0x43C10000
+#define XPAR_XBLOWFISH_DECIPHER_0_S_AXI_AXILITES_HIGHADDR 0x43C1FFFF
+
+
+/******************************************************************/
+
+/* Definitions for driver BLOWFISH_ENCIPHER */
+#define XPAR_XBLOWFISH_ENCIPHER_NUM_INSTANCES 1
+
+/* Definitions for peripheral BLOWFISH_ENCIPHER_0 */
+#define XPAR_BLOWFISH_ENCIPHER_0_DEVICE_ID 0
+#define XPAR_BLOWFISH_ENCIPHER_0_S_AXI_AXILITES_BASEADDR 0x43C00000
+#define XPAR_BLOWFISH_ENCIPHER_0_S_AXI_AXILITES_HIGHADDR 0x43C0FFFF
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral BLOWFISH_ENCIPHER_0 */
+#define XPAR_XBLOWFISH_ENCIPHER_0_DEVICE_ID XPAR_BLOWFISH_ENCIPHER_0_DEVICE_ID
+#define XPAR_XBLOWFISH_ENCIPHER_0_S_AXI_AXILITES_BASEADDR 0x43C00000
+#define XPAR_XBLOWFISH_ENCIPHER_0_S_AXI_AXILITES_HIGHADDR 0x43C0FFFF
+
+
+/******************************************************************/
+
 /* Definitions for driver PMODKYPD */
 #define XPAR_PMODKYPD_NUM_INSTANCES 1
 
-/* Definitions for peripheral PMODKYPD_1 */
-#define XPAR_PMODKYPD_1_DEVICE_ID 0
-#define XPAR_PMODKYPD_1_AXI_LITE_GPIO_BASEADDR 0x40000000
-#define XPAR_PMODKYPD_1_AXI_LITE_GPIO_HIGHADDR 0x40000FFF
+/* Definitions for peripheral PMODKYPD_0 */
+#define XPAR_PMODKYPD_0_DEVICE_ID 0
+#define XPAR_PMODKYPD_0_AXI_LITE_GPIO_BASEADDR 0x40000000
+#define XPAR_PMODKYPD_0_AXI_LITE_GPIO_HIGHADDR 0x40000FFF
 
 
 /******************************************************************/
@@ -215,6 +253,29 @@
 /* Definitions for peripheral PS7_SLCR_0 */
 #define XPAR_PS7_SLCR_0_S_AXI_BASEADDR 0xF8000000
 #define XPAR_PS7_SLCR_0_S_AXI_HIGHADDR 0xF8000FFF
+
+
+/******************************************************************/
+
+/* Definitions for driver GPIO */
+#define XPAR_XGPIO_NUM_INSTANCES 1
+
+/* Definitions for peripheral AXI_GPIO_0 */
+#define XPAR_AXI_GPIO_0_BASEADDR 0x41200000
+#define XPAR_AXI_GPIO_0_HIGHADDR 0x4120FFFF
+#define XPAR_AXI_GPIO_0_DEVICE_ID 0
+#define XPAR_AXI_GPIO_0_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_0_IS_DUAL 0
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral AXI_GPIO_0 */
+#define XPAR_GPIO_0_BASEADDR 0x41200000
+#define XPAR_GPIO_0_HIGHADDR 0x4120FFFF
+#define XPAR_GPIO_0_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
+#define XPAR_GPIO_0_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_0_IS_DUAL 0
 
 
 /******************************************************************/

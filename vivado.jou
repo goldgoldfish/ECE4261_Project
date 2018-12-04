@@ -2,14 +2,15 @@
 # Vivado v2017.1 (64-bit)
 # SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
 # IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Sat Nov  3 16:27:11 2018
-# Process ID: 4812
-# Current directory: C:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2908 C:\Users\bwedemir\Downloads\ECE4261_Project-Keypad\ECE4261_Project-Keypad\Project_V0.2.xpr
-# Log file: C:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad/vivado.log
-# Journal file: C:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad\vivado.jou
+# Start of session at: Mon Dec  3 22:09:55 2018
+# Process ID: 12964
+# Current directory: C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11228 C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.xpr
+# Log file: C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/vivado.log
+# Journal file: C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad/Project_V0.2.xpr
+open_project C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.xpr
 update_compile_order -fileset sources_1
-launch_sdk -workspace C:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad/Project_V0.2.sdk -hwspec C:/Users/bwedemir/Downloads/ECE4261_Project-Keypad/ECE4261_Project-Keypad/Project_V0.2.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk -hwspec C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk -hwspec C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf

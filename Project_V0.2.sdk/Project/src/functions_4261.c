@@ -1,9 +1,14 @@
-/*
- * functions_4261.c
+/*===========================================================================================
+ * Filename: functions_4261.c
  *
- *  Created on: Nov 3, 2018
- *      Author: bwedemir
- */
+ * Authors: Kyle O'Hara & Ben Wedemire
+ * Student IDs: 3532550 & 3515624
+ * Date: 2018/12/3
+ *
+ * Description: functions_4261.c contains the function used to create a string of the number
+ * 				inputed into the keypad.
+ *
+ ==========================================================================================*/
 
 /****************************** Include Files ***************************/
 
@@ -33,8 +38,9 @@ char *make_transmit_string(int num_bytes, int max_length) {
 	int n = 0;
 	int mod = 0;
 	int s = sizeof(temp_string) - 1;
+	//num_bytes = 1456;
 
-	return_string = calloc(num_bytes - 1,sizeof(char));
+	return_string = calloc(num_bytes + 7,sizeof(char));
 
 	if(num_bytes > max_length) {
 		xil_printf("Number of bytes entered exceeds max length allowed");
@@ -46,35 +52,6 @@ char *make_transmit_string(int num_bytes, int max_length) {
 		return_string[n] = temp_string[mod];
 		n++;
 	} //end while
-	return(return_string);
+	return_string[n] = '\0';
+	return return_string;
 } //end make_transmit_sting
-
-/*** void KYPD_begin(PmodKYPD *InstancePtr, u32 GPIO_Address)
-**
-**   Parameters:
-**      InstancePtr: A PmodKYPD device to start
-**      GPIO_Address: The Base address of the PmodKYPD GPIO
-**
-**   Return Value:
-**      none
-**
-**   Description:
-**      Initialize the PmodKYPD driver device
-*/
-
-//software_encrypt(num_bytes, make_transmit_string());
-
-/*** void KYPD_begin(PmodKYPD *InstancePtr, u32 GPIO_Address)
-**
-**   Parameters:
-**      InstancePtr: A PmodKYPD device to start
-**      GPIO_Address: The Base address of the PmodKYPD GPIO
-**
-**   Return Value:
-**      none
-**
-**   Description:
-**      Initialize the PmodKYPD driver device
-*/
-
-//hardware_encrypt(num_bytes, make_transmit_string());

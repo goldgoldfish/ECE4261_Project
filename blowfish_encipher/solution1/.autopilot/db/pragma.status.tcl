@@ -1,0 +1,2 @@
+lappend pragmaStatus0 {pragma "INTERFACE" source "C:/Users/kohara/Downloads/ECE4261_Project-UDP/ECE4261_Project-UDP/blowfish_encipher_ap_cntrl.c" location "Blowfish_encipher" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus1 {pragma "INTERFACE" source "C:/Users/kohara/Downloads/ECE4261_Project-UDP/ECE4261_Project-UDP/blowfish_encipher_ap_cntrl.c" location "Blowfish_encipher" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}

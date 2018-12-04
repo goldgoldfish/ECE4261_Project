@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# 
+# Start of session at: Fri Nov 30 22:14:44 2018
+# Process ID: 9112
+# Current directory: C:/Users/kohara/Downloads/ECE4261_Project-UDP/ECE4261_Project-UDP/Project_V0.2.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/kohara/Downloads/ECE4261_Project-UDP/ECE4261_Project-UDP/Project_V0.2.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/kohara/Downloads/ECE4261_Project-UDP/ECE4261_Project-UDP/Project_V0.2.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
