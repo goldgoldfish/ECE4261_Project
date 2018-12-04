@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Dec  2 22:11:37 2018
+# Process ID: 10404
+# Current directory: C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5236 C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.xpr
+# Log file: C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/vivado.log
+# Journal file: C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.runs/impl_1/design_1_wrapper.sysdef C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk -hwspec C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf

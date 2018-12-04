@@ -1,3 +1,21 @@
+/*===========================================================================================
+ * Filename: BLOWFISH.c
+ *
+ * Author: Bruce Schneier
+ * Taken from: https://www.schneier.com/academic/blowfish/
+ * No license required
+ *
+ * Modified by: Kyle O'Hara & Ben Wedemire
+ * Student IDs: 3532550 & 3515624
+ * Date: 2018/12/3
+ *
+ * Description: BLOWFISH.c contains the function used to create a string of the number
+ * 				inputed into the keypad.
+ *
+ ==========================================================================================*/
+
+
+
 #ifdef little_endian   /* Eg: Intel */
    #include <dos.h>
    #include <graphics.h>

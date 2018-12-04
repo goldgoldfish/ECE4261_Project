@@ -18891,3 +18891,1097 @@ con
 
 00:34:20 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
 00:41:36 INFO  : Disconnected from the channel tcfchan#1.
+22:23:25 INFO  : Registering command handlers for SDK TCF services
+22:23:26 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\temp_xsdb_launch_script.tcl
+22:23:35 INFO  : XSCT server has started successfully.
+22:23:35 INFO  : Successfully done setting XSCT server connection channel  
+22:23:37 INFO  : Successfully done setting SDK workspace  
+22:23:37 INFO  : Processing command line option -hwspec C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf.
+22:26:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:26:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+22:26:43 INFO  : FPGA configured successfully with bitstream "C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:27:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+22:27:48 INFO  : 'fpga -state' command is executed.
+22:27:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:27:48 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+22:27:48 INFO  : 'jtag frequency' command is executed.
+22:27:48 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:27:48 INFO  : Context for 'APU' is selected.
+22:27:48 INFO  : 'stop' command is executed.
+22:27:49 INFO  : 'ps7_init' command is executed.
+22:27:49 INFO  : 'ps7_post_config' command is executed.
+22:27:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:27:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:27:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:27:49 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:27:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+22:27:49 INFO  : Memory regions updated for context APU
+22:27:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:27:49 INFO  : 'con' command is executed.
+22:27:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+22:27:49 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+22:29:52 INFO  : Disconnected from the channel tcfchan#1.
+22:29:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+22:29:53 INFO  : 'fpga -state' command is executed.
+22:29:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:29:54 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+22:29:54 INFO  : 'jtag frequency' command is executed.
+22:29:54 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:29:54 INFO  : Context for 'APU' is selected.
+22:29:54 INFO  : 'stop' command is executed.
+22:29:54 INFO  : 'ps7_init' command is executed.
+22:29:54 INFO  : 'ps7_post_config' command is executed.
+22:29:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:29:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:29:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:29:54 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:29:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+22:29:54 INFO  : Memory regions updated for context APU
+22:29:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:29:55 INFO  : 'con' command is executed.
+22:29:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+22:29:55 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+22:31:27 INFO  : Disconnected from the channel tcfchan#2.
+22:31:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+22:31:28 INFO  : 'fpga -state' command is executed.
+22:31:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:31:29 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+22:31:29 INFO  : 'jtag frequency' command is executed.
+22:31:29 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:31:29 INFO  : Context for 'APU' is selected.
+22:31:29 INFO  : 'stop' command is executed.
+22:31:29 INFO  : 'ps7_init' command is executed.
+22:31:29 INFO  : 'ps7_post_config' command is executed.
+22:31:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:31:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:31:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:31:30 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:31:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+22:31:30 INFO  : Memory regions updated for context APU
+22:31:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:31:30 INFO  : 'con' command is executed.
+22:31:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+22:31:30 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+23:29:03 INFO  : Disconnected from the channel tcfchan#3.
+23:29:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+23:29:04 INFO  : 'fpga -state' command is executed.
+23:29:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:29:04 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+23:29:04 INFO  : 'jtag frequency' command is executed.
+23:29:04 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:29:04 INFO  : Context for 'APU' is selected.
+23:29:04 INFO  : 'stop' command is executed.
+23:29:05 INFO  : 'ps7_init' command is executed.
+23:29:05 INFO  : 'ps7_post_config' command is executed.
+23:29:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:29:05 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:29:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:29:05 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:29:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+23:29:05 INFO  : Memory regions updated for context APU
+23:29:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:29:05 INFO  : 'con' command is executed.
+23:29:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+23:29:05 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+23:30:15 INFO  : Disconnected from the channel tcfchan#4.
+23:30:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+23:30:16 INFO  : 'fpga -state' command is executed.
+23:30:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:30:16 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+23:30:16 INFO  : 'jtag frequency' command is executed.
+23:30:16 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:30:16 INFO  : Context for 'APU' is selected.
+23:30:16 INFO  : 'stop' command is executed.
+23:30:17 INFO  : 'ps7_init' command is executed.
+23:30:17 INFO  : 'ps7_post_config' command is executed.
+23:30:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:30:17 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:30:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:30:17 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:30:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+23:30:17 INFO  : Memory regions updated for context APU
+23:30:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:30:17 INFO  : 'con' command is executed.
+23:30:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+23:30:17 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+23:31:50 INFO  : Disconnected from the channel tcfchan#5.
+23:31:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+23:31:51 INFO  : 'fpga -state' command is executed.
+23:31:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:31:51 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+23:31:51 INFO  : 'jtag frequency' command is executed.
+23:31:51 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:31:51 INFO  : Context for 'APU' is selected.
+23:31:51 INFO  : 'stop' command is executed.
+23:31:52 INFO  : 'ps7_init' command is executed.
+23:31:52 INFO  : 'ps7_post_config' command is executed.
+23:31:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:31:52 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:31:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:31:52 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:31:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+23:31:52 INFO  : Memory regions updated for context APU
+23:31:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:31:52 INFO  : 'con' command is executed.
+23:31:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+23:31:52 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+23:32:30 INFO  : Disconnected from the channel tcfchan#6.
+23:32:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+23:32:31 INFO  : 'fpga -state' command is executed.
+23:32:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:32:31 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+23:32:31 INFO  : 'jtag frequency' command is executed.
+23:32:31 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:32:31 INFO  : Context for 'APU' is selected.
+23:32:32 INFO  : 'stop' command is executed.
+23:32:32 INFO  : 'ps7_init' command is executed.
+23:32:32 INFO  : 'ps7_post_config' command is executed.
+23:32:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:32:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:32:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:32:32 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:32:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+23:32:32 INFO  : Memory regions updated for context APU
+23:32:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:32:32 INFO  : 'con' command is executed.
+23:32:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+23:32:32 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+23:36:18 INFO  : Disconnected from the channel tcfchan#7.
+23:36:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+23:36:19 INFO  : 'fpga -state' command is executed.
+23:36:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:36:19 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+23:36:19 INFO  : 'jtag frequency' command is executed.
+23:36:19 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:36:19 INFO  : Context for 'APU' is selected.
+23:36:19 INFO  : 'stop' command is executed.
+23:36:19 INFO  : 'ps7_init' command is executed.
+23:36:19 INFO  : 'ps7_post_config' command is executed.
+23:36:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:36:19 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:36:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:36:20 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:36:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+23:36:20 INFO  : Memory regions updated for context APU
+23:36:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:36:20 INFO  : 'con' command is executed.
+23:36:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+23:36:20 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+23:37:21 INFO  : Disconnected from the channel tcfchan#8.
+23:37:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+23:37:22 INFO  : 'fpga -state' command is executed.
+23:37:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:37:22 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+23:37:22 INFO  : 'jtag frequency' command is executed.
+23:37:22 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:37:22 INFO  : Context for 'APU' is selected.
+23:37:22 INFO  : 'stop' command is executed.
+23:37:23 INFO  : 'ps7_init' command is executed.
+23:37:23 INFO  : 'ps7_post_config' command is executed.
+23:37:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:37:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:37:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:37:23 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:37:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+23:37:23 INFO  : Memory regions updated for context APU
+23:37:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:37:23 INFO  : 'con' command is executed.
+23:37:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+23:37:23 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+23:39:12 INFO  : Disconnected from the channel tcfchan#9.
+23:39:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+23:39:13 INFO  : 'fpga -state' command is executed.
+23:39:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:39:13 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+23:39:13 INFO  : 'jtag frequency' command is executed.
+23:39:13 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:39:13 INFO  : Context for 'APU' is selected.
+23:39:13 INFO  : 'stop' command is executed.
+23:39:14 INFO  : 'ps7_init' command is executed.
+23:39:14 INFO  : 'ps7_post_config' command is executed.
+23:39:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:39:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:39:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:39:14 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:39:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+23:39:14 INFO  : Memory regions updated for context APU
+23:39:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:39:14 INFO  : 'con' command is executed.
+23:39:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+23:39:14 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+23:42:29 INFO  : Disconnected from the channel tcfchan#10.
+23:42:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+23:42:30 INFO  : 'fpga -state' command is executed.
+23:42:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:42:30 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+23:42:30 INFO  : 'jtag frequency' command is executed.
+23:42:30 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:42:30 INFO  : Context for 'APU' is selected.
+23:42:30 INFO  : 'stop' command is executed.
+23:42:31 INFO  : 'ps7_init' command is executed.
+23:42:31 INFO  : 'ps7_post_config' command is executed.
+23:42:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:42:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:42:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:42:31 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:42:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+23:42:31 INFO  : Memory regions updated for context APU
+23:42:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:42:31 INFO  : 'con' command is executed.
+23:42:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+23:42:31 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+23:55:13 INFO  : Disconnected from the channel tcfchan#11.
+23:55:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+23:55:14 INFO  : 'fpga -state' command is executed.
+23:55:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:55:14 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+23:55:14 INFO  : 'jtag frequency' command is executed.
+23:55:14 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:55:14 INFO  : Context for 'APU' is selected.
+23:55:14 INFO  : 'stop' command is executed.
+23:55:14 INFO  : 'ps7_init' command is executed.
+23:55:14 INFO  : 'ps7_post_config' command is executed.
+23:55:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:55:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:55:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:55:15 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:55:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+23:55:15 INFO  : Memory regions updated for context APU
+23:55:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:55:15 INFO  : 'con' command is executed.
+23:55:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+23:55:15 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+23:56:30 INFO  : Disconnected from the channel tcfchan#12.
+23:56:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+23:56:31 INFO  : 'fpga -state' command is executed.
+23:56:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:56:31 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+23:56:31 INFO  : 'jtag frequency' command is executed.
+23:56:31 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:56:31 INFO  : Context for 'APU' is selected.
+23:56:31 INFO  : 'stop' command is executed.
+23:56:32 INFO  : 'ps7_init' command is executed.
+23:56:32 INFO  : 'ps7_post_config' command is executed.
+23:56:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:56:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:56:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:56:32 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:56:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+23:56:32 INFO  : Memory regions updated for context APU
+23:56:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:56:32 INFO  : 'con' command is executed.
+23:56:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+23:56:32 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+23:57:39 INFO  : Disconnected from the channel tcfchan#13.
+12:49:10 INFO  : Registering command handlers for SDK TCF services
+12:49:11 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\temp_xsdb_launch_script.tcl
+12:49:15 INFO  : XSCT server has started successfully.
+12:49:15 INFO  : Successfully done setting XSCT server connection channel  
+12:49:16 INFO  : Successfully done setting SDK workspace  
+12:49:16 INFO  : Processing command line option -hwspec C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf.
+12:49:16 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+12:49:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:49:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:50:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:50:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:50:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:51:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:51:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:51:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:51:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+12:51:18 INFO  : FPGA configured successfully with bitstream "C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:51:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+12:51:43 INFO  : 'fpga -state' command is executed.
+12:51:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:51:43 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+12:51:43 INFO  : 'jtag frequency' command is executed.
+12:51:43 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:51:43 INFO  : Context for 'APU' is selected.
+12:51:43 INFO  : 'stop' command is executed.
+12:51:44 INFO  : 'ps7_init' command is executed.
+12:51:44 INFO  : 'ps7_post_config' command is executed.
+12:51:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:51:44 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:51:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:51:44 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:51:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+12:51:44 INFO  : Memory regions updated for context APU
+12:51:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:51:45 INFO  : 'con' command is executed.
+12:51:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+12:51:45 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+12:52:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:52:55 INFO  : Disconnected from the channel tcfchan#1.
+12:52:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+12:52:56 INFO  : 'fpga -state' command is executed.
+12:52:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:52:56 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+12:52:56 INFO  : 'jtag frequency' command is executed.
+12:52:56 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:52:56 INFO  : Context for 'APU' is selected.
+12:52:56 INFO  : 'stop' command is executed.
+12:52:56 INFO  : 'ps7_init' command is executed.
+12:52:57 INFO  : 'ps7_post_config' command is executed.
+12:52:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:52:57 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:52:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:52:57 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:52:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+12:52:57 INFO  : Memory regions updated for context APU
+12:52:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:52:57 INFO  : 'con' command is executed.
+12:52:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+12:52:57 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+12:54:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:54:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+12:54:28 INFO  : FPGA configured successfully with bitstream "C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:56:08 INFO  : Disconnected from the channel tcfchan#2.
+12:56:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+12:56:09 INFO  : 'fpga -state' command is executed.
+12:56:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:56:09 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+12:56:09 INFO  : 'jtag frequency' command is executed.
+12:56:09 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:56:09 INFO  : Context for 'APU' is selected.
+12:56:10 INFO  : 'stop' command is executed.
+12:56:11 INFO  : 'ps7_init' command is executed.
+12:56:12 INFO  : 'ps7_post_config' command is executed.
+12:56:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:56:12 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:56:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:56:14 ERROR : Memory write error at 0x100000. APB AP transaction error, DAP status f0000021
+12:56:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+12:56:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:56:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+12:56:27 INFO  : FPGA configured successfully with bitstream "C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:56:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+12:56:31 INFO  : 'fpga -state' command is executed.
+12:56:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:56:31 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+12:56:31 INFO  : 'jtag frequency' command is executed.
+12:56:31 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:56:31 INFO  : Context for 'APU' is selected.
+12:56:31 INFO  : 'stop' command is executed.
+12:56:31 ERROR : AP transaction error, DAP status f0000021
+12:56:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+12:56:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:56:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+12:56:46 INFO  : FPGA configured successfully with bitstream "C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:56:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+12:56:52 INFO  : 'fpga -state' command is executed.
+12:56:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:56:52 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+12:56:52 INFO  : 'jtag frequency' command is executed.
+12:56:52 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:56:52 INFO  : Context for 'APU' is selected.
+12:56:52 INFO  : 'stop' command is executed.
+12:56:52 ERROR : AP transaction error, DAP status f0000021
+12:56:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+12:57:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+12:57:18 INFO  : 'fpga -state' command is executed.
+12:57:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:57:18 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+12:57:18 INFO  : 'jtag frequency' command is executed.
+12:57:18 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:57:18 INFO  : Context for 'APU' is selected.
+12:57:18 INFO  : 'stop' command is executed.
+12:57:18 ERROR : AP transaction error, DAP status f0000021
+12:57:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+12:57:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:57:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+12:57:37 INFO  : FPGA configured successfully with bitstream "C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:57:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+12:57:44 INFO  : 'fpga -state' command is executed.
+12:57:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:57:44 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+12:57:44 INFO  : 'jtag frequency' command is executed.
+12:57:44 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:57:44 INFO  : Context for 'APU' is selected.
+12:57:44 INFO  : 'stop' command is executed.
+12:57:44 ERROR : AP transaction error, DAP status f0000021
+12:57:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+12:57:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+12:57:52 INFO  : 'fpga -state' command is executed.
+12:57:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:57:52 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+12:57:52 INFO  : 'jtag frequency' command is executed.
+12:57:52 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:57:52 INFO  : Context for 'APU' is selected.
+12:57:52 INFO  : 'stop' command is executed.
+12:57:53 INFO  : 'ps7_init' command is executed.
+12:57:53 INFO  : 'ps7_post_config' command is executed.
+12:57:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:57:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:57:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:57:53 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:57:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+12:57:53 INFO  : Memory regions updated for context APU
+12:57:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:57:54 INFO  : 'con' command is executed.
+12:57:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+con
+----------------End of Script----------------
+
+12:57:54 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+12:59:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:59:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+12:59:10 INFO  : FPGA configured successfully with bitstream "C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:59:35 INFO  : Disconnected from the channel tcfchan#3.
+12:59:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+12:59:36 INFO  : 'fpga -state' command is executed.
+12:59:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:59:36 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+12:59:36 INFO  : 'jtag frequency' command is executed.
+12:59:36 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:59:36 INFO  : Context for 'APU' is selected.
+12:59:36 INFO  : 'stop' command is executed.
+12:59:36 INFO  : 'ps7_init' command is executed.
+12:59:36 INFO  : 'ps7_post_config' command is executed.
+12:59:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:59:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:59:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:59:37 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:59:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+12:59:37 INFO  : Memory regions updated for context APU
+12:59:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:59:37 INFO  : 'con' command is executed.
+12:59:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+con
+----------------End of Script----------------
+
+12:59:37 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+13:06:15 INFO  : Disconnected from the channel tcfchan#4.
+13:06:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+13:06:16 INFO  : 'fpga -state' command is executed.
+13:06:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:06:16 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+13:06:16 INFO  : 'jtag frequency' command is executed.
+13:06:16 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:06:16 INFO  : Context for 'APU' is selected.
+13:06:16 INFO  : 'stop' command is executed.
+13:06:17 INFO  : 'ps7_init' command is executed.
+13:06:17 INFO  : 'ps7_post_config' command is executed.
+13:06:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:06:17 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:06:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:06:17 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:06:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+13:06:17 INFO  : Memory regions updated for context APU
+13:06:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:06:18 INFO  : 'con' command is executed.
+13:06:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+13:06:18 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+13:07:20 INFO  : Disconnected from the channel tcfchan#5.
+13:07:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+13:07:22 INFO  : 'fpga -state' command is executed.
+13:07:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:07:22 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+13:07:22 INFO  : 'jtag frequency' command is executed.
+13:07:22 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:07:22 INFO  : Context for 'APU' is selected.
+13:07:22 INFO  : 'stop' command is executed.
+13:07:23 INFO  : 'ps7_init' command is executed.
+13:07:23 INFO  : 'ps7_post_config' command is executed.
+13:07:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:07:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:07:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:07:23 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:07:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+13:07:23 INFO  : Memory regions updated for context APU
+13:07:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:07:23 INFO  : 'con' command is executed.
+13:07:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+13:07:23 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+13:08:54 INFO  : Disconnected from the channel tcfchan#6.
+13:08:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+13:08:55 INFO  : 'fpga -state' command is executed.
+13:08:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:08:55 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+13:08:55 INFO  : 'jtag frequency' command is executed.
+13:08:55 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:08:55 INFO  : Context for 'APU' is selected.
+13:08:55 INFO  : 'stop' command is executed.
+13:08:56 INFO  : 'ps7_init' command is executed.
+13:08:56 INFO  : 'ps7_post_config' command is executed.
+13:08:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:08:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:08:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:08:57 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:08:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+13:08:57 INFO  : Memory regions updated for context APU
+13:08:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:08:57 INFO  : 'con' command is executed.
+13:08:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+13:08:57 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+13:09:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:09:18 ERROR : Specified device 'Digilent Zybo 210279655093A/2-xc7z010' is not found on the board
+13:09:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:09:26 ERROR : Specified device 'Digilent Zybo 210279655093A/2-xc7z010' is not found on the board
+13:09:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:09:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+13:09:34 INFO  : FPGA configured successfully with bitstream "C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:09:39 INFO  : Disconnected from the channel tcfchan#7.
+13:09:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+13:09:41 INFO  : 'fpga -state' command is executed.
+13:09:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:09:41 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+13:09:41 INFO  : 'jtag frequency' command is executed.
+13:09:41 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:09:41 INFO  : Context for 'APU' is selected.
+13:09:41 INFO  : 'stop' command is executed.
+13:09:42 INFO  : 'ps7_init' command is executed.
+13:09:42 INFO  : 'ps7_post_config' command is executed.
+13:09:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:09:42 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:09:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:09:43 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:09:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+13:09:43 INFO  : Memory regions updated for context APU
+13:09:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:09:43 INFO  : 'con' command is executed.
+13:09:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+con
+----------------End of Script----------------
+
+13:09:43 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+13:13:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:13:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:13:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:13:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+13:13:31 INFO  : FPGA configured successfully with bitstream "C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:13:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:13:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+13:13:58 INFO  : FPGA configured successfully with bitstream "C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:14:50 INFO  : Disconnected from the channel tcfchan#8.
+13:14:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+13:14:51 INFO  : 'fpga -state' command is executed.
+13:14:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:14:52 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+13:14:52 INFO  : 'jtag frequency' command is executed.
+13:14:52 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:14:52 INFO  : Context for 'APU' is selected.
+13:14:52 INFO  : 'stop' command is executed.
+13:14:52 INFO  : 'ps7_init' command is executed.
+13:14:52 INFO  : 'ps7_post_config' command is executed.
+13:14:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:14:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:14:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:14:53 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:14:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+13:14:53 INFO  : Memory regions updated for context APU
+13:14:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:14:53 INFO  : 'con' command is executed.
+13:14:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+con
+----------------End of Script----------------
+
+13:14:53 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+14:26:07 INFO  : Disconnected from the channel tcfchan#9.
+14:26:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+14:26:08 INFO  : 'fpga -state' command is executed.
+14:26:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:26:09 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+14:26:09 INFO  : 'jtag frequency' command is executed.
+14:26:09 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:26:09 INFO  : Context for 'APU' is selected.
+14:26:09 INFO  : 'stop' command is executed.
+14:26:09 INFO  : 'ps7_init' command is executed.
+14:26:09 INFO  : 'ps7_post_config' command is executed.
+14:26:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:26:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:26:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:26:10 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:26:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+14:26:10 INFO  : Memory regions updated for context APU
+14:26:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:26:10 INFO  : 'con' command is executed.
+14:26:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+con
+----------------End of Script----------------
+
+14:26:10 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+15:23:38 INFO  : Disconnected from the channel tcfchan#10.
+15:23:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655093A" && level==0} -index 1' command is executed.
+15:23:39 INFO  : 'fpga -state' command is executed.
+15:23:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:23:39 INFO  : Jtag cable 'Digilent Zybo 210279655093A' is selected.
+15:23:39 INFO  : 'jtag frequency' command is executed.
+15:23:39 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:23:39 INFO  : Context for 'APU' is selected.
+15:23:39 INFO  : 'stop' command is executed.
+15:23:40 INFO  : 'ps7_init' command is executed.
+15:23:40 INFO  : 'ps7_post_config' command is executed.
+15:23:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:23:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:23:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:23:40 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:23:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+15:23:40 INFO  : Memory regions updated for context APU
+15:23:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:23:40 INFO  : 'con' command is executed.
+15:23:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655093A"} -index 0
+con
+----------------End of Script----------------
+
+15:23:40 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+15:25:42 INFO  : Disconnected from the channel tcfchan#11.
+22:12:28 INFO  : Registering command handlers for SDK TCF services
+22:12:29 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\temp_xsdb_launch_script.tcl
+22:12:35 INFO  : XSCT server has started successfully.
+22:12:35 INFO  : Successfully done setting XSCT server connection channel  
+22:13:03 INFO  : Processing command line option -hwspec C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf.
+22:13:03 INFO  : Successfully done setting SDK workspace  
+22:13:03 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+23:13:31 INFO  : Registering command handlers for SDK TCF services
+23:13:31 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\temp_xsdb_launch_script.tcl
+23:13:37 INFO  : XSCT server has started successfully.
+23:13:39 INFO  : Successfully done setting XSCT server connection channel  
+23:13:41 INFO  : Successfully done setting SDK workspace  
+23:13:41 INFO  : Processing command line option -hwspec C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper.hdf.
+23:13:42 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+23:13:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:13:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+23:13:48 INFO  : FPGA configured successfully with bitstream "C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:13:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655100A" && level==0} -index 1' command is executed.
+23:13:54 INFO  : 'fpga -state' command is executed.
+23:13:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:13:55 INFO  : Jtag cable 'Digilent Zybo 210279655100A' is selected.
+23:13:55 INFO  : 'jtag frequency' command is executed.
+23:13:55 INFO  : Sourcing of 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:13:55 INFO  : Context for 'APU' is selected.
+23:13:55 INFO  : 'stop' command is executed.
+23:13:56 INFO  : 'ps7_init' command is executed.
+23:13:56 INFO  : 'ps7_post_config' command is executed.
+23:13:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:13:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:13:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:13:56 INFO  : The application 'C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:13:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+dow C:/Users/bwedemir/Desktop/ECE4261Project/WORK-ECE4261_Project-UDP-2018-12-1/ECE4261_Project-UDP/Project_V0.2.sdk/Project/Debug/Project.elf
+----------------End of Script----------------
+
+23:13:56 INFO  : Memory regions updated for context APU
+23:13:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:13:56 INFO  : 'con' command is executed.
+23:13:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655100A"} -index 0
+con
+----------------End of Script----------------
+
+23:13:56 INFO  : Launch script is exported to file 'C:\Users\bwedemir\Desktop\ECE4261Project\WORK-ECE4261_Project-UDP-2018-12-1\ECE4261_Project-UDP\Project_V0.2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_project.elf_on_local.tcl'
+23:17:35 INFO  : Disconnected from the channel tcfchan#1.
