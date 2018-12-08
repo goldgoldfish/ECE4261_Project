@@ -1,5 +1,8 @@
 ECE4261_Project
 
+Requires Vivado 2018.2 library for PMODs
+https://github.com/Digilent/vivado-library/releases
+
 Copying from Git to school computers:
 1: Sign into GitHub and download the zip of the branch you wish to work in.
 2: Extract the project and move the folder to where you wish to keep the folder in.
